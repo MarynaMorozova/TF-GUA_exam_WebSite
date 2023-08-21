@@ -1,0 +1,11 @@
+001 User authorization on https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+1. Load file.
+2. Enter Password.
+4. Press "Авторизуватись"
+ER: Switch on //div [text()= 'Крок 1 з 5']
+
+001 Login with invalid password on https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+1. Load file.
+2. Enter invalidPassword.
+4. Press "Авторизуватись"
+ER:Ключ пошкоджено або невірний пароль. Спробуйте ще раз, або оберіть інший файл
