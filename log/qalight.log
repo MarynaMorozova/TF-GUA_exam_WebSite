@@ -1,0 +1,330 @@
+2023-16-08 18:25:52   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:25:57   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:26:00   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:26:00  ERROR [pages.LoginPage] : Can not work with elementorg.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=115.0.5790.171)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5852a1208ef8c33a2cbf4eeeb4a4ca05, clearElement {id=2997779690C3238DC76E21847938FFF3_element_17}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51166/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5852a1208ef8c33a2cbf4eeeb4a4ca05)] -> xpath: .//input [@type ="password"]]
+Session ID: 5852a1208ef8c33a2cbf4eeeb4a4ca05
+2023-16-08 18:26:01   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:26:01   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:27:11   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:27:14   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:27:17   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:27:17  ERROR [pages.LoginPage] : Can not work with elementorg.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=115.0.5790.171)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be2ec5c88b289e49f8d30c312826265c, clearElement {id=EDADD9A315E11E38362C49896AF1D91F_element_17}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51454}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51454/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (be2ec5c88b289e49f8d30c312826265c)] -> xpath: .//input [@type ="password"]]
+Session ID: be2ec5c88b289e49f8d30c312826265c
+2023-16-08 18:27:18   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:27:18   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:35:15   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:35:19   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:35:22   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:35:22   INFO [pages.LoginPage] : Element is not displayed
+2023-16-08 18:35:23   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:35:23   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:39:24   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:39:28   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:39:31   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:39:31   INFO [pages.LoginPage] :  Element is not displayed
+2023-16-08 18:39:32   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:39:32   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:43:43   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:43:46   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:43:49   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:43:49   INFO [pages.LoginPage] :  Element is not displayed
+2023-16-08 18:43:50   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:43:50   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:46:01   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:46:05   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:46:08   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:46:08   INFO [pages.LoginPage] :  Element is not displayed
+2023-16-08 18:46:09   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:46:09   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:49:24   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:49:27   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:49:30   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:49:30   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 18:49:30   INFO [pages.LoginPage] :  Element is not displayed
+2023-16-08 18:49:31   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:49:31   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:51:01   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:51:04   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:51:08   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:51:08   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 18:51:08   INFO [pages.LoginPage] :  Element is not displayed
+2023-16-08 18:51:09   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:51:09   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 18:52:20   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 18:52:24   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 18:52:28   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 18:52:28   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 18:53:29   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 18:53:29   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 19:04:33   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 19:04:37   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:04:40   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:04:40   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:04:40   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 19:04:41   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:04:41   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 19:11:07   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 19:11:10   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:11:13   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:11:13   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:12:14   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:12:14   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 19:14:10   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was started ----
+2023-16-08 19:14:13   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:14:16   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:14:16   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:14:16   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 19:14:17   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:14:17   INFO [FileUploaderWithSelenium] : -----fileUploaderWithSelenium was stop ----
+2023-16-08 19:32:29   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 19:32:32   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:32:33  ERROR [pages.LoginPage] : Can not open https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:32:33   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:32:33   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 19:33:24   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 19:33:28   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:33:31   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:33:31   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:34:32   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:34:32   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 19:39:15   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 19:39:18   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:39:22   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:39:22   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:40:23   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:40:23   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 19:51:58   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 19:52:01   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:52:05   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:52:05   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:52:05   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 19:52:05   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 19:52:06   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:52:06   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 19:53:50   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 19:53:54   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:53:57   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:53:57   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:53:57   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 19:53:57   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 19:53:58   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:53:58   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 19:54:33   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 19:54:37   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:54:41   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:54:42   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:54:42   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 19:54:42   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 19:54:42   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:54:42   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 19:55:04   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 19:55:07   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 19:55:11   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 19:55:11   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 19:55:11   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 19:55:11   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 19:55:12   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 19:55:12   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:11:23   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:11:26   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:11:31   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:11:31   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:11:31   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:11:31   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:11:31   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 20:11:32   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:11:32   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:23:28   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:23:31   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:23:31  ERROR [pages.LoginPage] : Can not open https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:23:32   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:23:32   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:24:31   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:24:34   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:24:38   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:24:38   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:24:38   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:24:38   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:24:38   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-16-08 20:24:38   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 20:24:39   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:24:39   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:33:15   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:33:18   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:33:22   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:33:22   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:33:22   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:33:22   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:33:22   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-16-08 20:33:22   INFO [pages.LoginPage] :  element is not displayed
+2023-16-08 20:33:23   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:33:23   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:37:51   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:37:54   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:37:58   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:37:58   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:37:58   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:37:58   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:37:58   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-16-08 20:40:50   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:40:54   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:40:57   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:40:57   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:40:57   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:40:57   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:40:57   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-16-08 20:40:57   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:40:58   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-16-08 20:40:58   INFO [pages.LoginPage] : Password input
+2023-16-08 20:40:58  ERROR [pages.LoginPage] : Can not work with elementjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.webDriverWait10" is null
+2023-16-08 20:40:58   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:40:58   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:46:42   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:46:46   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:46:50   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:46:50   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:46:50   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:46:50   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:46:50   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-16-08 20:46:50   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:46:50   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-16-08 20:46:50   INFO [pages.LoginPage] : Password input
+2023-16-08 20:46:51   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:46:51   INFO [pages.LoginPage] : signInVisible
+2023-16-08 20:46:51  ERROR [pages.LoginPage] : Can not work with elementjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.webDriverWait10" is null
+2023-16-08 20:46:51   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:46:51   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:49:02   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:49:05   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:49:09   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:49:09   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:49:09   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:49:09   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:49:09   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-16-08 20:49:09   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:49:10   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-16-08 20:49:10   INFO [pages.LoginPage] : Password input
+2023-16-08 20:49:10   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:49:10   INFO [pages.LoginPage] : signInVisible
+2023-16-08 20:49:10  ERROR [pages.LoginPage] : Can not work with elementjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.webDriverWait10" is null
+2023-16-08 20:49:10   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:49:10   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-16-08 20:51:26   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-16-08 20:51:30   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-16-08 20:51:35   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-16-08 20:51:35   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:51:35   INFO [FileUploaderWithSelenium] : Send file
+2023-16-08 20:51:35   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:51:35   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-16-08 20:51:36   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:51:36   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-16-08 20:51:36   INFO [pages.LoginPage] : Password input
+2023-16-08 20:51:36   INFO [pages.LoginPage] : Element is displayed
+2023-16-08 20:51:36   INFO [pages.LoginPage] : signInVisible
+2023-16-08 20:51:36  ERROR [pages.LoginPage] : Can not work with elementjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.webDriverWait10" is null
+2023-16-08 20:51:36   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-16-08 20:51:36   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-17-08 11:35:10   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-17-08 11:35:15   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-17-08 11:35:15  ERROR [pages.LoginPage] : Can not open https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-17-08 11:35:16   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-17-08 11:35:16   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-17-08 16:37:30   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-17-08 16:37:33   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-17-08 16:37:34  ERROR [pages.LoginPage] : Can not open https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-17-08 16:37:34   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-17-08 16:37:34   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-17-08 16:38:39   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-17-08 16:38:43   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-17-08 16:38:46   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-17-08 16:38:46   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:38:46   INFO [FileUploaderWithSelenium] : Send file
+2023-17-08 16:38:47   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:38:47   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-17-08 16:38:47   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:38:47   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-17-08 16:38:47   INFO [pages.LoginPage] : Password input
+2023-17-08 16:38:47   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:38:47   INFO [pages.LoginPage] : signInVisible
+2023-17-08 16:38:47   INFO [pages.LoginPage] :  element was clicked
+2023-17-08 16:41:47   INFO [pages.LoginPage] :  element is not displayed
+2023-17-08 16:41:48   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-17-08 16:41:48   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-17-08 16:43:55   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was started ----
+2023-17-08 16:44:00   INFO [FileUploaderWithSelenium] : Browser was opened
+2023-17-08 16:44:04   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-17-08 16:44:04   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:44:04   INFO [FileUploaderWithSelenium] : Send file
+2023-17-08 16:44:04   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:44:04   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-17-08 16:44:04   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:44:04   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-17-08 16:44:04   INFO [pages.LoginPage] : Password input
+2023-17-08 16:44:04   INFO [pages.LoginPage] : Element is displayed
+2023-17-08 16:44:04   INFO [pages.LoginPage] : signInVisible
+2023-17-08 16:44:04   INFO [pages.LoginPage] :  element was clicked
+2023-17-08 16:47:04   INFO [pages.LoginPage] :  element is not displayed
+2023-17-08 16:47:05   INFO [FileUploaderWithSelenium] : Browser was closed
+2023-17-08 16:47:05   INFO [FileUploaderWithSelenium] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-18-08 10:34:54   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was started ----
+2023-18-08 10:34:58   INFO [LoginWithUploadFile] : Browser was opened
+2023-18-08 10:35:03   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-18-08 10:35:03   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:35:03   INFO [LoginWithUploadFile] : Send file
+2023-18-08 10:35:03   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:35:03   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-18-08 10:35:03   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:35:03   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-18-08 10:35:03   INFO [pages.LoginPage] : Password input
+2023-18-08 10:35:03   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:35:03   INFO [pages.LoginPage] : signInVisible
+2023-18-08 10:35:03   INFO [pages.LoginPage] :  element was clicked
+2023-18-08 10:38:03   INFO [pages.LoginPage] :  element is not displayed
+2023-18-08 10:38:04   INFO [LoginWithUploadFile] : Browser was closed
+2023-18-08 10:38:04   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-18-08 10:46:34   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was started ----
+2023-18-08 10:46:37   INFO [LoginWithUploadFile] : Browser was opened
+2023-18-08 10:46:40   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-18-08 10:46:41   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:46:41   INFO [LoginWithUploadFile] : Send file
+2023-18-08 10:46:41   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:46:41   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-18-08 10:46:41   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:46:41   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-18-08 10:46:41   INFO [pages.LoginPage] : Password input
+2023-18-08 10:46:41   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 10:46:41   INFO [pages.LoginPage] : signInVisible
+2023-18-08 10:46:41   INFO [pages.LoginPage] :  element was clicked
+2023-18-08 10:49:41   INFO [pages.LoginPage] :  element is not displayed
+2023-18-08 10:49:42   INFO [LoginWithUploadFile] : Browser was closed
+2023-18-08 10:49:42   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-18-08 11:53:07   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was started ----
+2023-18-08 11:53:10   INFO [LoginWithUploadFile] : Browser was opened
+2023-18-08 11:53:15   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-18-08 11:53:15   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 11:53:15   INFO [LoginWithUploadFile] : Send file
+2023-18-08 11:53:15   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 11:53:15   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-18-08 11:53:16   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 11:53:16   INFO [pages.LoginPage] : 12345678 was inputted input
+2023-18-08 11:53:16   INFO [pages.LoginPage] : Password input
+2023-18-08 11:53:16   INFO [pages.LoginPage] : Element is displayed
+2023-18-08 11:53:16   INFO [pages.LoginPage] : signInVisible
+2023-18-08 11:53:16   INFO [pages.LoginPage] :  element was clicked
+2023-21-08 09:43:31   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was started ----
+2023-21-08 10:13:08   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was started ----
+2023-21-08 10:17:54   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was started ----
