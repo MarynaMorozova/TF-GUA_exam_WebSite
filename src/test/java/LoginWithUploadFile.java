@@ -55,6 +55,7 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         pageProvider.getLoginPage().clickOnButtonSignIn();
         pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
         //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        pageProvider.getLoginPage().checkIsStep1Visible();
     }
 
     @Test

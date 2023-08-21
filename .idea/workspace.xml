@@ -51,13 +51,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/workSpaсe/TF-GUA"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workSpaсe/TF-GUA&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pages" />
@@ -104,6 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.FileUploaderWithSelenium" />
+      <item itemvalue="JUnit.LoginWithUploadFile" />
+      <item itemvalue="JUnit.LoginWithUploadFile.fileHiddenUploaderWithSelenium" />
+      <item itemvalue="JUnit.FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LoginWithUploadFile" />

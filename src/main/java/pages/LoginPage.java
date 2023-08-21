@@ -26,6 +26,9 @@ public class LoginPage extends ParentPage {
     @FindBy(xpath = "//div [@class=\"tender-field-error ng-star-inserted\"]")
     private WebElement isInvalidPassword;
 
+    @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")
+    private WebElement step1;
+
 
 
     //це як варіант webDriver.findElement(By.xpath("//div[@class='alert alert-danger small liveValidateMessage liveValidateMessage--visible']"));
@@ -103,6 +106,11 @@ public class LoginPage extends ParentPage {
     public void checkIsInvalidPasswordVisible() {
         checkElementDisplayed(isInvalidPassword);
     }
+
+    public void checkIsStep1Visible() {
+        checkElementDisplayed(step1);
+    }
+
 
 
 //    public LoginPage enterTextIntoRegistrationUserNameField(String userName) {

@@ -1,0 +1,20 @@
+    @FindBy(xpath = ".//label [@for='upload']")
+    private WebElement labelFile;
+
+    @FindBy(xpath = ".//input [@type='password']")
+    private WebElement inputPassword;
+
+    @FindBy(xpath = ".//span [@class='sec-button-text']")
+    private WebElement signIn;
+
+    @FindBy(xpath = ".//div [@class ='input-view text ng-star-inserted']")
+    private WebElement isFileLoad;
+
+    @FindBy(xpath = "//div [@class=\"tender-field-error ng-star-inserted\"]")
+    private WebElement isInvalidPassword;
+
+    @FindBy(xpath = ".//div [@class ='recaptcha-checkbox-border']")
+        private WebElement checkBoxRob;
+
+    @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")
+    private WebElement step1;
