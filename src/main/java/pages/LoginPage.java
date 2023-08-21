@@ -23,6 +23,10 @@ public class LoginPage extends ParentPage {
     @FindBy(xpath = ".//div [@class ='input-view text ng-star-inserted']")
     private WebElement isFileLoad;
 
+    @FindBy(xpath = "//div [@class=\"tender-field-error ng-star-inserted\"]")
+    private WebElement isInvalidPassword;
+
+
 
     //це як варіант webDriver.findElement(By.xpath("//div[@class='alert alert-danger small liveValidateMessage liveValidateMessage--visible']"));
 //    @FindBy(xpath = "@FindBy(xpath = \"//div[@class='alert alert-danger text-center' and text() = 'Invalid username / pasword']\")\n" +
@@ -61,6 +65,11 @@ public class LoginPage extends ParentPage {
         checkElementDisplayed(labelFile);
     }
 
+
+    public void checkIsСheckBoxRobVisible() {
+        checkElementDisplayed(checkBoxRob);
+    }
+
     public void checkIsCheckBoxRobNotVisible() {
         checkElementNotDisplayed(checkBoxRob);// валідний логін
     }
@@ -89,6 +98,10 @@ public class LoginPage extends ParentPage {
     public void checkSignInVisible() {
         checkElementDisplayed(signIn);
         logger.info("signInVisible");
+    }
+
+    public void checkIsInvalidPasswordVisible() {
+        checkElementDisplayed(isInvalidPassword);
     }
 
 

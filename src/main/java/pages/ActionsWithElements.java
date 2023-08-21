@@ -31,10 +31,10 @@ public class ActionsWithElements {
     public void clickOnElement(WebElement element) { //method for clicking on element
 
         try {
-        //    String elementName= getElementName(element);
+            String elementName= getElementName(element);
         //    webDriverWait10.until(ExpectedConditions.elementToBeClickable(element));//вона перестрибне на інший коли буде клікабельний
             element.click();
-            logger.info(" element was clicked");
+            logger.info(elementName+" element was clicked");
         } catch (Exception e) {
             printErrorAndStopTest(e);
         }
@@ -66,7 +66,7 @@ public class ActionsWithElements {
 
             boolean state = element.isDisplayed();
             if (state) {
-                logger.info("Element is displayed");
+                logger.info(getElementName(element)+ " element is displayed");
             } else {
                 logger.info( getElementName(element)+" element is not displayed");
             }
@@ -131,9 +131,10 @@ public class ActionsWithElements {
 
     public void toMarkCheckBox(WebElement element) { //2. метод для вибору чекбокса
         try {
+            String elementName= getElementName(element);
             if (!element.isSelected()) { // якщо чекбокс не вибраний
                 element.click(); // вибрати чекбокс
-                logger.info("Checkbox was marked 'Yes'");
+                logger.info(elementName + "Checkbox was marked 'Yes'");
             } else {
                 logger.info("Checkbox is already marked 'Yes'");
             }
@@ -178,7 +179,7 @@ public class ActionsWithElements {
 
     private String getElementName(WebElement element) {
         try {
-            return element.getTagName();//getAccessibleName();//
+            return element.getAccessibleName(); // getTagName(); //
         } catch (Exception e) {
             return "";
         }
