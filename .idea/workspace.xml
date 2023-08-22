@@ -5,30 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2970835a-853d-4dec-a94e-f9e6a6225f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/TestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigHiddenProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ExcelDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/SpreadsheetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginRBOWithUploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Locators.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Locators.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,20 +51,26 @@
       <recent name="C:\workSpaсe\TF-GUA\src\main\java\libs" />
       <recent name="C:\workSpaсe\TF-GUA\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginWithUploadFile">
-    <configuration name="FileUploaderWithSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FileUploaderWithSelenium" />
-      <module name="TF-GUA" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LoginRBOWithUploadFile.validLogin">
     <configuration name="FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FileUploaderWithSelenium" />
       <option name="METHOD_NAME" value="fileHiddenUploaderWithSelenium" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginRBOWithUploadFile.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TF-GUA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginRBOWithUploadFile" />
+      <option name="METHOD_NAME" value="validLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,18 +95,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginWithUploadFile.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TF-GUA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginWithUploadFile" />
+      <option name="METHOD_NAME" value="validLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.FileUploaderWithSelenium" />
+      <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
+      <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
       <item itemvalue="JUnit.LoginWithUploadFile" />
       <item itemvalue="JUnit.LoginWithUploadFile.fileHiddenUploaderWithSelenium" />
       <item itemvalue="JUnit.FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
+        <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
         <item itemvalue="JUnit.LoginWithUploadFile" />
         <item itemvalue="JUnit.LoginWithUploadFile.fileHiddenUploaderWithSelenium" />
         <item itemvalue="JUnit.FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" />
-        <item itemvalue="Application.FileUploaderWithSelenium" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +131,25 @@
       <option name="presentableId" value="Default" />
       <updated>1692171115271</updated>
     </task>
+    <task id="LOCAL-00001" summary="Locators+ TC2">
+      <created>1692628173586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692628173586</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Locators+ TC2">
+      <created>1692628186881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692628186881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Locators+ TC2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Locators+ TC2" />
   </component>
 </project>

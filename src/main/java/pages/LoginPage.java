@@ -29,6 +29,17 @@ public class LoginPage extends ParentPage {
     @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")
     private WebElement step1;
 
+    @FindBy(xpath = ".//label [@class='fileField formControl']")
+    private WebElement LabelFileLogin;
+    @FindBy(xpath = "//span [@class = 'keyFilename']")
+    private WebElement isLabelFileLogin;
+
+    @FindBy(xpath ="//input [@id = \"pwd_id\"]")
+    private WebElement isPasswordRBO;
+
+    @FindBy(xpath = "//button [@CLASS='button loginSignatureBehavior next actionDefault']")
+    private WebElement signInRbo;
+
 
 
     //це як варіант webDriver.findElement(By.xpath("//div[@class='alert alert-danger small liveValidateMessage liveValidateMessage--visible']"));
@@ -40,77 +51,101 @@ public class LoginPage extends ParentPage {
         super(webDriver);
     }
 
-//    @Override
+    //    @Override
 //    protected String getRelativeUrl() {
 //        return "/";
 //    }
-    public void openLoginPage() {
-        openPage(BASE_URL);
-     //   checkUrl();
+    public void openLoginPage(String url) {
+        openPage(url);
+        //   checkUrl();
     }
 
     public void enterTextIntoInputPassword(String Password) {
         enterTextIntoInput(inputPassword, Password);
-        logger.info("Password input");
+ //       logger.info("Password input");
     }
 
-    public void clickOnButtonSignIn() {
-        clickOnElement(signIn);
+    public void clickOnButtonSignIn(String elementName) {
+        clickOnElement(signIn, elementName);
     }
 
-    public void loginWithValidCreds() {
-        openLoginPage();
-//        enterTextIntoInputUserName(TestData.LOGIN_DEFAULT);
-        enterTextIntoInputPassword(TestData.PASSWORD_DEFAULT);
-        clickOnButtonSignIn();
-    }
-    public void checkIsLabelFileVisible() {
-        checkElementDisplayed(labelFile);
+//    public void loginWithValidCreds() {
+//        openLoginPage(BASE_URL);
+////        enterTextIntoInputUserName(TestData.LOGIN_DEFAULT);
+//        enterTextIntoInputPassword(TestData.PASSWORD_DEFAULT);
+//        clickOnButtonSignIn();
+//    }
+
+    public void checkIsLabelFileVisible(String elementName) {
+        checkElementDisplayed(labelFile, elementName);
     }
 
 
     public void checkIsСheckBoxRobVisible() {
-        checkElementDisplayed(checkBoxRob);
+        checkElementDisplayed(checkBoxRob, "checkBoxRob");
     }
 
     public void checkIsCheckBoxRobNotVisible() {
-        checkElementNotDisplayed(checkBoxRob);// валідний логін
+        checkElementNotDisplayed(checkBoxRob, "checkBoxRob");// валідний логін
     }
 
-    public void checkIsInputPasswordVisible() {
-        checkElementDisplayed(inputPassword);
+    public void checkIsInputPasswordVisible(String elementName) {
+        checkElementDisplayed(inputPassword, elementName);
     }
 
-    public void checkIsInputPasswordNotVisible() {
-        checkElementNotDisplayed(inputPassword);
+    public void checkIsInputPasswordNotVisible(String elementName) {
+        checkElementNotDisplayed(inputPassword, elementName);
     }
 
     public void checkIsButtonSignInVisible() {
-        checkElementDisplayed(signIn);
+        checkElementDisplayed(signIn, "SignIn");
     }
 
-    public void checkIsButtonSignInNotVisible() {
-        checkElementNotDisplayed(signIn);
+    public void checkIsButtonSignInNotVisible(String elementName) {
+        checkElementNotDisplayed(signIn, elementName);
     }
 
-    public void checkIsFileLoadVisible() {
-        checkElementDisplayed(isFileLoad);
+    public void checkIsFileLoadVisible(String elementName) {
+        checkElementDisplayed(isFileLoad, elementName);
         logger.info("checkIsFileLoadVisible");
     }
 
-    public void checkSignInVisible() {
-        checkElementDisplayed(signIn);
+    public void checkSignInVisible(String elementName) {
+        checkElementDisplayed(signIn,elementName);
         logger.info("signInVisible");
     }
 
-    public void checkIsInvalidPasswordVisible() {
-        checkElementDisplayed(isInvalidPassword);
+    public void checkIsInvalidPasswordVisible(String elementName) {
+        checkElementDisplayed(isInvalidPassword, elementName);
     }
 
-    public void checkIsStep1Visible() {
-        checkElementDisplayed(step1);
+    public void checkIsStep1Visible(String elementName) {
+        checkElementDisplayed(step1, elementName);
     }
 
+    public void checkIsInputPasswordRBOVisible(String elementName)
+        {            checkElementDisplayed(isPasswordRBO, elementName);
+        }
+
+        public void checkIsFileLoadRBOVisible() { checkElementDisplayed(isLabelFileLogin, "LabelFileLogin");}
+
+    public void checkIsLabelFileRBOVisible(String elementName) {
+        checkElementDisplayed(LabelFileLogin, elementName);
+    }
+
+    public LoginPage enterTextIntoInputPasswordRBO(String passwordRbo) {
+        enterTextIntoInput(isPasswordRBO, passwordRbo);
+        return this;
+    }
+
+    public void checkSignInVisibleRBO(String elementName) {
+        checkElementDisplayed(signInRbo,elementName);
+  //      logger.info("signInVisible");
+    }
+
+    public void clickOnButtonSignInRBO(String elementName) {
+        clickOnElement(signInRbo,elementName);
+    }
 
 
 //    public LoginPage enterTextIntoRegistrationUserNameField(String userName) {
@@ -174,5 +209,6 @@ public class LoginPage extends ParentPage {
 //    private List<WebElement> getErrorLogin() {
 //        return webDriver.findElements(By.xpath(errorMessageLogin));
 //    }
-}
 
+
+    }

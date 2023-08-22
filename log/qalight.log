@@ -345,3 +345,110 @@ Session ID: be2ec5c88b289e49f8d30c312826265c
 2023-21-08 10:54:59   INFO [pages.LoginPage] :  element is not displayed
 2023-21-08 10:55:00   INFO [LoginWithUploadFile] : Browser was closed
 2023-21-08 10:55:00   INFO [LoginWithUploadFile] : -----fileHiddenUploaderWithSelenium was stop ----
+2023-22-08 11:19:05   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-22-08 11:19:14   INFO [LoginWithUploadFile] : Browser was opened
+2023-22-08 11:19:22   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-22-08 11:19:23   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 11:19:23   INFO [LoginWithUploadFile] : Send file
+2023-22-08 11:19:23   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 11:19:23   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-22-08 11:19:23   INFO [pages.LoginPage] : ****** element is displayed
+2023-22-08 11:19:24   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-22-08 11:19:24   INFO [pages.LoginPage] : Password input
+2023-22-08 11:19:24   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 11:19:24   INFO [pages.LoginPage] : signInVisible
+2023-22-08 11:19:24   INFO [pages.LoginPage] :  element was clicked
+2023-22-08 11:22:24   INFO [pages.LoginPage] :  element is not displayed
+2023-22-08 11:25:24   INFO [pages.LoginPage] :  element is not displayed
+2023-22-08 17:08:01   INFO [LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-22-08 17:08:08   INFO [LoginRBOWithUploadFile] : Browser was opened
+2023-22-08 17:08:14   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-22-08 17:08:14   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 17:08:55   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-22-08 17:08:59   INFO [LoginWithUploadFile] : Browser was opened
+2023-22-08 17:09:04   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-22-08 17:09:04   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 17:09:05   INFO [LoginWithUploadFile] : Send file
+2023-22-08 17:09:05   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 17:09:05   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-22-08 17:09:05   INFO [pages.LoginPage] : ****** element is displayed
+2023-22-08 17:09:05   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-22-08 17:09:05   INFO [pages.LoginPage] : Password input
+2023-22-08 17:09:05   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 17:09:05   INFO [pages.LoginPage] : signInVisible
+2023-22-08 17:09:05   INFO [pages.LoginPage] :  element was clicked
+2023-22-08 17:12:06   INFO [pages.LoginPage] :  element is not displayed
+2023-22-08 17:12:06   INFO [pages.LoginPage] :  element is displayed
+2023-22-08 17:26:24   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-22-08 17:26:28   INFO [LoginWithUploadFile] : Browser was opened
+2023-22-08 17:26:33   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-22-08 17:26:33   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-22-08 17:26:33   INFO [LoginWithUploadFile] : Send file
+2023-22-08 17:26:33   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-22-08 17:26:33   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-22-08 17:26:33   INFO [pages.LoginPage] : Password element is displayed
+2023-22-08 17:26:34   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-22-08 17:26:34   INFO [pages.LoginPage] : Password input
+2023-22-08 17:26:34   INFO [pages.LoginPage] : SignIn element is displayed
+2023-22-08 17:26:34   INFO [pages.LoginPage] : signInVisible
+2023-22-08 17:26:34   INFO [pages.LoginPage] :  element was clicked
+2023-22-08 17:27:34   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-22-08 17:27:34   INFO [pages.LoginPage] : Step1 element is displayed
+2023-22-08 18:42:43   INFO [LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-22-08 18:42:48   INFO [LoginRBOWithUploadFile] : Browser was opened
+2023-22-08 18:42:49   INFO [pages.LoginPage] : Page was opened https://rbo-dev.avrb.com.ua/ibank/dashboard?3
+2023-22-08 18:42:53   INFO [pages.LoginPage] : LabelFile element is displayed
+2023-22-08 18:42:53   INFO [LoginRBOWithUploadFile] : Send file
+2023-22-08 18:42:53   INFO [pages.LoginPage] : LabelFileLogin element is displayed
+2023-22-08 18:42:53   INFO [pages.LoginPage] : Password element is displayed
+2023-22-08 18:43:53  ERROR [pages.LoginPage] : Can not work with elementorg.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=115.0.1901.203)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3d841e279f5534fd3b13444972fa13a4, clearElement {id=B0B0332AD772ED05D70182497354D3FD_element_24}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.203, ms:edgeOptions: {debuggerAddress: localhost:53419}, msedge: {msedgedriverVersion: 115.0.1901.203 (a5a2b1779bc..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53419/devtoo..., se:cdpVersion: 115.0.1901.203, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (3d841e279f5534fd3b13444972fa13a4)] -> xpath: .//input [@type='password']]
+Session ID: 3d841e279f5534fd3b13444972fa13a4
+2023-22-08 18:54:28   INFO [LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-22-08 18:54:32   INFO [LoginRBOWithUploadFile] : Browser was opened
+2023-22-08 18:54:33   INFO [pages.LoginPage] : Page was opened https://rbo-dev.avrb.com.ua/ibank/dashboard?3
+2023-22-08 18:54:36   INFO [pages.LoginPage] : LabelFile element is displayed
+2023-22-08 18:54:36   INFO [LoginRBOWithUploadFile] : Send file
+2023-22-08 18:54:36   INFO [pages.LoginPage] : LabelFileLogin element is displayed
+2023-22-08 18:54:36   INFO [pages.LoginPage] : Password element is displayed
+2023-22-08 18:54:36   INFO [pages.LoginPage] : Qwerty_123 was inputted Введіть пароль
+2023-22-08 18:55:36   INFO [pages.LoginPage] : SignIn element is not displayed
+2023-22-08 18:58:17   INFO [LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-22-08 18:58:21   INFO [LoginRBOWithUploadFile] : Browser was opened
+2023-22-08 18:58:22   INFO [pages.LoginPage] : Page was opened https://rbo-dev.avrb.com.ua/ibank/dashboard?3
+2023-22-08 18:58:25   INFO [pages.LoginPage] : LabelFile element is displayed
+2023-22-08 18:58:25   INFO [LoginRBOWithUploadFile] : Send file
+2023-22-08 18:58:25   INFO [pages.LoginPage] : LabelFileLogin element is displayed
+2023-22-08 18:58:25   INFO [pages.LoginPage] : Password element is displayed
+2023-22-08 18:58:25   INFO [pages.LoginPage] : Qwerty_123 was inputted Введіть пароль
+2023-22-08 18:58:25   INFO [pages.LoginPage] : SignIn element is displayed
+2023-22-08 19:04:08   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-22-08 19:04:12   INFO [LoginWithUploadFile] : Browser was opened
+2023-22-08 19:04:17   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-22-08 19:04:17   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-22-08 19:04:17   INFO [LoginWithUploadFile] : Send file
+2023-22-08 19:04:17   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-22-08 19:04:17   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-22-08 19:04:17   INFO [pages.LoginPage] : Password element is displayed
+2023-22-08 19:04:18   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-22-08 19:04:18   INFO [pages.LoginPage] : SignIn element is displayed
+2023-22-08 19:04:18   INFO [pages.LoginPage] : signInVisible
+2023-22-08 19:04:18   INFO [pages.LoginPage] : SignIn element was clicked
+2023-22-08 19:05:17   INFO [LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-22-08 19:05:18   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-22-08 19:05:18   INFO [pages.LoginPage] : Step1 element is displayed
+2023-22-08 19:05:21   INFO [LoginRBOWithUploadFile] : Browser was opened
+2023-22-08 19:05:23   INFO [pages.LoginPage] : Page was opened https://rbo-dev.avrb.com.ua/ibank/dashboard?3
+2023-22-08 19:05:26   INFO [pages.LoginPage] : LabelFile element is displayed
+2023-22-08 19:05:26   INFO [LoginRBOWithUploadFile] : Send file
+2023-22-08 19:05:27   INFO [pages.LoginPage] : LabelFileLogin element is displayed
+2023-22-08 19:05:27   INFO [pages.LoginPage] : Password element is displayed
+2023-22-08 19:05:27   INFO [pages.LoginPage] : Qwerty_123 was inputted Введіть пароль
+2023-22-08 19:05:27   INFO [pages.LoginPage] : SignIn element is displayed
+2023-22-08 19:05:27   INFO [pages.LoginPage] : SignIn element was clicked

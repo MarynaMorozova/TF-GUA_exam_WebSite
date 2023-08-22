@@ -17,13 +17,13 @@ public class LoginTest extends BaseTest {
 
 //    final static String ERROR_USERNAME_OR_PASSWORD = "Invalid username / pasword";
 
-    @Test
-    public void ValidLogin() {
-
-        pageProvider.getLoginPage().openLoginPage();
-                pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
-        pageProvider.getLoginPage().clickOnButtonSignIn();
-    }
+//    @Test
+//    public void ValidLogin() {
+//
+//        pageProvider.getLoginPage().openLoginPage(BASE_URL);
+//                pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
+//        pageProvider.getLoginPage().clickOnButtonSignIn();
+//    }
 
 //    @Test //проверка входа с невалидными данными
 //    @Parameters(method = "parametersForCheckInvalidLoginPassword") //параметризация

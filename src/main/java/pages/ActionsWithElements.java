@@ -28,10 +28,10 @@ public class ActionsWithElements {
 
     }
 
-    public void clickOnElement(WebElement element) { //method for clicking on element
+    public void clickOnElement(WebElement element, String elementName) { //method for clicking on element
 
         try {
-            String elementName= getElementName(element);
+ //           String elementName= getElementName(element);
         //    webDriverWait10.until(ExpectedConditions.elementToBeClickable(element));//вона перестрибне на інший коли буде клікабельний
             element.click();
             logger.info(elementName+" element was clicked");
@@ -40,9 +40,9 @@ public class ActionsWithElements {
         }
     }
 
-    public void clickOnElement(String locator) {
+    public void clickOnElement(String locator, String elementName) {
         try {
-            clickOnElement(webDriver.findElement(By.xpath(locator)));
+            clickOnElement(webDriver.findElement(By.xpath(locator)), elementName);
         } catch (Exception e) {
             printErrorAndStopTest(e);
         }
@@ -61,28 +61,27 @@ public class ActionsWithElements {
         }
     }
 
-    public boolean isElementDisplayed(WebElement element) {
+    public boolean isElementDisplayed(WebElement element, String elementName) {
         try {
-
             boolean state = element.isDisplayed();
             if (state) {
-                logger.info(getElementName(element)+ " element is displayed");
+                logger.info(elementName+ " element is displayed");
             } else {
-                logger.info( getElementName(element)+" element is not displayed");
+                logger.info( elementName +" element is not displayed");
             }
             return state;
         } catch (Exception e) {
-            logger.info(getElementName(element) +" element is not displayed");
+            logger.info(elementName +" element is not displayed");
             return false;
         }
     }
 
-    public void checkElementDisplayed(WebElement element) {
-        Assert.assertTrue(getElementName(element)+ " element is not displaed", isElementDisplayed(element));
+    public void checkElementDisplayed(WebElement element, String elementName) {
+        Assert.assertTrue(elementName + " element is not displayed", isElementDisplayed(element, elementName));
     }
 
-    public void checkElementNotDisplayed(WebElement element) {
-        Assert.assertFalse(getElementName(element)+ " element is displayed", isElementDisplayed(element));
+    public void checkElementNotDisplayed(WebElement element,String elementName ) {
+        Assert.assertFalse(elementName+ " element is displayed", isElementDisplayed(element,elementName));
     }
 
     public void selectTextInDropDown(WebElement dropDown, String text) {
@@ -119,15 +118,15 @@ public class ActionsWithElements {
     }
 
     //HW4 1. метод вибору значення з дропдауну
-    public void selectTextInDropDownByUI(WebElement dropDown, String text) {
-        try {
-            clickOnElement(dropDown);
-            clickOnElement(dropDown.findElement(By.xpath("//*[contains(text(),'" + text + "')]")));
-            logger.info(text + " was selected in DropDown");
-        } catch (Exception e) { // якщо в дропдауні немає вибраного значення
-            printErrorAndStopTest(e);
-        }
-    }
+//    public void selectTextInDropDownByUI(WebElement dropDown, String text) {
+//        try {
+//            clickOnElement(dropDown);
+//            clickOnElement(dropDown.findElement(By.xpath("//*[contains(text(),'" + text + "')]")));
+//            logger.info(text + " was selected in DropDown");
+//        } catch (Exception e) { // якщо в дропдауні немає вибраного значення
+//            printErrorAndStopTest(e);
+//        }
+//    }
 
     public void toMarkCheckBox(WebElement element) { //2. метод для вибору чекбокса
         try {

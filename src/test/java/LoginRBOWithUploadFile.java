@@ -7,29 +7,24 @@ import java.io.File;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-import static data.TestData.PASSWORD_DEFAULT;
-import static data.TestData.PASSWORD_INVALID;
+import static data.TestData.*;
 
-public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElements {
-
-//    public FileUploaderWithSelenium(WebDriver webDriver) {
-//        super(webDriver);
-//    }
+public class LoginRBOWithUploadFile extends BaseTest {
 
     @Test
     public void validLogin() {
 
-        String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
-        String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
+        String url = "https://rbo-dev.avrb.com.ua/ibank/dashboard?3"; // Замініть на URL свого веб-сайту
+        String filePath = "C://workSpaсe//КОФІТОН_37120506_директор.dat"; // Шлях до вашого файлу
         pageProvider.getLoginPage().openLoginPage(url);
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд
 
 
         //    webDriver.manage().timeouts().implicitlyWait(Duration,TimeUnit.SECONDS);//замість 30 секунд
-        pageProvider.getLoginPage().checkIsLabelFileVisible("LoginFile");
+        pageProvider.getLoginPage().checkIsLabelFileRBOVisible("LabelFile");
 
         // Знайти label за вказаним XPath
-        WebElement label = webDriver.findElement(By.xpath(".//label [@for='upload']"));
+        WebElement label = webDriver.findElement(By.xpath(".//label [@class='fileField formControl']"));
 
 //        JavascriptExecutor jsExecutor = (JavascriptExecutor) webDriver;
 //        String script = "arguments[0].setAttribute('type', 'file');";
@@ -43,23 +38,23 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         // Відправити шлях до файлу в інпут
         fileInput.sendKeys(new File(filePath).getAbsolutePath());
         //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsFileLoadVisible("LoginNameFile");
+        pageProvider.getLoginPage().checkIsFileLoadRBOVisible();
 //        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
 //        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
         webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsInputPasswordVisible("Password");
-        pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
-        pageProvider.getLoginPage().checkSignInVisible("SignIn");
+        pageProvider.getLoginPage().checkIsInputPasswordRBOVisible("Password");
+        pageProvider.getLoginPage().enterTextIntoInputPasswordRBO(PASSWORD_RBO);
+        pageProvider.getLoginPage().checkSignInVisibleRBO("SignIn");
 
         //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
-        pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
-        //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsStep1Visible("Step1");
+        pageProvider.getLoginPage().clickOnButtonSignInRBO("SignIn");
+//        pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
+//        //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+//        pageProvider.getLoginPage().checkIsStep1Visible("Step1");
     }
 
- /*   @Test
- /*   public void inValidLoginPassword() {
+  /*  @Test
+    public void inValidLoginPassword() {
 
 //        String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
@@ -68,7 +63,7 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
 
 
         //    webDriver.manage().timeouts().implicitlyWait(Duration,TimeUnit.SECONDS);//замість 30 секунд
-        pageProvider.getLoginPage().checkIsLabelFileVisible("LoginFile");
+        pageProvider.getLoginPage().checkIsLabelFileVisible();
 
         // Знайти label за вказаним XPath
         WebElement label = webDriver.findElement(By.xpath(".//label [@for='upload']"));

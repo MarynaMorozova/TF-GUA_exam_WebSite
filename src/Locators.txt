@@ -1,3 +1,4 @@
+ Step 0. Login
     @FindBy(xpath = ".//label [@for='upload']")
     private WebElement labelFile;
 
@@ -16,5 +17,7 @@
     @FindBy(xpath = ".//div [@class ='recaptcha-checkbox-border']")
         private WebElement checkBoxRob;
 
+
+ Step 1.
     @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")
     private WebElement step1;
