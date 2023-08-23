@@ -13,6 +13,10 @@ public class PageProvider {
         return new LoginPage(webDriver);
     }
 
+    public LoginPageRBO getLoginPageRBO() {
+        return new LoginPageRBO(webDriver);
+    }
+
     public HomePage getHomePage() {
         return new HomePage(webDriver);
     }

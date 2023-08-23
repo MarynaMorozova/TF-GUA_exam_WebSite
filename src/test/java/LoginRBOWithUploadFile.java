@@ -16,12 +16,12 @@ public class LoginRBOWithUploadFile extends BaseTest {
 
         String url = "https://rbo-dev.avrb.com.ua/ibank/dashboard?3"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//КОФІТОН_37120506_директор.dat"; // Шлях до вашого файлу
-        pageProvider.getLoginPage().openLoginPage(url);
+        pageProvider.getLoginPageRBO().openLoginPage(url);
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд
 
 
         //    webDriver.manage().timeouts().implicitlyWait(Duration,TimeUnit.SECONDS);//замість 30 секунд
-        pageProvider.getLoginPage().checkIsLabelFileRBOVisible("LabelFile");
+        pageProvider.getLoginPageRBO().checkIsLabelFileRBOVisible("LabelFile");
 
         // Знайти label за вказаним XPath
         WebElement label = webDriver.findElement(By.xpath(".//label [@class='fileField formControl']"));
@@ -38,21 +38,19 @@ public class LoginRBOWithUploadFile extends BaseTest {
         // Відправити шлях до файлу в інпут
         fileInput.sendKeys(new File(filePath).getAbsolutePath());
         //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsFileLoadRBOVisible();
+        pageProvider.getLoginPageRBO().checkIsFileLoadRBOVisible();
 //        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
 //        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
         webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsInputPasswordRBOVisible("Password");
-        pageProvider.getLoginPage().enterTextIntoInputPasswordRBO(PASSWORD_RBO);
-        pageProvider.getLoginPage().checkSignInVisibleRBO("SignIn");
+        pageProvider.getLoginPageRBO().checkIsInputPasswordRBOVisible("Password");
+        pageProvider.getLoginPageRBO().enterTextIntoInputPasswordRBO(PASSWORD_RBO);
+        pageProvider.getLoginPageRBO().checkSignInVisibleRBO("SignIn");
 
         //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().clickOnButtonSignInRBO("SignIn");
-//        pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
-//        //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-//        pageProvider.getLoginPage().checkIsStep1Visible("Step1");
-    }
+        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO("SignIn");
 
+    }
+}
   /*  @Test
     public void inValidLoginPassword() {
 
@@ -83,17 +81,14 @@ public class LoginRBOWithUploadFile extends BaseTest {
         pageProvider.getLoginPage().checkIsFileLoadVisible();
 //        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
 //        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
-        webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsInputPasswordVisible();
-        pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_INVALID);
-        pageProvider.getLoginPage().checkSignInVisible();
-
-        //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().clickOnButtonSignIn();
-        pageProvider.getLoginPage().checkIsInvalidPasswordVisible();
-
-    }
-
-    ;
-    //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);*/
-}
+//        webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//        pageProvider.getLoginPage().checkIsInputPasswordVisible();
+//        pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_INVALID);
+//        pageProvider.getLoginPage().checkSignInVisible();
+//
+//        //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//        pageProvider.getLoginPage().clickOnButtonSignIn();
+//        pageProvider.getLoginPage().checkIsInvalidPasswordVisible();
+//
+//    }
+//} */

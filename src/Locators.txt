@@ -1,4 +1,4 @@
- Step 0. Login
+ Step 0. LoginPage on https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
     @FindBy(xpath = ".//label [@for='upload']")
     private WebElement labelFile;
 
