@@ -3,24 +3,28 @@ TC 001 Positive test.User authorization on https://rbo-dev.avrb.com.ua/ibank/hom
     2. Enter Password.
     4. Press "Авторизуватись"
 ER: Switch on //div [text()= 'Крок 1 з 5']
+Postcondition: Close WebSite
 
 TC 002 Negative test. Login with invalid password on https://rbo-dev.avrb.com.ua/ibank/home?0
     1. Load file.
     2. Enter invalidPassword.
     4. Press "Авторизуватись"
 ER:Ключ пошкоджено або невірний пароль. Спробуйте ще раз, або оберіть інший файл
+Postcondition: Close WebSite
 
 TC 003 Positive test. User authorization on https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
     1. Load file.
     2. Enter Password.
-    4. Press "Авторизуватись"
+    4. Press "Увійти"
 ER: Switch on //div [text()= 'Крок 1 з 5']
+Postcondition: Close WebSite
 
 TC 004 Negative test. Login with invalid password on https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
     1. Load file.
     2. Enter invalidPassword.
-    4. Press "Авторизуватись"
+    4. Press "Увійти"
 ER:Ключ пошкоджено або невірний пароль. Спробуйте ще раз, або оберіть інший файл
+Postcondition: Close WebSite
 
 TC 005 Negative test. Fill Step1 https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
 Precondition:Run TC 003

@@ -14,7 +14,7 @@ public class LoginRBOWithUploadFile extends BaseTest {
     @Test
     public void validLogin() {
 
-        String url = "https://rbo-dev.avrb.com.ua/ibank/dashboard?3"; // Замініть на URL свого веб-сайту
+        String url = "https://rbo-dev.avrb.com.ua/ibank/home?0"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//КОФІТОН_37120506_директор.dat"; // Шлях до вашого файлу
         pageProvider.getLoginPageRBO().openLoginPage(url);
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд

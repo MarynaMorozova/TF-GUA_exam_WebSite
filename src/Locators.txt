@@ -1,3 +1,16 @@
+LoginPageRBO
+        @FindBy(xpath = ".//label [@class='fileField formControl']")
+        private WebElement LabelFileLogin;
+
+        @FindBy(xpath = "//span [@class = 'keyFilename']")
+        private WebElement isLabelFileLogin;
+
+        @FindBy(xpath ="//input [@id = \"pwd_id\"]")
+        private WebElement isPasswordRBO;
+
+        @FindBy(xpath = "//button [@CLASS='button loginSignatureBehavior next actionDefault']")
+        private WebElement signInRbo;
+
  Step 0. LoginPage on https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
     @FindBy(xpath = ".//label [@for='upload']")
     private WebElement labelFile;
