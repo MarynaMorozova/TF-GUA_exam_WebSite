@@ -1,10 +1,13 @@
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import junitparams.JUnitParamsRunner;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Rule;
 
+import org.junit.experimental.categories.Category;
 import org.junit.rules.TestName;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,12 +15,47 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import pages.PageProvider;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+//import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.qameta.allure.Allure;// для отчета епік-фіча...
+//import libs.ConfigProvider;
+//import libs.ScreenShot;
+//import org.apache.log4j.Logger;
+//import org.junit.After;
+//import org.junit.Before;
+//import org.junit.Rule;
+//import org.junit.rules.TestName;
+//import org.junit.rules.TestWatcher;
+//import org.junit.runner.Description;
+//import org.openqa.selenium.OutputType;
+//import org.openqa.selenium.TakesScreenshot;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.edge.EdgeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.ie.InternetExplorerDriver;
+//import org.openqa.selenium.safari.SafariDriver;
+//import pages.PageProvider;
+//
+//@Epic("Allure examples")
+//@Feature("Junit 4 support")
+//
+//
+////@RunWith(JUnitParamsRunner.class) //позволяет использовать параметризацию
+//@Category(SmokeTestFilter.class)
+
 
 public class BaseTest {
     WebDriver webDriver;
     protected PageProvider pageProvider;
     protected Logger logger = Logger.getLogger(getClass());
 
+//    @Description("Some detailed test description")
+//    @Link("https://example.org")
+//    @Link(name = "allure", type = "mylink")
+//    @Issue("123")
+//    @Issue("432")
+//    @Severity(SeverityLevel.CRITICAL)
+//    @Story("Base support for bdd annotations")
 
     @Before
     public void setUp() {

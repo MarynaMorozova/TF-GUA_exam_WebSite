@@ -31,15 +31,6 @@ public class LoginPage extends ParentPage {
 
     @FindBy(xpath = ".//label [@class='fileField formControl']")
     private WebElement LabelFileLogin;
-//    @FindBy(xpath = "//span [@class = 'keyFilename']")
-//    private WebElement isLabelFileLogin;
-//
-//    @FindBy(xpath ="//input [@id = \"pwd_id\"]")
-//    private WebElement isPasswordRBO;
-//
-//    @FindBy(xpath = "//button [@CLASS='button loginSignatureBehavior next actionDefault']")
-//    private WebElement signInRbo;
-
 
     //це як варіант webDriver.findElement(By.xpath("//div[@class='alert alert-danger small liveValidateMessage liveValidateMessage--visible']"));
 //    @FindBy(xpath = "@FindBy(xpath = \"//div[@class='alert alert-danger text-center' and text() = 'Invalid username / pasword']\")\n" +
@@ -111,16 +102,13 @@ public class LoginPage extends ParentPage {
 
     public void checkSignInVisible(String elementName) {
         checkElementDisplayed(signIn, elementName);
-        logger.info("signInVisible");
-    }
-
-    public void checkIsInvalidPasswordVisible(String elementName) {
-        checkElementDisplayed(isInvalidPassword, elementName);
     }
 
     public void checkIsStep1Visible(String elementName) {
         checkElementDisplayed(step1, elementName);
     }
+
+    public void checkIsInvalidPasswordVisible(String elementName) {checkElementDisplayed(isInvalidPassword, elementName);}// iнвалідний логін
 
 //    public void checkIsInputPasswordRBOVisible(String elementName)
 //        {            checkElementDisplayed(isPasswordRBO, elementName);

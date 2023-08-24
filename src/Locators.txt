@@ -1,4 +1,4 @@
-LoginPageRBO
+LoginPageRBO https://rbo-dev.avrb.com.ua/ibank/home?0
         @FindBy(xpath = ".//label [@class='fileField formControl']")
         private WebElement LabelFileLogin;
 
@@ -10,6 +10,8 @@ LoginPageRBO
 
         @FindBy(xpath = "//button [@CLASS='button loginSignatureBehavior next actionDefault']")
         private WebElement signInRbo;
+
+PageHome //https://rbo-dev.avrb.com.ua/ibank/dashboard?1
 
  Step 0. LoginPage on https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
     @FindBy(xpath = ".//label [@for='upload']")
@@ -24,7 +26,7 @@ LoginPageRBO
     @FindBy(xpath = ".//div [@class ='input-view text ng-star-inserted']")
     private WebElement isFileLoad;
 
-    @FindBy(xpath = "//div [@class=\"tender-field-error ng-star-inserted\"]")
+    @FindBy(xpath = "//div [@class='tender-field-error ng-star-inserted']")
     private WebElement isInvalidPassword;
 
     @FindBy(xpath = ".//div [@class ='recaptcha-checkbox-border']")

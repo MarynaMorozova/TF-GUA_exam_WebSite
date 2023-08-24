@@ -6,10 +6,10 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
  public class ParentPage extends ActionsWithElements {
     String env = System.getProperty("env", "aqa"); //параметр, який ми передаємо при старті тесту
-    String BASE_URL;
+//    String BASE_URL;
     public ParentPage(WebDriver webDriver) {
         super(webDriver);
-        BASE_URL = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";//формуємо url
+//        BASE_URL = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";//формуємо url
     }
 
     public void openPage(String url) {
@@ -23,14 +23,14 @@ import org.openqa.selenium.WebDriver;
     }
    // abstract protected String getRelativeUrl();
 
-    public void checkIsRedirectToLoginPage() {
-        checkUrlWithPattern("/login");
-    }
+//    public void checkIsRedirectToLoginPage() {
+//        checkUrlWithPattern("/login");
+//    }
 
     //checkCurrentUrl
     //https://aqa-complexapp.onrender.com/ ==BASE_URL+ "/" -> true
-    protected void checkUrl(String relativeUrl) {
-        Assert.assertEquals("Url is not expected", BASE_URL + relativeUrl, webDriver.getCurrentUrl());// порівнюємо поточний url з тим, який ми передали в параметрі
+    protected void checkUrl(String url) {
+        Assert.assertEquals("Url is not expected", url, webDriver.getCurrentUrl());// порівнюємо поточний url з тим, який ми передали в параметрі
     }
 //    protected void checkUrl() {
 //        checkUrl(getRelativeUrl());
@@ -41,12 +41,12 @@ import org.openqa.selenium.WebDriver;
     //[a-zA-Z0-9]{24}  - 24 символи, які можуть бути цифрами або літерами від a до z
     //https://aqa-complexapp.onrender.com/post/[a-zA-Z0-9]
 
-    protected void checkUrlWithPattern(String relativeUrl) {
-        Assert.assertTrue("Url is not expected \n"
-                        +"Expected result: "+ BASE_URL + relativeUrl + "\n"// перехід на новий рядок
-                        +"Actual result: "+ webDriver.getCurrentUrl()
-                ,webDriver.getCurrentUrl().matches(BASE_URL + relativeUrl));
-    }
+//    protected void checkUrlWithPattern(String relativeUrl) {
+//        Assert.assertTrue("Url is not expected \n"
+//                        +"Expected result: "+ BASE_URL + relativeUrl + "\n"// перехід на новий рядок
+//                        +"Actual result: "+ webDriver.getCurrentUrl()
+//                ,webDriver.getCurrentUrl().matches(BASE_URL + relativeUrl));
+//    }
 //    protected void checkUrlWithPattern() {
 //        checkUrlWithPattern(getRelativeUrl());
 //    }
