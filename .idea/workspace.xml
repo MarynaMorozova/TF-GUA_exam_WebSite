@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2970835a-853d-4dec-a94e-f9e6a6225f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/testData.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/categories/SmokeTestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/suits/SmokeSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/suits/SmokeSuiteWithCategories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Locators.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Locators.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestCases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestCases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginRBOWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginRBOWithUploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/workSpaсe/TF-GUA/src/main/java/data"
+    "last_opened_file_path": "C:/workSpaсe/TF-GUA"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -44,6 +48,8 @@
       <recent name="pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workSpaсe\TF-GUA\src\main\java" />
+      <recent name="C:\workSpaсe\TF-GUA\src\test\java" />
       <recent name="C:\workSpaсe\TF-GUA\src\main\java\data" />
       <recent name="C:\workSpaсe\TF-GUA\src\main\java\libs" />
       <recent name="C:\workSpaсe\TF-GUA\src\main\resources" />
@@ -53,7 +59,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginRBOWithUploadFile.validLogin">
+  <component name="RunManager" selected="JUnit.LoginWithUploadFile">
     <configuration name="FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
       <option name="PACKAGE_NAME" value="" />
@@ -112,9 +118,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
-        <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
         <item itemvalue="JUnit.LoginWithUploadFile" />
+        <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
+        <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
         <item itemvalue="JUnit.LoginWithUploadFile.fileHiddenUploaderWithSelenium" />
         <item itemvalue="JUnit.FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" />
       </list>

@@ -452,3 +452,46 @@ Session ID: 3d841e279f5534fd3b13444972fa13a4
 2023-22-08 19:05:27   INFO [pages.LoginPage] : Qwerty_123 was inputted Введіть пароль
 2023-22-08 19:05:27   INFO [pages.LoginPage] : SignIn element is displayed
 2023-22-08 19:05:27   INFO [pages.LoginPage] : SignIn element was clicked
+2023-24-08 17:50:30   INFO [LoginWithUploadFile] : -----inValidLoginPassword was started ----
+2023-24-08 17:50:34   INFO [LoginWithUploadFile] : Browser was opened
+2023-24-08 17:50:41   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-24-08 17:50:41   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-24-08 17:50:41   INFO [LoginWithUploadFile] : Send file
+2023-24-08 17:50:41   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-24-08 17:50:41   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-24-08 17:50:41   INFO [pages.LoginPage] : Password element is displayed
+2023-24-08 17:50:41   INFO [pages.LoginPage] : 123 was inputted ******
+2023-24-08 17:50:41   INFO [pages.LoginPage] : SignIn element is displayed
+2023-24-08 17:50:41   INFO [pages.LoginPage] : SignIn element was clicked
+2023-24-08 17:50:42   INFO [pages.LoginPage] : Ключ пошкоджено або невірний пароль. element is displayed
+2023-24-08 17:50:42   INFO [LoginWithUploadFile] : Browser was closed
+2023-24-08 17:50:42   INFO [LoginWithUploadFile] : -----inValidLoginPassword was stop ----
+2023-24-08 17:54:12   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-24-08 17:54:16   INFO [LoginWithUploadFile] : Browser was opened
+2023-24-08 17:54:22   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-24-08 17:54:22   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-24-08 17:54:22   INFO [LoginWithUploadFile] : Send file
+2023-24-08 17:54:22   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-24-08 17:54:22   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-24-08 17:54:22   INFO [pages.LoginPage] : Password element is displayed
+2023-24-08 17:54:22   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-24-08 17:54:22   INFO [pages.LoginPage] : SignIn element is displayed
+2023-24-08 17:54:23   INFO [pages.LoginPage] : SignIn element was clicked
+2023-24-08 17:55:23   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-24-08 17:56:23   INFO [pages.LoginPage] : Step1 element is not displayed
+2023-24-08 17:56:23   INFO [LoginWithUploadFile] : Browser was closed
+2023-24-08 17:56:23   INFO [LoginWithUploadFile] : -----validLogin was stop ----
+2023-24-08 17:56:23   INFO [LoginWithUploadFile] : -----inValidLoginPassword was started ----
+2023-24-08 17:56:26   INFO [LoginWithUploadFile] : Browser was opened
+2023-24-08 17:56:33   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-24-08 17:56:33   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-24-08 17:56:33   INFO [LoginWithUploadFile] : Send file
+2023-24-08 17:56:33   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-24-08 17:56:33   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-24-08 17:56:33   INFO [pages.LoginPage] : Password element is displayed
+2023-24-08 17:56:33   INFO [pages.LoginPage] : 123 was inputted ******
+2023-24-08 17:56:34   INFO [pages.LoginPage] : SignIn element is displayed
+2023-24-08 17:56:34   INFO [pages.LoginPage] : SignIn element was clicked
+2023-24-08 17:56:34   INFO [pages.LoginPage] : Ключ пошкоджено або невірний пароль. element is displayed
+2023-24-08 17:56:35   INFO [LoginWithUploadFile] : Browser was closed
+2023-24-08 17:56:35   INFO [LoginWithUploadFile] : -----inValidLoginPassword was stop ----

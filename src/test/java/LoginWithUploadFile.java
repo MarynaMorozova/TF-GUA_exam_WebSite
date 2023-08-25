@@ -12,6 +12,18 @@ import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_DEFAULT;
 import static data.TestData.PASSWORD_INVALID;
+import categories.SmokeTestFilter;
+import io.qameta.allure.*;
+import junitparams.Parameters;
+
+@Epic("Allure examples")
+@Feature("Junit 4 support")
+
+
+//@RunWith(JUnitParamsRunner.class) //позволяет использовать параметризацию(не для отчета)
+
+@Category(SmokeTestFilter.class)
+
 
 
 public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElements {
@@ -20,8 +32,21 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
 //        super(webDriver);
 //    }
 
-    @Test
+    @Description("Some detailed test description")
+    @Link("https://example.org")
+    @Link(name = "allure", type = "mylink")
+    @Issue("123")
+    @Issue("432")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Base support for bdd annotations")
+//
+   @Test //проверка входа с валидными данными
+//    //@Ignore
+    @Category(SmokeTestFilter.class)
+    @Parameters(method = "parametersForCheckValidLoginPassword") //параметризация
+
     public void validLogin() {
+
         String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
         pageProvider.getLoginPage().openLoginPage(url);
@@ -60,8 +85,18 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         pageProvider.getLoginPage().checkIsStep1Visible("Step1");
     }
-        @Test //проверка входа с невалидными данными
-        //@Ignore
+    @Description("Some detailed test description")
+    @Link("https://example.org")
+    @Link(name = "allure", type = "mylink")
+    @Issue("123")
+    @Issue("432")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Base support for bdd annotations")
+
+    @Test //проверка входа с невалидными данными
+    //@Ignore
+    @Category(SmokeTestFilter.class)
+    @Parameters(method = "parametersForCheckInvalidLoginPassword") //параметризация
  public void inValidLoginPassword() {
     String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
     String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу

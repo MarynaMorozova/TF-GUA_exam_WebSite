@@ -1,17 +1,35 @@
+import junitparams.JUnitParamsRunner;
 import libs.ConfigProvider;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
+//import io.qameta.allure.*;
+import categories.SmokeTestFilter;
 import java.io.File;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static data.TestData.*;
+//@Epic("Allure examples")
+//@Feature("Junit 4 support")
 
+
+//@RunWith(JUnitParamsRunner.class) //позволяет использовать параметризацию
+//@Category(SmokeTestFilter.class)
 public class LoginRBOWithUploadFile extends BaseTest {
+//    @Description("Some detailed test description")
+//    @Link("https://example.org")
+//    @Link(name = "allure", type = "mylink")
+//    @Issue("123")
+//    @Issue("432")
+//    @Severity(SeverityLevel.CRITICAL)
+//    @Story("Base support for bdd annotations")
 
-    @Test
+    @Test //проверка входа с невалидными данными
+    //@Ignore
+    @Category(SmokeTestFilter.class)
     public void validLogin() {
         String url = "https://rbo-dev.avrb.com.ua/ibank/home?0"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//КОФІТОН_37120506_директор.dat"; // Шлях до вашого файлу
