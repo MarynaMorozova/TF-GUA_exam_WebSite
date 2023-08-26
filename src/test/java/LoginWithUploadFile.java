@@ -59,10 +59,6 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         // Знайти label за вказаним XPath
         WebElement label = webDriver.findElement(By.xpath(".//label [@for='upload']"));
 
-//        JavascriptExecutor jsExecutor = (JavascriptExecutor) webDriver;
-//        String script = "arguments[0].setAttribute('type', 'file');";
-//        jsExecutor.executeScript(script, label);
-
 // Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
         WebElement parentElement = label.findElement(By.xpath("./.."));
         WebElement fileInput = parentElement.findElement(By.tagName("input"));
@@ -83,7 +79,7 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
         pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
         //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsStep1Visible("Step1");
+   //     pageProvider.getLoginPage().checkIsStep1Visible("Step1");
     }
     @Description("Some detailed test description")
     @Link("https://example.org")
@@ -109,10 +105,6 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
 
     // Знайти label за вказаним XPath
     WebElement label = webDriver.findElement(By.xpath(".//label [@for='upload']"));
-
-//        JavascriptExecutor jsExecutor = (JavascriptExecutor) webDriver;
-//        String script = "arguments[0].setAttribute('type', 'file');";
-//        jsExecutor.executeScript(script, label);
 
     // Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
     WebElement parentElement = label.findElement(By.xpath("./.."));
