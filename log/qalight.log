@@ -605,3 +605,581 @@ Session ID: 3d841e279f5534fd3b13444972fa13a4
 2023-26-08 10:36:12   INFO [pages.LoginPage] : LoginFile element is not displayed
 2023-26-08 10:36:12   INFO [LoginWithUploadFile] : Browser was closed
 2023-26-08 10:36:12   INFO [LoginWithUploadFile] : -----validLogin was stop ----
+2023-26-08 18:47:20   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-26-08 18:47:28   INFO [LoginWithUploadFile] : Browser was opened
+2023-26-08 18:47:29   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-26-08 18:47:34   INFO [pages.LoginPage] : LoginFile element is not displayed
+2023-26-08 18:47:35   INFO [LoginWithUploadFile] : Browser was closed
+2023-26-08 18:47:35   INFO [LoginWithUploadFile] : -----validLogin was stop ----
+2023-28-08 11:21:30   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-28-08 11:21:38   INFO [LoginWithUploadFile] : Browser was opened
+2023-28-08 11:21:48   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 11:21:48   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 11:21:48   INFO [LoginWithUploadFile] : Send file
+2023-28-08 11:21:49   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 11:21:49   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 11:21:49   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 11:21:49   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 11:21:49   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 11:21:49   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 11:22:49   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 11:22:50   INFO [LoginWithUploadFile] : Browser was closed
+2023-28-08 11:22:50   INFO [LoginWithUploadFile] : -----validLogin was stop ----
+2023-28-08 11:25:25   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-28-08 11:25:33   INFO [LoginWithUploadFile] : Browser was opened
+2023-28-08 11:25:40   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 11:25:40   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 11:25:40   INFO [LoginWithUploadFile] : Send file
+2023-28-08 11:25:40   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 11:25:40   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 11:25:40   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 11:25:40   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 11:25:40   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 11:25:41   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 11:26:41   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 11:39:49   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-28-08 11:39:53   INFO [LoginWithUploadFile] : Browser was opened
+2023-28-08 11:39:59   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 11:40:00   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 11:40:00   INFO [LoginWithUploadFile] : Send file
+2023-28-08 11:40:00   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 11:40:00   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 11:40:00   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 11:40:00   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 11:40:00   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 11:40:00   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 11:40:23   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 11:40:29   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-28-08 11:40:35   INFO [LoginWithUploadFile] : Browser was opened
+2023-28-08 11:40:40   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 11:40:40   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 11:40:40   INFO [LoginWithUploadFile] : Send file
+2023-28-08 11:40:41   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 11:40:41   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 11:40:41   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 11:40:41   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 11:40:41   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 11:40:41   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 11:41:41   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 11:42:31   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-28-08 11:42:35   INFO [LoginWithUploadFile] : Browser was opened
+2023-28-08 11:42:40   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 11:42:41   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 11:42:41   INFO [LoginWithUploadFile] : Send file
+2023-28-08 11:42:41   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 11:42:41   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 11:42:41   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 11:42:41   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 11:42:41   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 11:42:42   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 11:43:42   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 12:13:57   INFO [LoginWithUploadFile] : -----validLogin was started ----
+2023-28-08 12:14:01   INFO [LoginWithUploadFile] : Browser was opened
+2023-28-08 12:14:07   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 12:14:07   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 12:14:07   INFO [LoginWithUploadFile] : Send file
+2023-28-08 12:14:07   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 12:14:07   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 12:14:07   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 12:14:07   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 12:14:08   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 12:14:08   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 12:15:08   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 13:23:24   INFO [ValidTestsWithExcel] : -----step1[0] was started ----
+2023-28-08 13:23:29   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 13:23:35   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 13:23:35   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 13:23:35   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 13:23:35   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 13:23:35   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 13:23:35   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 13:23:35   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 13:23:35   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 13:23:35   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 13:24:35   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 13:24:35   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 13:25:36  ERROR [pages.Step1Page] : Can not work with elementorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//input [@class='mat-autocomplete-trigger regular ng-valid ng-touched ng-dirty']"}
+  (Session info: MicrosoftEdge=116.0.1938.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [deb6f540dadea00f87cc6d3486971bda, findElement {using=xpath, value=.//input [@class='mat-autocomplete-trigger regular ng-valid ng-touched ng-dirty']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59665}, msedge: {msedgedriverVersion: 116.0.1938.62 (493f2197e519..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59665/devtoo..., se:cdpVersion: 116.0.1938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: deb6f540dadea00f87cc6d3486971bda
+2023-28-08 16:00:55   INFO [ValidTestsWithExcel] : -----step1[0] was started ----
+2023-28-08 16:01:04   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 16:01:12   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 16:01:12   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 16:01:13   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 16:01:13   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 16:01:13   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 16:01:13   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 16:01:13   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 16:01:13   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 16:01:14   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 16:02:14   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 16:02:14   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 16:02:14   INFO [pages.Step1Page] : UA-0000-00-00-000000-a was inputted UA-0000-00-00-000000-a
+2023-28-08 16:02:14   INFO [pages.Step1Page] : inputHref
+2023-28-08 16:19:52   INFO [ValidTestsWithExcel] : -----step1[0] was started ----
+2023-28-08 16:19:58   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 16:20:07   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 16:20:07   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 16:20:07   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 16:20:07   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 16:20:07   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 16:20:08   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 16:20:08   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 16:20:08   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 16:20:08   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 16:21:08   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 16:21:08   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 16:21:09   INFO [pages.Step1Page] : UA-0000-00-00-000000-a was inputted UA-0000-00-00-000000-a
+2023-28-08 16:21:09   INFO [pages.Step1Page] : inputHref
+2023-28-08 16:21:09   INFO [pages.Step1Page] : isVisibleHref element is displayed
+2023-28-08 16:21:09   INFO [pages.Step1Page] : radioButtonEasy element was clicked
+2023-28-08 16:29:58   INFO [ValidTestsWithExcel] : -----step1[0] was started ----
+2023-28-08 16:30:04   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 16:30:12   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 16:30:13   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 16:30:13   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 16:30:13   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 16:30:13   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 16:30:13   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 16:30:13   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 16:30:13   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 16:30:14   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 16:31:14   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 16:31:14   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 16:31:14   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:31:14   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:31:14   INFO [pages.Step1Page] : 03000000-1 was selected in DropDown
+2023-28-08 16:31:14   INFO [pages.Step1Page] : inputHref element is displayed
+2023-28-08 16:31:15   INFO [pages.Step1Page] : UA-0000-00-00-000000-a was inputted UA-0000-00-00-000000-a
+2023-28-08 16:31:15   INFO [pages.Step1Page] : inputHref
+2023-28-08 16:31:15   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 16:31:15   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 16:34:53   INFO [ValidTestsWithExcel] : -----step1[0] was started ----
+2023-28-08 16:34:59   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 16:35:08   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 16:35:08   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 16:35:08   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 16:35:08   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 16:35:08   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 16:35:08   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 16:35:09   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 16:35:09   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 16:35:09   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 16:36:09   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 16:36:09   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 16:36:09   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 16:36:09   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:36:10   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:36:10   INFO [pages.Step1Page] : 03000000-1 was selected in DropDown
+2023-28-08 16:36:10   INFO [pages.Step1Page] : inputHref element is displayed
+2023-28-08 16:36:10   INFO [pages.Step1Page] : UA-0000-00-00-000000-a was inputted UA-0000-00-00-000000-a
+2023-28-08 16:36:10   INFO [pages.Step1Page] : inputHref
+2023-28-08 16:36:10   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 16:36:10   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 16:36:11   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 16:36:11   INFO [ValidTestsWithExcel] : -----step1[1] was started ----
+2023-28-08 16:36:15   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 16:36:22   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 16:36:22   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 16:36:23   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 16:36:23   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 16:36:23   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 16:36:23   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 16:36:23   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 16:36:23   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 16:36:24   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 16:37:24   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 16:37:24   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 16:37:24   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 16:37:24   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:37:24   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:37:24   INFO [pages.Step1Page] : 03100000-2 was selected in DropDown
+2023-28-08 16:37:24   INFO [pages.Step1Page] : inputHref element is displayed
+2023-28-08 16:37:25   INFO [pages.Step1Page] : UA-0000-00-00-000001-a was inputted UA-0000-00-00-000000-a
+2023-28-08 16:37:25   INFO [pages.Step1Page] : inputHref
+2023-28-08 16:37:25   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 16:37:25   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 16:37:25   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 16:37:25   INFO [ValidTestsWithExcel] : -----step1[2] was started ----
+2023-28-08 16:37:29   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 16:37:37   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 16:37:37   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 16:37:37   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 16:37:37   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 16:37:37   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 16:37:37   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 16:37:38   INFO [pages.LoginPage] : 12345678 was inputted ******
+2023-28-08 16:37:38   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 16:37:38   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 16:38:38   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 16:38:38   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 16:38:38   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 16:38:39   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:38:39   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 16:38:39   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 16:38:39   INFO [pages.Step1Page] : inputHref element is displayed
+2023-28-08 16:38:39   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted UA-0000-00-00-000000-a
+2023-28-08 16:38:39   INFO [pages.Step1Page] : inputHref
+2023-28-08 16:38:39   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 16:38:39   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 16:38:40   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 17:21:11   INFO [ValidTestsWithExcel] : -----step1[0] was started ----
+2023-28-08 17:21:19   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 17:21:27   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 17:21:27   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 17:21:28   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 17:21:28   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 17:21:28   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 17:21:28   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 17:21:28   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 17:21:28   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 17:21:28   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 17:22:28   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 17:22:28   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 17:22:29   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 17:22:29   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 17:22:29   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 17:22:29   INFO [pages.Step1Page] : 03000000-1 was selected in DropDown
+2023-28-08 17:22:29   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 17:22:29   INFO [pages.Step1Page] : UA-0000-00-00-000000-a was inputted 
+2023-28-08 17:22:29   INFO [pages.Step1Page] : inputHref
+2023-28-08 17:22:29   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 17:22:29   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 17:22:30   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 17:22:30   INFO [ValidTestsWithExcel] : -----step1[1] was started ----
+2023-28-08 17:22:34   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 17:22:42   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 17:22:42   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 17:22:42   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 17:22:42   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 17:22:42   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 17:22:42   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 17:22:43   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 17:22:43   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 17:22:43   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 17:23:43   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 17:23:43   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 17:23:43   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 17:23:43   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 17:23:43   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 17:23:43   INFO [pages.Step1Page] : 03100000-2 was selected in DropDown
+2023-28-08 17:23:43   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 17:23:44   INFO [pages.Step1Page] : UA-0000-00-00-000001-a was inputted 
+2023-28-08 17:23:44   INFO [pages.Step1Page] : inputHref
+2023-28-08 17:23:44   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 17:23:44   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 17:23:44   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 17:23:44   INFO [ValidTestsWithExcel] : -----step1[2] was started ----
+2023-28-08 17:23:48   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 17:23:56   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 17:23:56   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 17:23:56   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 17:23:56   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 17:23:56   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 17:23:56   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 17:23:57   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 17:23:57   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 17:23:57   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 17:24:57   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 17:24:57   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 17:24:57   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 17:24:58   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 17:24:58   INFO [pages.Step1Page] : dropDownPurh element was clicked
+2023-28-08 17:24:58   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 17:24:58   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 17:24:59   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted 
+2023-28-08 17:24:59   INFO [pages.Step1Page] : inputHref
+2023-28-08 17:24:59   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 17:24:59   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 17:24:59   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 19:15:41   INFO [ValidTestsWithExcel] : -----step1[0] was started ----
+2023-28-08 19:15:50   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 19:15:57   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 19:15:57   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 19:15:57   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 19:15:57   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 19:15:57   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 19:15:58   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 19:15:58   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 19:15:58   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 19:15:58   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 19:16:58   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 19:16:58   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 19:16:58   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 19:16:59   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:16:59   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:16:59   INFO [pages.Step1Page] : 03000000-1 was selected in DropDown
+2023-28-08 19:16:59   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 19:16:59   INFO [pages.Step1Page] : UA-0000-00-00-000000-a was inputted 
+2023-28-08 19:16:59   INFO [pages.Step1Page] : inputHref
+2023-28-08 19:16:59   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 19:17:00   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 19:17:00   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 19:17:00   INFO [ValidTestsWithExcel] : -----step1[1] was started ----
+2023-28-08 19:17:04   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 19:17:13   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 19:17:13   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 19:17:13   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 19:17:13   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 19:17:13   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 19:17:13   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 19:17:14   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 19:17:14   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 19:17:14   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 19:18:14   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 19:18:14   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 19:18:14   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 19:18:14   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:18:15   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:18:15   INFO [pages.Step1Page] : 03100000-2 was selected in DropDown
+2023-28-08 19:18:15   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 19:18:15   INFO [pages.Step1Page] : UA-0000-00-00-000001-a was inputted 
+2023-28-08 19:18:15   INFO [pages.Step1Page] : inputHref
+2023-28-08 19:18:15   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 19:18:15   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 19:18:15   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 19:18:15   INFO [ValidTestsWithExcel] : -----step1[2] was started ----
+2023-28-08 19:18:19   INFO [ValidTestsWithExcel] : Browser was opened
+2023-28-08 19:18:30   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 19:18:31   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 19:18:31   INFO [ValidTestsWithExcel] : Send file
+2023-28-08 19:18:32   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 19:18:32   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 19:18:32   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 19:18:32   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 19:18:32   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 19:18:32   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 19:19:33   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 19:19:33   INFO [ValidTestsWithExcel] : --step1--
+2023-28-08 19:19:33   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 19:19:33   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:19:33   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:19:33   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 19:19:33   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 19:19:34   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted 
+2023-28-08 19:19:34   INFO [pages.Step1Page] : inputHref
+2023-28-08 19:19:34   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 19:19:34   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 19:19:34   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 19:32:27   INFO [Step2Test] : -----Step2 was started ----
+2023-28-08 19:32:34   INFO [Step2Test] : Browser was opened
+2023-28-08 19:32:42   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 19:32:43   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 19:32:43   INFO [Step2Test] : Send file
+2023-28-08 19:32:43   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 19:32:43   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 19:32:43   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 19:32:43   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 19:32:43   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 19:32:44   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 19:33:44   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 19:33:44   INFO [Step2Test] : --step1--
+2023-28-08 19:33:44   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 19:33:44   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:33:44   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:33:44   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 19:33:44   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 19:33:45   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted 
+2023-28-08 19:33:45   INFO [pages.Step1Page] : inputHref
+2023-28-08 19:33:45   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 19:33:45   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 19:33:45   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 19:33:45   INFO [pages.Step2Page] : Step2 element is displayed
+2023-28-08 19:33:45   INFO [Step2Test] : --step2--
+2023-28-08 19:33:46   INFO [pages.Step2Page] : ТОВ " БЕЙЛ ТРЕЙД" was inputted 
+2023-28-08 19:33:46  ERROR [pages.Step2Page] : Can not work with elementorg.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .//input[@placeholder='.//input[@placeholder='Введіть код ЄДРПОУ'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/input[@placeholder='.//input[@placeholder='Введіть код ЄДРПОУ']' is not a valid XPath expression.
+  (Session info: MicrosoftEdge=116.0.1938.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [655412ba1a65b178907dd91b4652b4e9, findElement {using=xpath, value=.//input[@placeholder='.//input[@placeholder='Введіть код ЄДРПОУ']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50897}, msedge: {msedgedriverVersion: 116.0.1938.62 (493f2197e519..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50897/devtoo..., se:cdpVersion: 116.0.1938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 655412ba1a65b178907dd91b4652b4e9
+2023-28-08 19:36:16   INFO [Step2Test] : -----Step2 was started ----
+2023-28-08 19:36:22   INFO [Step2Test] : Browser was opened
+2023-28-08 19:36:30   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 19:36:30   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 19:36:30   INFO [Step2Test] : Send file
+2023-28-08 19:36:30   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 19:36:30   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 19:36:30   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 19:36:31   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 19:36:31   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 19:36:31   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 19:37:31   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 19:37:31   INFO [Step2Test] : --step1--
+2023-28-08 19:37:31   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 19:37:31   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:37:32   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 19:37:32   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 19:37:32   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 19:37:32   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted 
+2023-28-08 19:37:32   INFO [pages.Step1Page] : inputHref
+2023-28-08 19:37:32   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 19:37:32   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 19:37:32   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 19:37:33   INFO [pages.Step2Page] : Step2 element is displayed
+2023-28-08 19:37:33   INFO [Step2Test] : --step2--
+2023-28-08 19:37:33   INFO [pages.Step2Page] : ТОВ " БЕЙЛ ТРЕЙД" was inputted 
+2023-28-08 19:37:33   INFO [pages.Step2Page] : 43646107 was inputted 
+2023-28-08 19:37:33   INFO [pages.Step2Page] : Kyev was inputted 
+2023-28-08 19:37:34   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 19:37:34   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 19:37:34   INFO [pages.Step2Page] : Органи соціального страхування was selected in DropDown
+2023-28-08 19:37:34   INFO [pages.Step2Page] : ButtonNextOnStep3 element was clicked
+2023-28-08 20:19:08   INFO [Step3Test] : -----Step3 was started ----
+2023-28-08 20:19:13   INFO [Step3Test] : Browser was opened
+2023-28-08 20:19:18   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 20:19:18   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 20:19:18   INFO [Step3Test] : Send file
+2023-28-08 20:19:18   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 20:19:18   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 20:19:18   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 20:19:19   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 20:19:19   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 20:19:19   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 20:20:19   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 20:20:19   INFO [Step3Test] : --step1--
+2023-28-08 20:20:19   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 20:20:19   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 20:20:19   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 20:20:19   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 20:20:19   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 20:20:19   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted 
+2023-28-08 20:20:19   INFO [pages.Step1Page] : inputHref
+2023-28-08 20:20:19   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 20:20:19   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 20:20:19   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 20:20:20   INFO [pages.Step2Page] : Step2 element is displayed
+2023-28-08 20:20:20   INFO [Step3Test] : --step2--
+2023-28-08 20:20:20   INFO [pages.Step2Page] : ТОВ " БЕЙЛ ТРЕЙД" was inputted 
+2023-28-08 20:20:20   INFO [pages.Step2Page] : 43646107 was inputted 
+2023-28-08 20:20:20   INFO [pages.Step2Page] : Фастов was inputted 
+2023-28-08 20:20:20   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 20:20:20   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 20:20:20   INFO [pages.Step2Page] : Органи соціального страхування was selected in DropDown
+2023-28-08 20:20:20   INFO [pages.Step2Page] : ButtonNextOnStep3 element was clicked
+2023-28-08 20:20:20   INFO [pages.Step2Page] : Step3 element is displayed
+2023-28-08 20:20:20   INFO [Step3Test] : --step3--
+2023-28-08 20:20:20   INFO [pages.Step3Page] : 25.03.2024 was inputted 
+2023-28-08 20:20:20   INFO [pages.Step3Page] : 18.10.2023 was inputted 
+2023-28-08 20:20:20   INFO [pages.Step3Page] : 20000 was inputted 
+2023-28-08 20:21:21  ERROR [pages.Step3Page] : Can not work with elementorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"tag name","selector":"select"}
+  (Session info: MicrosoftEdge=116.0.1938.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7c4221334f87c31e487726717616994a, findElement {using=tag name, value=select}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63777}, msedge: {msedgedriverVersion: 116.0.1938.62 (493f2197e519..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63777/devtoo..., se:cdpVersion: 116.0.1938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c4221334f87c31e487726717616994a
+2023-28-08 20:25:13   INFO [Step3Test] : -----Step3 was started ----
+2023-28-08 20:25:17   INFO [Step3Test] : Browser was opened
+2023-28-08 20:25:23   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 20:25:23   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 20:25:23   INFO [Step3Test] : Send file
+2023-28-08 20:25:23   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 20:25:23   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 20:25:23   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 20:25:24   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 20:25:24   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 20:25:24   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 20:26:24   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 20:26:24   INFO [Step3Test] : --step1--
+2023-28-08 20:26:24   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 20:26:24   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 20:26:24   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 20:26:24   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 20:26:24   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 20:26:24   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted 
+2023-28-08 20:26:24   INFO [pages.Step1Page] : inputHref
+2023-28-08 20:26:24   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 20:26:24   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 20:26:24   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 20:26:24   INFO [pages.Step2Page] : Step2 element is displayed
+2023-28-08 20:26:24   INFO [Step3Test] : --step2--
+2023-28-08 20:26:25   INFO [pages.Step2Page] : ТОВ " БЕЙЛ ТРЕЙД" was inputted 
+2023-28-08 20:26:25   INFO [pages.Step2Page] : 43646107 was inputted 
+2023-28-08 20:26:25   INFO [pages.Step2Page] : Фастов was inputted 
+2023-28-08 20:26:25   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 20:26:25   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 20:26:25   INFO [pages.Step2Page] : Органи соціального страхування was selected in DropDown
+2023-28-08 20:26:25   INFO [pages.Step2Page] : ButtonNextOnStep3 element was clicked
+2023-28-08 20:26:25   INFO [pages.Step2Page] : Step3 element is displayed
+2023-28-08 20:26:25   INFO [Step3Test] : --step3--
+2023-28-08 20:26:25   INFO [pages.Step3Page] : 25.03.2024 was inputted 
+2023-28-08 20:26:25   INFO [pages.Step3Page] : 18.10.2023 was inputted 
+2023-28-08 20:26:26   INFO [pages.Step3Page] : 20000 was inputted 
+2023-28-08 20:26:26   INFO [pages.Step3Page] : ElementAccount element was clicked
+2023-28-08 20:26:26   INFO [pages.Step3Page] : ElementAccount element was clicked
+2023-28-08 20:26:26   INFO [pages.Step3Page] : UA613808050000000026005728147 was selected in DropDown
+2023-28-08 20:27:26  ERROR [pages.Step3Page] : Can not work with elementorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//input[@tabindex=5]"}
+  (Session info: MicrosoftEdge=116.0.1938.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3bf8158d54b7eb9d27f6c170582a0f5b, findElement {using=xpath, value=.//input[@tabindex=5]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59306}, msedge: {msedgedriverVersion: 116.0.1938.62 (493f2197e519..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59306/devtoo..., se:cdpVersion: 116.0.1938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bf8158d54b7eb9d27f6c170582a0f5b
+2023-28-08 20:29:20   INFO [Step3Test] : -----Step3 was started ----
+2023-28-08 20:29:24   INFO [Step3Test] : Browser was opened
+2023-28-08 20:29:29   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-28-08 20:29:29   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-28-08 20:29:29   INFO [Step3Test] : Send file
+2023-28-08 20:29:29   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-28-08 20:29:29   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-28-08 20:29:29   INFO [pages.LoginPage] : Password element is displayed
+2023-28-08 20:29:29   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-28-08 20:29:29   INFO [pages.LoginPage] : SignIn element is displayed
+2023-28-08 20:29:29   INFO [pages.LoginPage] : SignIn element was clicked
+2023-28-08 20:30:29   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-28-08 20:30:29   INFO [Step3Test] : --step1--
+2023-28-08 20:30:29   INFO [pages.Step1Page] : Step1 element is displayed
+2023-28-08 20:30:29   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 20:30:29   INFO [pages.Step1Page] : DropDownPurh element was clicked
+2023-28-08 20:30:29   INFO [pages.Step1Page] : 03111000-2 was selected in DropDown
+2023-28-08 20:30:30   INFO [pages.Step1Page] : InputHref element is displayed
+2023-28-08 20:30:30   INFO [pages.Step1Page] : UA-0000-00-00-000002-a was inputted 
+2023-28-08 20:30:30   INFO [pages.Step1Page] : inputHref
+2023-28-08 20:30:30   INFO [pages.Step1Page] : IsVisibleHref element is displayed
+2023-28-08 20:30:30   INFO [pages.Step1Page] : RadioButtonEasy element was clicked
+2023-28-08 20:30:30   INFO [pages.Step1Page] : ButtonNext element was clicked
+2023-28-08 20:30:30   INFO [pages.Step2Page] : Step2 element is displayed
+2023-28-08 20:30:30   INFO [Step3Test] : --step2--
+2023-28-08 20:30:30   INFO [pages.Step2Page] : ТОВ " БЕЙЛ ТРЕЙД" was inputted 
+2023-28-08 20:30:30   INFO [pages.Step2Page] : 43646107 was inputted 
+2023-28-08 20:30:31   INFO [pages.Step2Page] : Фастов was inputted 
+2023-28-08 20:30:31   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 20:30:31   INFO [pages.Step2Page] : ElementCategoryPurch element was clicked
+2023-28-08 20:30:31   INFO [pages.Step2Page] : Органи соціального страхування was selected in DropDown
+2023-28-08 20:30:31   INFO [pages.Step2Page] : ButtonNextOnStep3 element was clicked
+2023-28-08 20:30:31   INFO [pages.Step2Page] : Step3 element is displayed
+2023-28-08 20:30:31   INFO [Step3Test] : --step3--
+2023-28-08 20:30:31   INFO [pages.Step3Page] : 25.03.2024 was inputted 
+2023-28-08 20:30:31   INFO [pages.Step3Page] : 26.09.2023 was inputted 
+2023-28-08 20:30:31   INFO [pages.Step3Page] : 20000 was inputted 
+2023-28-08 20:30:31   INFO [pages.Step3Page] : ElementAccount element was clicked
+2023-28-08 20:30:31   INFO [pages.Step3Page] : ElementAccount element was clicked
+2023-28-08 20:30:31   INFO [pages.Step3Page] : UA613808050000000026005728147 was selected in DropDown
+2023-28-08 20:30:31   INFO [pages.Step3Page] : 11 was inputted 
+2023-28-08 20:30:32   INFO [pages.Step3Page] : 22 was inputted 
+2023-28-08 20:30:32   INFO [pages.Step3Page] : ButtonNextOnStep4 element was clicked
+2023-28-08 20:39:47   INFO [LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-28-08 20:39:53   INFO [LoginRBOWithUploadFile] : Browser was opened
+2023-28-08 20:39:55   INFO [pages.LoginPageRBO] : Page was opened https://rbo-dev.avrb.com.ua/ibank/home?0
+2023-28-08 20:39:59   INFO [pages.LoginPageRBO] : LabelFile element is displayed
+2023-28-08 20:39:59   INFO [LoginRBOWithUploadFile] : Send file
+2023-28-08 20:39:59   INFO [pages.LoginPageRBO] : LabelFileLogin element is displayed
+2023-28-08 20:39:59   INFO [pages.LoginPageRBO] : Password element is displayed
+2023-28-08 20:39:59   INFO [pages.LoginPageRBO] : Qwerty_123 was inputted 
+2023-28-08 20:39:59   INFO [pages.LoginPageRBO] : SignIn element is displayed
+2023-28-08 20:39:59   INFO [pages.LoginPageRBO] : SignIn element was clicked

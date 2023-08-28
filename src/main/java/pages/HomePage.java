@@ -6,38 +6,4 @@ public class HomePage extends ActionsWithElements {//ParentPage {//extends Paren
     public HomePage(WebDriver webDriver) {
         super(webDriver);
     }
-
-//    @Override
-//    protected String getRelativeUrl() {
-//        return "/";
-//
-//    }
-//
-//    public HomePage openHomePage() {
-//        LoginPage loginPage = new LoginPage(webDriver);
-//        loginPage.loginWithValidCreds();
-//        checkIsRedirectToHomePage();
-//        return this;
-//    }
-//
-//    public HomePage checkIsRedirectToHomePage() {
-//        checkUrl();
-//        // TODO some unigue element
-//        getHeader().checkIsButtonSignOutVisible();
-//        return this;
-//    }
-//
-//    public HomePage openHomePageAndLoginIfNeeded() {
-//        LoginPage loginPage = new LoginPage(webDriver);
-//        loginPage.openLoginPage();
-//
-//        if (this.getHeader().IsButtonSignOutVisible()) {
-//            logger.info("User is already logged in");
-//        } else {
-//            loginPage.loginWithValidCreds();
-//            checkIsRedirectToHomePage();
-//            logger.info("User was  logged in");
-//        }
-//        return this;
-//    }
 }

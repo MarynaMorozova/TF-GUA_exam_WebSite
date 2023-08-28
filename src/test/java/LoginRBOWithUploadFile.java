@@ -27,7 +27,7 @@ public class LoginRBOWithUploadFile extends BaseTest {
 //    @Severity(SeverityLevel.CRITICAL)
 //    @Story("Base support for bdd annotations")
 
-    @Test //проверка входа с невалидными данными
+    @Test //проверка входа с валидными данными
     //@Ignore
     @Category(SmokeTestFilter.class)
     public void validLogin() {

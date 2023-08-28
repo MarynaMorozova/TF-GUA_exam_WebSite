@@ -1,17 +1,15 @@
 package pages;
 
-import libs.ConfigProvider;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
+//import org.openqa.selenium.support.ui.ExpectedConditions;
+//import org.openqa.selenium.support.ui.Select;
+//import org.openqa.selenium.support.ui.WebDriverWait;
+//import java.time.Duration;
 
 
 public class ActionsWithElements {
@@ -29,10 +27,7 @@ public class ActionsWithElements {
     }
 
     public void clickOnElement(WebElement element, String elementName) { //method for clicking on element
-
         try {
- //           String elementName= getElementName(element);
-        //    webDriverWait10.until(ExpectedConditions.elementToBeClickable(element));//вона перестрибне на інший коли буде клікабельний
             element.click();
             logger.info(elementName+" element was clicked");
         } catch (Exception e) {
@@ -53,7 +48,7 @@ public class ActionsWithElements {
         try {
             element.clear();
             element.sendKeys(text);
-            logger.info(text + " was inputted " + getElementName(element));
+            logger.info(text + " was inputted ");
         } catch (Exception e) {
 // System.out.println("Can not work with element" + e);
 // Assert.fail("Can not work with element" + e);
@@ -84,106 +79,26 @@ public class ActionsWithElements {
         Assert.assertFalse(elementName+ " element is displayed", isElementDisplayed(element,elementName));
     }
 
-    public void selectTextInDropDown(WebElement dropDown, String text) {
-        try {
-            Select select = new Select(dropDown);
-            select.selectByVisibleText(text);
-            logger.info(text + " was selected in DropDown");
-        } catch (Exception e) {
-            printErrorAndStopTest(e);
-        }
-    }
-
-    //swich to new tab
-//    public void switchToNewTab() {
+//    public void selectTextInDropDown(WebElement dropDown, String text) {
 //        try {
-//            String winHandleBefore = webDriver.getWindowHandle();
-//            for (String winHandle : webDriver.getWindowHandles()) {
-//                webDriver.switchTo().window(winHandle);
-//            }
-//            logger.info("Switch to new tab");
+//            Select select = new Select(dropDown);
+//            select.selectByVisibleText(text);
+//            logger.info(text + " was selected in DropDown");
 //        } catch (Exception e) {
 //            printErrorAndStopTest(e);
 //        }
 //    }
 
-    public void selectValueInDropDown(WebElement dropDown, String value) {
+    // метод вибору значення з дропдауну
+    public void selectTextInDropDownByUI(WebElement dropDown, String text, String nameElement) {
         try {
-            Select select = new Select(dropDown);
-            select.selectByValue(value);
-            logger.info(value + " was selected in DropDown");
-        } catch (Exception e) {
+            clickOnElement(dropDown, nameElement);
+            clickOnElement(dropDown.findElement(By.xpath("//*[contains(text(),'" + text + "')]")), nameElement);
+            logger.info(text + " was selected in DropDown");
+        } catch (Exception e) { // якщо в дропдауні немає вибраного значення
             printErrorAndStopTest(e);
         }
     }
-
-    //HW4 1. метод вибору значення з дропдауну
-//    public void selectTextInDropDownByUI(WebElement dropDown, String text) {
-//        try {
-//            clickOnElement(dropDown);
-//            clickOnElement(dropDown.findElement(By.xpath("//*[contains(text(),'" + text + "')]")));
-//            logger.info(text + " was selected in DropDown");
-//        } catch (Exception e) { // якщо в дропдауні немає вибраного значення
-//            printErrorAndStopTest(e);
-//        }
-//    }
-
-    public void toMarkCheckBox(WebElement element) { //2. метод для вибору чекбокса
-        try {
-            String elementName= getElementName(element);
-            if (!element.isSelected()) { // якщо чекбокс не вибраний
-                element.click(); // вибрати чекбокс
-                logger.info(elementName + "Checkbox was marked 'Yes'");
-            } else {
-                logger.info("Checkbox is already marked 'Yes'");
-            }
-        } catch (Exception e) {
-            printErrorAndStopTest(e);
-        }
-    }
-
-    public void toUnMarkCheckBox(WebElement element) { // 3. метод для зняття чекбокса
-        try {
-            if (element.isSelected()) { // якщо чекбокс вибраний
-                element.click(); // зняти чекбокс
-                logger.info("Checkbox was unmarked");
-            } else {
-                logger.info("Checkbox is already unmarked");
-            }
-        } catch (Exception e) {
-            printErrorAndStopTest(e);
-        }
-    }
-
-    /*
-    4. Створити метод встановлення заданого стану у чекбокс
-    - метод повинен приймати на вхід стрінговий стан (check or uncheck)
-    - в залежності від стану чекбокса і необхідного стану - клікати і виводити повідомлення в лог, чи не клікати і просто виводити повідомлення в лог.
-    - додати цей метод в наш тест по створенню поста (зі значенням check) і перевірку на наступному скріні
-    */
-    public void checkCheckboxState(WebElement checkbox, String state) {
-        try {
-            if (state.equalsIgnoreCase("check")) {
-                toMarkCheckBox(checkbox);
-            } else if (state.equalsIgnoreCase("uncheck")) {
-                toUnMarkCheckBox(checkbox);
-            } else {
-                logger.error("State should be 'check' or 'uncheck'");
-                Assert.fail("State should be 'check' or 'uncheck'");
-            }
-        } catch (Exception e) {
-            printErrorAndStopTest(e);
-        }
-    }
-
-    private String getElementName(WebElement element) {
-        try {
-            return element.getAccessibleName(); // getTagName(); //
-        } catch (Exception e) {
-            return "";
-        }
-    }
-
     private void printErrorAndStopTest(Exception e) {
         logger.error("Can not work with element" + e);
         Assert.fail("Can not work with element" + e);

@@ -32,7 +32,54 @@ PageHome //https://rbo-dev.avrb.com.ua/ibank/dashboard?1
     @FindBy(xpath = ".//div [@class ='recaptcha-checkbox-border']")
         private WebElement checkBoxRob;
 
+==
+ Step 1. String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";
 
- Step 1.
     @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")
-    private WebElement step1;
+        private WebElement step1;
+
+    @FindBy(xpath = ".//input [@class='mat-autocomplete-trigger regular ng-untouched ng-pristine ng-valid']")
+        private WebElement DropDownPur;
+
+   //* [@class='account-title']:
+    03000000-1
+    Сільськогосподарська, фермерська продукція, продукція рибальства, лісівництва та супутня продукція
+
+    03100000-2
+    Сільськогосподарська продукція та продукція рослинництва
+
+    03111000-2
+    Насіння
+
+     @FindBy(xpath = ".//input[@placeholder='UA-0000-00-00-000000-a']")
+        private WebElement inputHref;
+
+     @FindBy(xpath = ".//div [@class='subtext h9rh14 ng-star-inserted']")
+        private WebElement isVisibleHref;
+
+     @FindBy(xpath = ".//input[@id='mat-radio-2-input']")
+        private WebElement radioButtonEasy;
+
+@FindBy(xpath = "//button [@CLASS='mat-focus-indicator next-button mat-button mat-button-base']")
+        private WebElement buttonNext;
+
+==
+Step2 https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+
+    @FindBy(xpath = ".//input[@placeholder='Введіть повне найменування']")
+         private WebElement purchName;
+
+    @FindBy(xpath = ".//input[@placeholder='Введіть код ЄДРПОУ']")
+        private WebElement edrpou;
+
+    @FindBy(xpath = ".//input[@placeholder='Введіть адресу']")
+            private WebElement adresaPurch;
+
+    @FindBy(xpath = ".//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c66-1 ng-star-inserted']")
+            private WebElement categoryPurch;
+
+        Element DropOown = .//span[text()='Органи соціального страхування']
+
+
+    @FindBy(xpath = ".//button[@class='mat-focus-indicator next-button mat-button mat-button-base']")
+            private WebElement buttonNext;

@@ -34,3 +34,7 @@ Precondition:Run TC 003
 
 ER:Ключ пошкоджено або невірний пароль. Спробуйте ще раз, або оберіть інший файл
 Postcondition: Close WebSite
+
+TC 006 ValidTestsWithExcel.step1 Run parametrize test for Step1 with Exel
+TC 007 Run test for Step2
+TC 008 Run test for Step3

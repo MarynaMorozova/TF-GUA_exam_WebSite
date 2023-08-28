@@ -1,58 +1,20 @@
-
 import libs.ConfigProvider;
-import libs.SpreadsheetData;
-import libs.Util;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.sql.SQLException;
 import java.time.Duration;
-import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_DEFAULT;
-import static libs.ConfigProvider.configProperties;
 
-/*Step1
-- данні для теста витягнути з testData.xls,
-створивши в ньому відповідний аркуш і додавши тестові данні:
-1.    предмет закупівлі: заповнити код та назву,
-посилання на ID оголошення Prozorro,
-обирає вид закупівлі.
 
-Візуалізувати посилання на сайт Prozorro за допомогою ID
-
-*/
-@RunWith(Parameterized.class)//тест буде брати дані з ексель, скільки раз скільки рядків
-
-public class ValidTestsWithExcel extends BaseTest {
-    //данні для Title, body, чекбокса і дропдауна витягнути з testData.xls,
-    String purchaseCN;
-    String idProzorro;
-
-    public ValidTestsWithExcel(String purchaseCN, String idProzorro) { // конструктор
-        this.purchaseCN = purchaseCN;
-        this.idProzorro = idProzorro;
-    }
-
-    @Parameterized.Parameters
-    //створивши в ньому відповідний аркуш і додавши тестові данні
-    public static Collection testData() throws IOException {// метод який повертає колекцію з даними
-        FileInputStream inputStream = new FileInputStream( // створюємо конекшен до файлу з даними
-                configProperties.DATA_FILE_PATH() + "testData.xls");//
-        return new SpreadsheetData(inputStream, "ParametrStep1").getData(); // створюємо колекцію з даними з екселю, вказуючи на вхід конекшен до файлу і назву листа
-    }
-
+public class Step3Test extends BaseTest {
     @Before
-    public void validLogin() throws SQLException, ClassNotFoundException {
+    public void validLoginAndStep1() throws SQLException, ClassNotFoundException {
         String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
         pageProvider.getLoginPage().openLoginPage(url);
@@ -81,20 +43,42 @@ public class ValidTestsWithExcel extends BaseTest {
 
         pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
         pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
-    }
 
-    @Test
-    public void step1() {
         logger.info("--step1--");
         pageProvider.getStep1PagePage().checkIsStep1Visible("Step1");//певірка чи ми на Step1
 
-        pageProvider.getStep1PagePage().selectTextInDropDownPH(purchaseCN, "DropDownPurh");
+        pageProvider.getStep1PagePage().selectTextInDropDownPH("03111000-2", "DropDownPurh");
         pageProvider.getStep1PagePage().checkIsInputHrefVisible("InputHref");
 
-        pageProvider.getStep1PagePage().enterTextIntoInputIdProzorro(idProzorro);
+        pageProvider.getStep1PagePage().enterTextIntoInputIdProzorro("UA-0000-00-00-000002-a");
         pageProvider.getStep1PagePage().checkIsInputHrefVisible("IsVisibleHref");
         pageProvider.getStep1PagePage().clickOnradioButtonEasy("RadioButtonEasy");
 
         pageProvider.getStep1PagePage().clickOnButtonNext("ButtonNext");
+
+        pageProvider.getStep2PagePage().checkIsStep2Visible("Step2");//певірка чи ми на Step2
+        logger.info("--step2--");
+
+        pageProvider.getStep2PagePage().enterTextIntoInputPurchName()
+                .enterTextIntoInputEdrpou()
+                .enterTextIntoInputAdresaPurch()
+                .selectTextInDropDownCategoryPrurch();
+        pageProvider.getStep2PagePage().clickOnButtonNext3("ButtonNextOnStep3")
+                .checkIsStep3Visible("Step3");//певірка чи ми на Step3
+    }
+
+    @Test
+    public void Step3() {
+        logger.info("--step3--");
+
+        pageProvider.getStep3PagePage().enterTextIntoInputDateTerminDii ()
+                .enterTextIntoInputDatePrPropoz()
+                .enterTextIntoInputSumGarant()
+                .selectTextInDropDownSelectAccount()
+                .enterTextIntoInputTextarea5()
+                .enterTextIntoInputTextarea6()
+
+                .clickOnButtonNext4("ButtonNextOnStep4");
     }
 }
+

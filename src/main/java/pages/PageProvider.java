@@ -13,6 +13,18 @@ public class PageProvider {
         return new LoginPage(webDriver);
     }
 
+    public Step1Page getStep1PagePage() {
+        return new Step1Page(webDriver);
+    }
+
+    public Step2Page getStep2PagePage() {
+        return new Step2Page(webDriver);
+    }
+
+    public Step3Page getStep3PagePage() {
+        return new Step3Page(webDriver);
+    }
+
     public LoginPageRBO getLoginPageRBO() {
         return new LoginPageRBO(webDriver);
     }

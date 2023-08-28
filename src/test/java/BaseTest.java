@@ -49,12 +49,12 @@ public class BaseTest {
         //       webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));//замість 30 секунд
     }
 
-    @After
-    public void tearDown() {
-        webDriver.quit();
-        logger.info("Browser was closed");
-        logger.info("-----" + testName.getMethodName() + " was stop ----");
-    }
+//    @After
+//    public void tearDown() {
+//        webDriver.quit();
+//        logger.info("Browser was closed");
+//        logger.info("-----" + testName.getMethodName() + " was stop ----");
+//    }
 
     @Rule
     public TestName testName = new TestName();

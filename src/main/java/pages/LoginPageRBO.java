@@ -24,14 +24,8 @@ public class LoginPageRBO extends ParentPage {
     @FindBy(xpath = "//*[contains (text(),'Невірний ключ або пароль')]")
     private WebElement isInvalidPasswordRBO;
 
-
-    //    @Override
-//    protected String getRelativeUrl() {
-//        return "/";
-//    }
     public void openLoginPage(String url) {
         openPage(url);
-        checkUrl(url);
     }
 
     public void checkIsInputPasswordRBOVisible(String elementName) {

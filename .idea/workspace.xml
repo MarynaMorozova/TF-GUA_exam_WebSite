@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2970835a-853d-4dec-a94e-f9e6a6225f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Step1Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Step2Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Step3Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Step2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Step3Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Locators.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Locators.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestCases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestCases.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/testData.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testData.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigHiddenProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPageRBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPageRBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PageProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Step1Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Step1Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ValidTestsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidTestsWithExcel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,13 +47,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/workSpaсe/G7_TAF/G7Project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workSpaсe/TF-GUA&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pages" />
@@ -53,45 +66,16 @@
       <recent name="C:\workSpaсe\TF-GUA\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pages" />
       <recent name="" />
+      <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginWithUploadFile.validLogin">
-    <configuration name="FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TF-GUA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FileUploaderWithSelenium" />
-      <option name="METHOD_NAME" value="fileHiddenUploaderWithSelenium" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LoginRBOWithUploadFile.validLogin">
     <configuration name="LoginRBOWithUploadFile.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LoginRBOWithUploadFile" />
       <option name="METHOD_NAME" value="validLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginWithUploadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TF-GUA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginWithUploadFile" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginWithUploadFile.fileHiddenUploaderWithSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TF-GUA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginWithUploadFile" />
-      <option name="METHOD_NAME" value="fileHiddenUploaderWithSelenium" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,20 +91,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Step2Test.Step2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TF-GUA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Step2Test" />
+      <option name="METHOD_NAME" value="Step2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Step3Test.Step3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TF-GUA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Step3Test" />
+      <option name="METHOD_NAME" value="Step3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidTestsWithExcel.step1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TF-GUA" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidTestsWithExcel" />
+      <option name="METHOD_NAME" value="step1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.Step2Test.Step2" />
+      <item itemvalue="JUnit.Step3Test.Step3" />
+      <item itemvalue="JUnit.ValidTestsWithExcel.step1" />
       <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
       <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
-      <item itemvalue="JUnit.LoginWithUploadFile" />
-      <item itemvalue="JUnit.LoginWithUploadFile.fileHiddenUploaderWithSelenium" />
-      <item itemvalue="JUnit.FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
         <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
-        <item itemvalue="JUnit.LoginWithUploadFile" />
-        <item itemvalue="JUnit.LoginWithUploadFile.fileHiddenUploaderWithSelenium" />
-        <item itemvalue="JUnit.FileUploaderWithSelenium.fileHiddenUploaderWithSelenium" />
+        <item itemvalue="JUnit.Step3Test.Step3" />
+        <item itemvalue="JUnit.Step2Test.Step2" />
+        <item itemvalue="JUnit.ValidTestsWithExcel.step1" />
+        <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -168,13 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692951484984</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="start Step1">
+      <created>1693038812420</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693038812420</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Locators+ TC2" />
     <MESSAGE value="LoginRBO + TC5" />
     <MESSAGE value="ADD structure for SmokeTest, comment in pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD structure for SmokeTest, comment in pom" />
+    <MESSAGE value="start Step1" />
+    <option name="LAST_COMMIT_MESSAGE" value="start Step1" />
   </component>
 </project>

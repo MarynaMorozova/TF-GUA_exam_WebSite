@@ -1,11 +1,9 @@
 package pages;
 
-import data.TestData;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.logging.Logger;
 
 public class LoginPage extends ParentPage {
 
@@ -40,31 +38,18 @@ public class LoginPage extends ParentPage {
     public LoginPage(WebDriver webDriver) {
         super(webDriver);
     }
-
-    //    @Override
-//    protected String getRelativeUrl() {
-//        return "/";
-//    }
     public void openLoginPage(String url) {
         openPage(url);
-        //   checkUrl();
     }
 
     public void enterTextIntoInputPassword(String Password) {
         enterTextIntoInput(inputPassword, Password);
-        //       logger.info("Password input");
     }
 
     public void clickOnButtonSignIn(String elementName) {
         clickOnElement(signIn, elementName);
     }
 
-//    public void loginWithValidCreds() {
-//        openLoginPage(BASE_URL);
-////        enterTextIntoInputUserName(TestData.LOGIN_DEFAULT);
-//        enterTextIntoInputPassword(TestData.PASSWORD_DEFAULT);
-//        clickOnButtonSignIn();
-//    }
 
     public void checkIsLabelFileVisible(String elementName) {
         checkElementDisplayed(labelFile, elementName);
@@ -104,96 +89,6 @@ public class LoginPage extends ParentPage {
         checkElementDisplayed(signIn, elementName);
     }
 
-    public void checkIsStep1Visible(String elementName) {
-        checkElementDisplayed(step1, elementName);
-    }
-
     public void checkIsInvalidPasswordVisible(String elementName) {checkElementDisplayed(isInvalidPassword, elementName);}// iнвалідний логін
 
-//    public void checkIsInputPasswordRBOVisible(String elementName)
-//        {            checkElementDisplayed(isPasswordRBO, elementName);
-//        }
-//
-//        public void checkIsFileLoadRBOVisible() { checkElementDisplayed(isLabelFileLogin, "LabelFileLogin");}
-//
-//    public void checkIsLabelFileRBOVisible(String elementName) {
-//        checkElementDisplayed(LabelFileLogin, elementName);
-//    }
-//
-//    public LoginPage enterTextIntoInputPasswordRBO(String passwordRbo) {
-//        enterTextIntoInput(isPasswordRBO, passwordRbo);
-//        return this;
-//    }
-//
-//    public void checkSignInVisibleRBO(String elementName) {
-//        checkElementDisplayed(signInRbo,elementName);
-//  //      logger.info("signInVisible");
-//    }
-//
-//    public void clickOnButtonSignInRBO(String elementName) {
-//        clickOnElement(signInRbo,elementName);
-//    }
-
-
-//    public LoginPage enterTextIntoRegistrationUserNameField(String userName) {
-//        enterTextIntoInput(inputUserNameRegistration, userName);
-//        return this;
-//    }
-//    public LoginPage enterTextIntoRegistrationEmailField(String email) {
-//        enterTextIntoInput(inputUserEmailRegistration, email);
-//        return this;
-//    }
-//    public LoginPage enterTextIntoRegistrationPasswordField(String password) {
-//        enterTextIntoInput(inputUserPasswordRegistration, password);
-//        return this;
-//    }
-//
-//    public LoginPage checkErrorsMessages(String expectedMessages) {
-//        //error1;error2;->[error1;error2]
-//        String [] errors = expectedMessages.split(";");
-//        //wait util number or error will be expected
-//        webDriverWait10.until(
-//                ExpectedConditions.numberOfElementsToBe(
-//                        By.xpath(listErrorsMessagesLocator), errors.length));
-//        Util.waitABit(1);//wait for visibility of all messages
-//        Assert.assertEquals("Number of elements", errors.length, getListOfErrors().size());
-//
-//        ArrayList atualTextFromErrors = new ArrayList();
-//        for (WebElement element : getListOfErrors()) {
-//            atualTextFromErrors.add(element.getText());
-//        }
-//
-//        SoftAssertions softAssertions = new SoftAssertions();
-//        for (int i = 0; i < errors.length; i++) {
-//            softAssertions.assertThat(errors[i])//візьми очикуваний результат та виконай дію
-//                    .as("Error " + errors[i] + " was not found")//message if assertion is failed
-//                    //      .isEqualToIgnoringCase(atualTextFromErrors.get(i).toString());//порівняй очікуваний результат з фактичним
-//                    .isIn(atualTextFromErrors.get(i).toString());//порівняй очікуваний результат з фактичним, порядок не важливий
-//        }
-//        softAssertions.assertAll();//check all assertion, виведе, що не співпало
-//
-//        return this;
-//    }
-//    private List<WebElement> getListOfErrors() {
-//        return webDriver.findElements(By.xpath(listErrorsMessagesLocator));
-//    }
-//    public LoginPage checkErrorMessageLogin(String expectedErrorMessageLogin) {
-//        // Очикування, поки повідомлення про помилку буде видимим
-//        webDriverWait10.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(errorMessageLogin)));
-//        Util.waitABit(1);
-//
-//        // Перевірте, що кількість повідомлень про помилку = 1
-//        Assert.assertEquals("Number of error messages", 1, getErrorLogin().size());
-//
-//        // Отримайте фактичний текст повідомлення про помилку
-//        String actualErrorMessage = getErrorLogin().get(0).getText();
-//
-//        // Порівняйте очікувані та фактичні повідомлення
-//        Assert.assertEquals("Error message", expectedErrorMessageLogin, actualErrorMessage);
-//
-//        return this;
-//    }
-//    private List<WebElement> getErrorLogin() {
-//        return webDriver.findElements(By.xpath(errorMessageLogin));
-//    }
 }
