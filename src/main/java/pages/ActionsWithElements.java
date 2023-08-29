@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -12,10 +13,12 @@ import org.openqa.selenium.support.PageFactory;
 //import java.time.Duration;
 
 
+
 public class ActionsWithElements {
     Logger logger = Logger.getLogger(getClass());
     protected WebDriver webDriver;
 //    protected WebDriverWait webDriverWait10, webDriverWait15;
+
 
     public ActionsWithElements(WebDriver webDriver) {//constructor
         this.webDriver = webDriver;
@@ -25,7 +28,7 @@ public class ActionsWithElements {
 //        webDriverWait15 = new WebDriverWait(webDriver, Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_EXPLICIT_WAIT_LOW()));
 
     }
-
+    @Step //хочемо бачити в репорті
     public void clickOnElement(WebElement element, String elementName) { //method for clicking on element
         try {
             element.click();
@@ -34,7 +37,7 @@ public class ActionsWithElements {
             printErrorAndStopTest(e);
         }
     }
-
+    @Step //хочемо бачити в репорті
     public void clickOnElement(String locator, String elementName) {
         try {
             clickOnElement(webDriver.findElement(By.xpath(locator)), elementName);
@@ -43,7 +46,7 @@ public class ActionsWithElements {
         }
     }
 
-
+    @Step //хочемо бачити в репорті
     public void enterTextIntoInput(WebElement element, String text) { //method for inputting text
         try {
             element.clear();
@@ -55,7 +58,7 @@ public class ActionsWithElements {
             printErrorAndStopTest(e);
         }
     }
-
+    @Step //хочемо бачити в репорті
     public boolean isElementDisplayed(WebElement element, String elementName) {
         try {
             boolean state = element.isDisplayed();
@@ -70,11 +73,11 @@ public class ActionsWithElements {
             return false;
         }
     }
-
+    @Step //хочемо бачити в репорті
     public void checkElementDisplayed(WebElement element, String elementName) {
         Assert.assertTrue(elementName + " element is not displayed", isElementDisplayed(element, elementName));
     }
-
+    @Step //хочемо бачити в репорті
     public void checkElementNotDisplayed(WebElement element,String elementName ) {
         Assert.assertFalse(elementName+ " element is displayed", isElementDisplayed(element,elementName));
     }
@@ -88,7 +91,7 @@ public class ActionsWithElements {
 //            printErrorAndStopTest(e);
 //        }
 //    }
-
+@Step //хочемо бачити в репорті
     // метод вибору значення з дропдауну
     public void selectTextInDropDownByUI(WebElement dropDown, String text, String nameElement) {
         try {
@@ -99,6 +102,7 @@ public class ActionsWithElements {
             printErrorAndStopTest(e);
         }
     }
+    @Step //хочемо бачити в репорті
     private void printErrorAndStopTest(Exception e) {
         logger.error("Can not work with element" + e);
         Assert.fail("Can not work with element" + e);

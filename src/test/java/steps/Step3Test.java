@@ -1,9 +1,12 @@
 package steps;
 
 import baseTest.BaseTest;
+import categories.SmokeTestFilter;
+import io.qameta.allure.*;
 import libs.ConfigProvider;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -17,6 +20,7 @@ import static data.TestData.PASSWORD_DEFAULT;
 
 public class Step3Test extends BaseTest {
     @Before
+
     public void validLoginAndStep1() throws SQLException, ClassNotFoundException {
         String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
@@ -69,8 +73,17 @@ public class Step3Test extends BaseTest {
         pageProvider.getStep2PagePage().clickOnButtonNext3("ButtonNextOnStep3")
                 .checkIsStep3Visible("Step3");//певірка чи ми на Step3
     }
+    @Description("Some detailed test description")
+    @Link("https://example.org")
+    @Link(name = "allure", type = "mylink")
+    @Issue("123")
+    @Issue("432")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Base support for bdd annotations")
 
     @Test
+    //@Ignore // проінорувати тест
+    @Category(SmokeTestFilter.class)//маркуємо категорію для тесту- ставиться перед класом або методом(якщо не параметризований)
     public void Step3() {
         logger.info("--step3--");
 

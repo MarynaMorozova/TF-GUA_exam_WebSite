@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,6 +39,7 @@ public class LoginPage extends ParentPage {
     public LoginPage(WebDriver webDriver) {
         super(webDriver);
     }
+    @Step //хочемо бачити в репорті
     public void openLoginPage(String url) {
         openPage(url);
     }
@@ -88,7 +90,7 @@ public class LoginPage extends ParentPage {
     public void checkSignInVisible(String elementName) {
         checkElementDisplayed(signIn, elementName);
     }
-
+    @Step //хочемо бачити в репорті
     public void checkIsInvalidPasswordVisible(String elementName) {checkElementDisplayed(isInvalidPassword, elementName);}// iнвалідний логін
 
 }

@@ -1,4 +1,4 @@
-package RBO;
+package rbo;
 
 import baseTest.BaseTest;
 import categories.SmokeTestFilter;

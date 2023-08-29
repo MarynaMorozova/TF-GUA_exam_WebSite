@@ -26,7 +26,6 @@ import static data.TestData.PASSWORD_INVALID;
 
 @Category(SmokeTestFilter.class)
 
-
 public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElements {
 
 //    public FileUploaderWithSelenium(WebDriver webDriver) {
@@ -40,7 +39,7 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
     @Issue("432")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Base support for bdd annotations")
-//
+
     @Test //проверка входа с валидными данными
     @Step
 //    //@Ignore

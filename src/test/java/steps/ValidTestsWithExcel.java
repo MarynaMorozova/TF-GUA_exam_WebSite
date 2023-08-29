@@ -29,7 +29,6 @@ import static libs.ConfigProvider.configProperties;
 обирає вид закупівлі.
 
 Візуалізувати посилання на сайт Prozorro за допомогою ID
-
 */
 @RunWith(Parameterized.class)//тест буде брати дані з ексель, скільки раз скільки рядків
 

@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2970835a-853d-4dec-a94e-f9e6a6225f54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/libs/ScreenShot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestCases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestCases.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginRBOWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBO/LoginRBOWithUploadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTFGUA/LoginWithUploadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Step2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Step2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Step3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Step3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ValidTestsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ValidTestsWithExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RBO/LoginRBOWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rbo/LoginRBOWithUploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/loginTFGUA/LoginWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTFGUA/LoginWithUploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Step3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Step3Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/ValidTestsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ValidTestsWithExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/suits/SmokeSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suits/SmokeSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/suits/SmokeSuiteWithCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suits/SmokeSuiteWithCategories.java" afterDir="false" />
     </list>
@@ -31,6 +33,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="regularTests" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2U3bGMpfBG3vZ7pzFuAwnVWdx3u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,14 +69,14 @@
       <recent name="C:\workSpaсe\TF-GUA\src\main\java\libs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="libs" />
       <recent name="baseTest" />
       <recent name="LoginTFGUA" />
       <recent name="RBO" />
       <recent name="" />
-      <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.TF-GUA [clean,test...]">
+  <component name="RunManager" selected="Maven.TF-GUA [clean,test,-Dtest=Step3Test...]">
     <configuration name="LoginRBOWithUploadFile.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,45 +89,67 @@
     </configuration>
     <configuration name="LoginWithUploadFile.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginWithUploadFile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="loginTFGUA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="loginTFGUA" />
+      <option name="MAIN_CLASS_NAME" value="loginTFGUA.LoginWithUploadFile" />
       <option name="METHOD_NAME" value="validLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step2Test.Step2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SmokeSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Step2Test" />
-      <option name="METHOD_NAME" value="Step2" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="suits.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="suits" />
+      <option name="MAIN_CLASS_NAME" value="suits.SmokeSuite" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step3Test.Step3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SmokeSuiteWithCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Step3Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="suits.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="suits" />
+      <option name="MAIN_CLASS_NAME" value="suits.SmokeSuiteWithCategories" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Step3Test.Step3 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TF-GUA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="steps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="steps.Step3Test" />
       <option name="METHOD_NAME" value="Step3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidTestsWithExcel.step1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TF-GUA" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ValidTestsWithExcel" />
-      <option name="METHOD_NAME" value="step1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TF-GUA [clean,test...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="TF-GUA [clean,test,-Dtest=Step3Test...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -128,7 +162,7 @@
               <list>
                 <option value="clean" />
                 <option value="test" />
-                <option value="-Dtest=LoginTestWithPageObject" />
+                <option value="-Dtest=Step3Test" />
                 <option value="allure:report" />
                 <option value="-Dmaven.test.failure.ignore=true" />
                 <option value="-Denv=aqa" />
@@ -148,20 +182,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Step2Test.Step2" />
-      <item itemvalue="JUnit.Step3Test.Step3" />
-      <item itemvalue="JUnit.ValidTestsWithExcel.step1" />
+      <item itemvalue="JUnit.SmokeSuite" />
+      <item itemvalue="JUnit.SmokeSuiteWithCategories" />
+      <item itemvalue="JUnit.Step3Test.Step3 (1)" />
       <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
       <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
-      <item itemvalue="Maven.TF-GUA [clean,test...]" />
+      <item itemvalue="Maven.TF-GUA [clean,test,-Dtest=Step3Test...]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
-        <item itemvalue="JUnit.Step3Test.Step3" />
-        <item itemvalue="JUnit.Step2Test.Step2" />
-        <item itemvalue="JUnit.ValidTestsWithExcel.step1" />
+        <item itemvalue="JUnit.Step3Test.Step3 (1)" />
         <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
+        <item itemvalue="JUnit.SmokeSuiteWithCategories" />
+        <item itemvalue="JUnit.SmokeSuite" />
+        <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693245197520</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Change structure">
+      <created>1693299465835</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693299465835</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,6 +280,8 @@
     <MESSAGE value="ADD structure for SmokeTest, comment in pom" />
     <MESSAGE value="start Step1" />
     <MESSAGE value="Step1,Step2, Step3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step1,Step2, Step3" />
+    <MESSAGE value="Change stucture" />
+    <MESSAGE value="Change structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change structure" />
   </component>
 </project>
