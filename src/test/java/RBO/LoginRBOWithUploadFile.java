@@ -1,17 +1,19 @@
-import junitparams.JUnitParamsRunner;
+package RBO;
+
+import baseTest.BaseTest;
+import categories.SmokeTestFilter;
 import libs.ConfigProvider;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-//import io.qameta.allure.*;
-import categories.SmokeTestFilter;
+
 import java.io.File;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-import static data.TestData.*;
+import static data.TestData.PASSWORD_RBO;
+import static data.TestData.PASSWORD_RBO_invalid;
 //@Epic("Allure examples")
 //@Feature("Junit 4 support")
 

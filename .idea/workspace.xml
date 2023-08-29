@@ -5,26 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2970835a-853d-4dec-a94e-f9e6a6225f54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Step2Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Step3Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Step2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Step3Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Locators.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Locators.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestCases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestCases.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/testData.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testData.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigHiddenProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/libs/ConfigProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/ConfigProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPageRBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPageRBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PageProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PageProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Step1Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Step1Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ValidTestsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidTestsWithExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginRBOWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RBO/LoginRBOWithUploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTFGUA/LoginWithUploadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Step2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Step2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Step3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Step3Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ValidTestsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ValidTestsWithExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/suits/SmokeSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suits/SmokeSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/suits/SmokeSuiteWithCategories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suits/SmokeSuiteWithCategories.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,30 +38,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/workSpaсe/TF-GUA&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/workSpaсe/TF-GUA/src/test/java/steps"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workSpaсe\TF-GUA\src\test\java\steps" />
       <recent name="C:\workSpaсe\TF-GUA\src\main\java" />
       <recent name="C:\workSpaсe\TF-GUA\src\test\java" />
       <recent name="C:\workSpaсe\TF-GUA\src\main\java\data" />
       <recent name="C:\workSpaсe\TF-GUA\src\main\java\libs" />
-      <recent name="C:\workSpaсe\TF-GUA\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="baseTest" />
+      <recent name="LoginTFGUA" />
+      <recent name="RBO" />
       <recent name="" />
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginRBOWithUploadFile.validLogin">
+  <component name="RunManager" selected="Maven.TF-GUA [clean,test...]">
     <configuration name="LoginRBOWithUploadFile.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,12 +115,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TF-GUA [clean,test...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+                <option value="-Dtest=LoginTestWithPageObject" />
+                <option value="allure:report" />
+                <option value="-Dmaven.test.failure.ignore=true" />
+                <option value="-Denv=aqa" />
+                <option value="-Dprofile=regularTests" />
+                <option value="-Dbrowser=edge" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JUnit.Step2Test.Step2" />
       <item itemvalue="JUnit.Step3Test.Step3" />
       <item itemvalue="JUnit.ValidTestsWithExcel.step1" />
       <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin" />
       <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
+      <item itemvalue="Maven.TF-GUA [clean,test...]" />
     </list>
     <recent_temporary>
       <list>
@@ -189,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1693038812420</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Step1,Step2, Step3">
+      <created>1693244525847</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693244525847</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Step1,Step2, Step3">
+      <created>1693245197520</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693245197520</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +238,7 @@
     <MESSAGE value="LoginRBO + TC5" />
     <MESSAGE value="ADD structure for SmokeTest, comment in pom" />
     <MESSAGE value="start Step1" />
-    <option name="LAST_COMMIT_MESSAGE" value="start Step1" />
+    <MESSAGE value="Step1,Step2, Step3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step1,Step2, Step3" />
   </component>
 </project>

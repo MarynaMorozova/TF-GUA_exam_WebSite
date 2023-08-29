@@ -1,19 +1,16 @@
-import java.io.File;
-import java.io.IOException;
-import java.sql.SQLException;
-import java.time.Duration;
-import java.util.Map;
-import java.util.concurrent.TimeUnit;
+package steps;
 
-import junitparams.JUnitParamsRunner;
-import junitparams.Parameters;
+import baseTest.BaseTest;
 import libs.ConfigProvider;
-import libs.ExcelDriver;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import java.io.File;
+import java.sql.SQLException;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_DEFAULT;
 

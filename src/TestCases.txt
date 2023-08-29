@@ -28,11 +28,7 @@ Postcondition: Close WebSite
 
 TC 005 Negative test. Fill Step1 https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
 Precondition:Run TC 003
-    1. Load file.
-    2. Enter invalidPassword.
-    4. Press "Авторизуватись"
-
-ER:Ключ пошкоджено або невірний пароль. Спробуйте ще раз, або оберіть інший файл
+Negative test. Fill Step1 з TC 007
 Postcondition: Close WebSite
 
 TC 006 ValidTestsWithExcel.step1 Run parametrize test for Step1 with Exel
