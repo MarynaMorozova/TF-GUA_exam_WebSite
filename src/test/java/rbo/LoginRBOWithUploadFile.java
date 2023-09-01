@@ -2,7 +2,9 @@ package rbo;
 
 import baseTest.BaseTest;
 import categories.SmokeTestFilter;
+import io.qameta.allure.*;
 import libs.ConfigProvider;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.openqa.selenium.By;
@@ -14,20 +16,20 @@ import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_RBO;
 import static data.TestData.PASSWORD_RBO_invalid;
-//@Epic("Allure examples")
-//@Feature("Junit 4 support")
+@Epic("Allure examples")
+@Feature("Junit 4 support")
 
 
 //@RunWith(JUnitParamsRunner.class) //позволяет использовать параметризацию
 //@Category(SmokeTestFilter.class)
 public class LoginRBOWithUploadFile extends BaseTest {
-//    @Description("Some detailed test description")
-//    @Link("https://example.org")
-//    @Link(name = "allure", type = "mylink")
-//    @Issue("123")
-//    @Issue("432")
-//    @Severity(SeverityLevel.CRITICAL)
-//    @Story("Base support for bdd annotations")
+    @Description("Some detailed test description")
+    @Link("https://example.org")
+    @Link(name = "allure", type = "mylink")
+    @Issue("123")
+    @Issue("432")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Base support for bdd annotations")
 
     @Test //проверка входа с валидными данными
     //@Ignore
@@ -54,18 +56,18 @@ public class LoginRBOWithUploadFile extends BaseTest {
         fileInput.sendKeys(new File(filePath).getAbsolutePath());
         //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         pageProvider.getLoginPageRBO().checkIsFileLoadRBOVisible();
-//        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
-//        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
-        webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
+        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         pageProvider.getLoginPageRBO().checkIsInputPasswordRBOVisible("Password");
         pageProvider.getLoginPageRBO().enterTextIntoInputPasswordRBO(PASSWORD_RBO);
         pageProvider.getLoginPageRBO().checkSignInVisibleRBO("SignIn");
 
-        //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         pageProvider.getLoginPageRBO().clickOnButtonSignInRBO("SignIn");
     }
 
-  @Test
+  @Test//проверка входа с не валидными данными
+  //@Ignore
     public void inValidLoginPassword() {
       String url = "https://rbo-dev.avrb.com.ua/ibank/home?0"; // Замініть на URL свого веб-сайту
       String filePath = "C://workSpaсe//КОФІТОН_37120506_директор.dat"; // Шлях до вашого файлу

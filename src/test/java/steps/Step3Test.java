@@ -17,10 +17,9 @@ import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_DEFAULT;
 
-
+@Category(SmokeTestFilter.class)
 public class Step3Test extends BaseTest {
     @Before
-
     public void validLoginAndStep1() throws SQLException, ClassNotFoundException {
         String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу

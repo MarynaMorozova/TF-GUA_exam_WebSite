@@ -78,7 +78,7 @@ Step2 https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
     @FindBy(xpath = ".//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c66-1 ng-star-inserted']")
             private WebElement categoryPurch;
 
-        Element DropOown = .//span[text()='Органи соціального страхування']
+        Element DropDown = .//span[text()='Органи соціального страхування']
 
 
     @FindBy(xpath = ".//button[@class='mat-focus-indicator next-button mat-button mat-button-base']")

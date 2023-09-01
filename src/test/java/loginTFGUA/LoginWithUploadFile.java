@@ -22,15 +22,8 @@ import static data.TestData.PASSWORD_INVALID;
 @Feature("Junit 4 support")
 
 
-//@RunWith(JUnitParamsRunner.class) //позволяет использовать параметризацию(не для отчета)
-
-@Category(SmokeTestFilter.class)
-
+//@Category(SmokeTestFilter.class)
 public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElements {
-
-//    public FileUploaderWithSelenium(WebDriver webDriver) {
-//        super(webDriver);
-//    }
 
     @Description("Some detailed test description")
     @Link("https://example.org")
@@ -45,14 +38,12 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
 //    //@Ignore
     @Category(SmokeTestFilter.class)
     @Parameters(method = "parametersForCheckValidLoginPassword") //параметризация
-
     public void validLogin() {
 
         String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
         String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
         pageProvider.getLoginPage().openLoginPage(url);
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд
-
 
         //    webDriver.manage().timeouts().implicitlyWait(Duration,TimeUnit.SECONDS);//замість 30 секунд
         pageProvider.getLoginPage().checkIsLabelFileVisible("LoginFile");
@@ -80,9 +71,8 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
         pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
         //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        //     pageProvider.getLoginPage().checkIsStep1Visible("Step1");
+        //pageProvider.getLoginPage().checkIsStep1Visible("Step1");
     }
-
     @Description("Some detailed test description")
     @Link("https://example.org")
     @Link(name = "allure", type = "mylink")
@@ -91,7 +81,7 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
     @Severity(SeverityLevel.CRITICAL)
     @Story("Base support for bdd annotations")
 
-    @Test //проверка входа с невалидными данными
+    @Test //проверка входа с не валидными данными
     @Ignore
     @Category(SmokeTestFilter.class)
     @Parameters(method = "parametersForCheckInvalidLoginPassword") //параметризация

@@ -1,9 +1,11 @@
 package steps;
 
 import baseTest.BaseTest;
+import categories.SmokeTestFilter;
 import libs.ConfigProvider;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -63,6 +65,7 @@ public class Step2Test extends BaseTest {
     }
 
     @Test
+    @Category(SmokeTestFilter.class)//маркуємо категорію для тесту
     public void Step2() {
         pageProvider.getStep2PagePage().checkIsStep2Visible("Step2");//певірка чи ми на Step2
         logger.info("--step2--");

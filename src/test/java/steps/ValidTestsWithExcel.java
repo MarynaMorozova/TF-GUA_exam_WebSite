@@ -1,10 +1,12 @@
 package steps;
 
 import baseTest.BaseTest;
+import categories.SmokeTestFilter;
 import libs.ConfigProvider;
 import libs.SpreadsheetData;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
@@ -31,6 +33,7 @@ import static libs.ConfigProvider.configProperties;
 Візуалізувати посилання на сайт Prozorro за допомогою ID
 */
 @RunWith(Parameterized.class)//тест буде брати дані з ексель, скільки раз скільки рядків
+@Category(SmokeTestFilter.class)//маркуємо категорію для тесту
 
 public class ValidTestsWithExcel extends BaseTest {
     //данні для Title, body, чекбокса і дропдауна витягнути з testData.xls,

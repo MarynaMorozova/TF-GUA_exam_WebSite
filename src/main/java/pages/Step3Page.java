@@ -69,8 +69,7 @@ public class Step3Page extends ParentPage {
         return this;
     }
 
-    public Step3Page clickOnButtonNext4(String elementName) {
+    public void clickOnButtonNext4(String elementName) {
         clickOnElement(buttonNextTo4, elementName);
-        return this;
     }
 }

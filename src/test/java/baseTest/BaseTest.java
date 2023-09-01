@@ -28,12 +28,8 @@ import org.junit.runner.Description;
 
 @Epic("Allure examples")
 @Feature("Junit 4 support")
-//
-////@RunWith(JUnitParamsRunner.class) //позволяет использовать параметризацию
-//
+
 @Category(SmokeTestFilter.class)
-
-
 public class BaseTest {
     protected WebDriver webDriver;
     protected PageProvider pageProvider;
@@ -102,7 +98,6 @@ public class BaseTest {
                 logger.error(e);
             }
         }
-
     };
 
     protected void takeScreenshot() {
