@@ -80,7 +80,6 @@ public class ValidTestsWithExcel extends BaseTest {
         pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
         pageProvider.getLoginPage().checkSignInVisible("SignIn");
 
-
         pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
         pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
     }
@@ -98,5 +97,6 @@ public class ValidTestsWithExcel extends BaseTest {
         pageProvider.getStep1PagePage().clickOnradioButtonEasy("RadioButtonEasy");
 
         pageProvider.getStep1PagePage().clickOnButtonNext("ButtonNext");
+        //перевірка, що немає сайн
     }
 }

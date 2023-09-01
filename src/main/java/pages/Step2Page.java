@@ -9,8 +9,7 @@ public class Step2Page extends ParentPage {
     @FindBy(xpath = "//div [text()= 'Крок 2 з 5']")
     private WebElement step2;
 
-    @FindBy(xpath = "//div [text()= 'Крок 3 з 5']")
-    private WebElement step3;
+
 
     @FindBy(xpath = ".//input[@placeholder='Введіть повне найменування']")
     private WebElement purchName;
@@ -59,12 +58,9 @@ public class Step2Page extends ParentPage {
         selectTextInDropDownByUI(categoryPurch, elementCategoryPurch, "ElementCategoryPurch");
         return this;
     }
-    public Step2Page clickOnButtonNext3(String elementName) {
+    public Step3Page clickOnButtonNext3(String elementName) {
         clickOnElement(buttonNext3,elementName);
-        return this;
+        return new Step3Page(webDriver);
     }
-    public Step2Page checkIsStep3Visible(String elementName) {
-        checkElementDisplayed(step3, elementName);
-        return this;
-    }
+
 }

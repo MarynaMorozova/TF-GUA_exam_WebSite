@@ -25,23 +25,23 @@ import static data.TestData.PASSWORD_INVALID;
 //@Category(SmokeTestFilter.class)
 public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElements {
 
-    @Description("Some detailed test description")
-    @Link("https://example.org")
-    @Link(name = "allure", type = "mylink")
-    @Issue("123")
-    @Issue("432")
-    @Severity(SeverityLevel.CRITICAL)
-    @Story("Base support for bdd annotations")
+//    @Description("ValidLogin")
+//    @Link("https://example.org")
+//    @Link(name = "allure", type = "mylink")
+//    @Issue("123")
+//    @Issue("432")
+//    @Severity(SeverityLevel.CRITICAL)
+//    @Story("Base support for bdd annotations")
 
     @Test //проверка входа с валидными данными
-    @Step
+ //   @Step
 //    //@Ignore
     @Category(SmokeTestFilter.class)
     @Parameters(method = "parametersForCheckValidLoginPassword") //параметризация
     public void validLogin() {
 
         String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
-        String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
+        String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу з ключем авторизації КЄП
         pageProvider.getLoginPage().openLoginPage(url);
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд
 
@@ -62,7 +62,7 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         pageProvider.getLoginPage().checkIsFileLoadVisible("LoginNameFile");
 //        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
 //        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
-        webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pageProvider.getLoginPage().checkIsInputPasswordVisible("Password");
         pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
         pageProvider.getLoginPage().checkSignInVisible("SignIn");
@@ -73,13 +73,9 @@ public class LoginWithUploadFile extends BaseTest { //extends ActionsWithElement
         //webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         //pageProvider.getLoginPage().checkIsStep1Visible("Step1");
     }
-    @Description("Some detailed test description")
-    @Link("https://example.org")
-    @Link(name = "allure", type = "mylink")
-    @Issue("123")
-    @Issue("432")
-    @Severity(SeverityLevel.CRITICAL)
-    @Story("Base support for bdd annotations")
+//    @Description("Some detailed test description")
+//    @Severity(SeverityLevel.CRITICAL)
+//    @Story("Base support for bdd annotations")
 
     @Test //проверка входа с не валидными данными
     @Ignore

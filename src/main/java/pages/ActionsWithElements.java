@@ -73,24 +73,14 @@ public class ActionsWithElements {
             return false;
         }
     }
-    @Step //хочемо бачити в репорті
+//    @Step //хочемо бачити в репорті
     public void checkElementDisplayed(WebElement element, String elementName) {
         Assert.assertTrue(elementName + " element is not displayed", isElementDisplayed(element, elementName));
     }
-    @Step //хочемо бачити в репорті
+//    @Step //хочемо бачити в репорті
     public void checkElementNotDisplayed(WebElement element,String elementName ) {
         Assert.assertFalse(elementName+ " element is displayed", isElementDisplayed(element,elementName));
     }
-
-//    public void selectTextInDropDown(WebElement dropDown, String text) {
-//        try {
-//            Select select = new Select(dropDown);
-//            select.selectByVisibleText(text);
-//            logger.info(text + " was selected in DropDown");
-//        } catch (Exception e) {
-//            printErrorAndStopTest(e);
-//        }
-//    }
 @Step //хочемо бачити в репорті
     // метод вибору значення з дропдауну
     public void selectTextInDropDownByUI(WebElement dropDown, String text, String nameElement) {
@@ -102,7 +92,7 @@ public class ActionsWithElements {
             printErrorAndStopTest(e);
         }
     }
-    @Step //хочемо бачити в репорті
+ //   @Step //хочемо бачити в репорті
     private void printErrorAndStopTest(Exception e) {
         logger.error("Can not work with element" + e);
         Assert.fail("Can not work with element" + e);

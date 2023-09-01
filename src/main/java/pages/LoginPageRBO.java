@@ -14,7 +14,7 @@ public class LoginPageRBO extends ParentPage {
     @FindBy(xpath = "//input [@id = \"pwd_id\"]")
     private WebElement isPasswordRBO;
 
-    @FindBy(xpath = "//button [@CLASS='button loginSignatureBehavior next actionDefault']")
+    @FindBy(xpath = ".//button [@CLASS='button loginSignatureBehavior next actionDefault']")
     private WebElement signInRbo;
 
     public LoginPageRBO(WebDriver webDriver) {

@@ -33,6 +33,7 @@ PageHome //https://rbo-dev.avrb.com.ua/ibank/dashboard?1
         private WebElement checkBoxRob;
 
 ==
+https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
  Step 1. String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";
 
     @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")

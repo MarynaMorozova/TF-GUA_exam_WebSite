@@ -3,6 +3,7 @@ package steps;
 import baseTest.BaseTest;
 import categories.SmokeTestFilter;
 import libs.ConfigProvider;
+import libs.Util;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
@@ -42,13 +43,14 @@ public class Step2Test extends BaseTest {
         //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         pageProvider.getLoginPage().checkIsFileLoadVisible("LoginNameFile");
 
-        webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
         pageProvider.getLoginPage().checkIsInputPasswordVisible("Password");
         pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
         pageProvider.getLoginPage().checkSignInVisible("SignIn");
 
 
         pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
+        Util.waitABit(10);// треба зробити метоод, щоб спінер зник
         pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
 
         logger.info("--step1--");

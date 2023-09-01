@@ -55,21 +55,25 @@ public class Step3Page extends ParentPage {
     }
 
     public Step3Page selectTextInDropDownSelectAccount() { // метод для вибору значення з дропдауну по id
-        String elementAccount="UA613808050000000026005728147";
+        String elementAccount="UA613808050000000026005728147";// тестові дані передавати стрінгой
         selectTextInDropDownByUI(dropDownSelectAccount, elementAccount, "ElementAccount");
         return this;
     }
 
     public Step3Page enterTextIntoInputTextarea5() {
-        enterTextIntoInput(textarea5, "11");
+        enterTextIntoInput(textarea5, "11");// тестові дані передавати стрінгой
         return this;
     }
     public Step3Page enterTextIntoInputTextarea6() {
-        enterTextIntoInput(textarea6, "22");
+        enterTextIntoInput(textarea6, "22");// тестові дані передавати стрінгой
         return this;
     }
 
     public void clickOnButtonNext4(String elementName) {
         clickOnElement(buttonNextTo4, elementName);
+    }
+    public Step3Page checkIsStep3Visible(String elementName) {
+        checkElementDisplayed(step3, elementName);
+        return this;
     }
 }

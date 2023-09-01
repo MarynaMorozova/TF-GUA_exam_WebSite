@@ -57,13 +57,14 @@ public class LoginRBOWithUploadFile extends BaseTest {
         //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         pageProvider.getLoginPageRBO().checkIsFileLoadRBOVisible();
 
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+  //      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         pageProvider.getLoginPageRBO().checkIsInputPasswordRBOVisible("Password");
         pageProvider.getLoginPageRBO().enterTextIntoInputPasswordRBO(PASSWORD_RBO);
         pageProvider.getLoginPageRBO().checkSignInVisibleRBO("SignIn");
 
-      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+  //    webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         pageProvider.getLoginPageRBO().clickOnButtonSignInRBO("SignIn");
+        //додати перевірка що немає сайнина
     }
 
   @Test//проверка входа с не валидными данными
@@ -89,10 +90,10 @@ public class LoginRBOWithUploadFile extends BaseTest {
       //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
       pageProvider.getLoginPageRBO().checkIsFileLoadRBOVisible();
 
-      webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+     // webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
       pageProvider.getLoginPageRBO().checkIsInputPasswordRBOVisible("Password");
-      pageProvider.getLoginPageRBO().enterTextIntoInputPasswordRBO(PASSWORD_RBO_invalid);
-      pageProvider.getLoginPageRBO().checkSignInVisibleRBO("SignIn");
+      pageProvider.getLoginPageRBO().enterTextIntoInputPasswordRBO(PASSWORD_RBO_invalid)
+              .checkSignInVisibleRBO("SignIn");
 
       //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
       pageProvider.getLoginPageRBO().clickOnButtonSignInRBO("SignIn");

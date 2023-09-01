@@ -16,6 +16,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_DEFAULT;
+import static data.TestData.PASSWORD_INVALID;
 
 @Category(SmokeTestFilter.class)
 public class Step3Test extends BaseTest {
@@ -46,7 +47,6 @@ public class Step3Test extends BaseTest {
         pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
         pageProvider.getLoginPage().checkSignInVisible("SignIn");
 
-
         pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
         pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
 
@@ -70,7 +70,7 @@ public class Step3Test extends BaseTest {
                 .enterTextIntoInputAdresaPurch()
                 .selectTextInDropDownCategoryPrurch();
         pageProvider.getStep2PagePage().clickOnButtonNext3("ButtonNextOnStep3")
-                .checkIsStep3Visible("Step3");//певірка чи ми на Step3
+                .checkIsStep3Visible("Step3");//певірка чи ми на Step3 - gthtytcn
     }
     @Description("Some detailed test description")
     @Link("https://example.org")
@@ -89,7 +89,7 @@ public class Step3Test extends BaseTest {
         pageProvider.getStep3PagePage().enterTextIntoInputDateTerminDii ()
                 .enterTextIntoInputDatePrPropoz()
                 .enterTextIntoInputSumGarant()
-                .selectTextInDropDownSelectAccount()
+                .selectTextInDropDownSelectAccount()// звідси переносити номер рахунку
                 .enterTextIntoInputTextarea5()
                 .enterTextIntoInputTextarea6()
 

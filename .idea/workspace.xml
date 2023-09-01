@@ -8,14 +8,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/qalight.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/qalight.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Locators.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Locators.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testData.xls" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/testData.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ActionsWithElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPageRBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPageRBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Step2Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Step2Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/Step3Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Step3Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/loginTFGUA/LoginWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loginTFGUA/LoginWithUploadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rbo/LoginRBOWithUploadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rbo/LoginRBOWithUploadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/Step2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Step2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/Step3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Step3Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/ValidTestsWithExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ValidTestsWithExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/suits/SmokeSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suits/SmokeSuite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="morozova-1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -52,7 +62,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/workSpaсe/TF-GUA"
+    "last_opened_file_path": "C:/workSpaсe/G7_TAF/G7Project"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,7 +84,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.TF-GUA [clean,test,-Dtest=Step3Test...]">
+  <component name="RunManager" selected="JUnit.LoginRBOWithUploadFile.validLogin (1)">
     <configuration name="LoginRBOWithUploadFile.validLogin (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
       <extension name="coverage">
@@ -85,22 +95,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="rbo" />
       <option name="MAIN_CLASS_NAME" value="rbo.LoginRBOWithUploadFile" />
-      <option name="METHOD_NAME" value="validLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginWithUploadFile.validLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TF-GUA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loginTFGUA.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loginTFGUA" />
-      <option name="MAIN_CLASS_NAME" value="loginTFGUA.LoginWithUploadFile" />
       <option name="METHOD_NAME" value="validLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -137,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Step3Test.Step3 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Step2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TF-GUA" />
       <extension name="coverage">
         <pattern>
@@ -146,8 +140,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="steps.Step3Test" />
-      <option name="METHOD_NAME" value="Step3" />
+      <option name="MAIN_CLASS_NAME" value="steps.Step2Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Step2Test.Step2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TF-GUA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="steps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="steps.Step2Test" />
+      <option name="METHOD_NAME" value="Step2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,6 +176,7 @@
                 <option value="clean" />
                 <option value="test" />
                 <option value="-Dtest=Step3Test" />
+                <option value="-Dtest=ValidTestsWithExcel" />
                 <option value="allure:report" />
                 <option value="-Dmaven.test.failure.ignore=true" />
                 <option value="-Denv=aqa" />
@@ -186,20 +196,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.Step2Test" />
+      <item itemvalue="JUnit.Step2Test.Step2" />
       <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin (1)" />
       <item itemvalue="JUnit.SmokeSuite" />
       <item itemvalue="JUnit.SmokeSuiteWithCategories" />
-      <item itemvalue="JUnit.Step3Test.Step3 (1)" />
-      <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
       <item itemvalue="Maven.TF-GUA [clean,test,-Dtest=Step3Test...]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SmokeSuite" />
-        <item itemvalue="JUnit.Step3Test.Step3 (1)" />
-        <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin (1)" />
-        <item itemvalue="JUnit.LoginWithUploadFile.validLogin" />
         <item itemvalue="JUnit.SmokeSuiteWithCategories" />
+        <item itemvalue="JUnit.SmokeSuite" />
+        <item itemvalue="JUnit.LoginRBOWithUploadFile.validLogin (1)" />
+        <item itemvalue="JUnit.Step2Test.Step2" />
+        <item itemvalue="JUnit.Step2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693309722311</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="TC_5valid + 2invalid">
+      <created>1693575235553</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693575235553</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -294,6 +311,18 @@
     <MESSAGE value="Change stucture" />
     <MESSAGE value="Change structure" />
     <MESSAGE value="Change pom + ScreenShot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change pom + ScreenShot" />
+    <MESSAGE value="TC_5valid + 2invalid" />
+    <option name="LAST_COMMIT_MESSAGE" value="TC_5valid + 2invalid" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/rbo/LoginRBOWithUploadFile.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
