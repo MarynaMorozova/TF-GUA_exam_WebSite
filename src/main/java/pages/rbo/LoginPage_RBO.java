@@ -1,10 +1,14 @@
-package pages;
+package pages.rbo;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPageRBO extends ParentPage {
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class LoginPage_RBO extends ParentPageRBO {
 
     @FindBy(xpath = ".//label [@class='fileField formControl']")
     private WebElement LabelFileLogin;
@@ -17,19 +21,34 @@ public class LoginPageRBO extends ParentPage {
     @FindBy(xpath = ".//button [@CLASS='button loginSignatureBehavior next actionDefault']")
     private WebElement signInRbo;
 
-    public LoginPageRBO(WebDriver webDriver) {
-        super(webDriver);
-    }
-
     @FindBy(xpath = "//*[contains (text(),'Невірний ключ або пароль')]")
     private WebElement isInvalidPasswordRBO;
 
-    public void openLoginPageRBO(String url) {
-        openPage(url);
-    }
+//    public void openLoginPage(String url) {
+//        openPage(url);
+//    }
 
+    public LoginPage_RBO(WebDriver webDriver) throws FileNotFoundException {
+        super(webDriver);
+    }
     public void checkIsInputPasswordRBOVisible(String elementName) {
         checkElementDisplayed(isPasswordRBO, elementName);
+    }
+
+    public LoginPage_RBO loadKepRBO() {
+        checkIsLabelFileRBOVisible("LabelFile");
+
+        // Знайти label за вказаним XPath
+        WebElement label = webDriver.findElement(By.xpath(".//label [@class='fileField formControl']"));
+
+// Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
+        WebElement parentElement = label.findElement(By.xpath("./.."));
+        WebElement fileInput = parentElement.findElement(By.tagName("input"));
+
+        logger.info("Send file");
+        // Відправити шлях до файлу в інпут
+        fileInput.sendKeys(new File(KepRbo.toString()).getAbsolutePath());
+        return this;
     }
 
     public void checkIsFileLoadRBOVisible() {
@@ -40,7 +59,7 @@ public class LoginPageRBO extends ParentPage {
         checkElementDisplayed(LabelFileLogin, elementName);
     }
 
-    public LoginPageRBO enterTextIntoInputPasswordRBO(String passwordRbo) {
+    public LoginPage_RBO enterTextIntoInputPasswordRBO(String passwordRbo) {
         enterTextIntoInput(isPasswordRBO, passwordRbo);
         return this;
     }

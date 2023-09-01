@@ -1,6 +1,9 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
+import pages.rbo.LoginPage_RBO;
+
+import java.io.FileNotFoundException;
 
 public class PageProvider {
     WebDriver webDriver;
@@ -12,6 +15,7 @@ public class PageProvider {
     public LoginPage getLoginPage() {
         return new LoginPage(webDriver);
     }
+
 
     public Step1Page getStep1PagePage() {
         return new Step1Page(webDriver);
@@ -25,8 +29,12 @@ public class PageProvider {
         return new Step3Page(webDriver);
     }
 
-    public LoginPageRBO getLoginPageRBO() {
-        return new LoginPageRBO(webDriver);
+    public LoginPage_RBO getLoginPageRBO() throws FileNotFoundException {
+        return new LoginPage_RBO(webDriver);
+    }
+
+    public LoginPage_RBO getLoginPage_RBO() throws FileNotFoundException {
+        return new LoginPage_RBO(webDriver);
     }
 
     public HomePage getHomePage() {

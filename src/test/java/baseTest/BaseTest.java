@@ -105,10 +105,11 @@ public class BaseTest {
         byte[] screen = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
         listOfScreenShots.add(new ScreenShot(testName.getMethodName() + "_after", screen));
     }
+
     //------------------------
     private WebDriver initDriver() {
         String browser = System.getProperty("browser");//передаємо з командної стрічки параметр -Dbrowser=chrome
-        if ((browser == null) ||("edge".equals(browser.toLowerCase()))) {   //edge
+        if ((browser == null) || ("edge".equals(browser.toLowerCase()))) {   //edge
             WebDriverManager.edgedriver().setup();
             webDriver = new EdgeDriver();
         } else if ("firefox".equals(browser.toLowerCase())) {
@@ -117,7 +118,7 @@ public class BaseTest {
         } else if ("iedriver".equals(browser.toLowerCase())) {   //internet explorer
             WebDriverManager.iedriver().setup(); //zoom 100%
             webDriver = new InternetExplorerDriver();//security level medium
-        } else if  ("chrome".equals(browser.toLowerCase())) {//якщо нічого не передали або передали chrome, дефолтний браузер
+        } else if ("chrome".equals(browser.toLowerCase())) {//якщо нічого не передали або передали chrome, дефолтний браузер
             WebDriverManager.chromedriver().setup();
             webDriver = new ChromeDriver();
         } else {

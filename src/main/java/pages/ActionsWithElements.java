@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class ActionsWithElements {
-    Logger logger = Logger.getLogger(getClass());
+    protected Logger logger = Logger.getLogger(getClass());
     protected WebDriver webDriver;
 //    protected WebDriverWait webDriverWait10, webDriverWait15;
 
