@@ -25,7 +25,7 @@ public class LoginPage extends ParentPage {
     @FindBy(xpath = "//div [@class=\"tender-field-error ng-star-inserted\"]")
     private WebElement isInvalidPassword;
 
-    @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")
+    @FindBy(xpath = "//div [text()= 'Крок 1 з 5']") // пошукати параметризований локатор 1 в стрінгу (як в пості)
     private WebElement step1;
 
     @FindBy(xpath = ".//label [@class='fileField formControl']")
@@ -44,28 +44,32 @@ public class LoginPage extends ParentPage {
         openPage(url);
     }
 
+    @Step //хочемо бачити в репорті
+
     public void enterTextIntoInputPassword(String Password) {
         enterTextIntoInput(inputPassword, Password);
     }
 
+    @Step //хочемо бачити в репорті
     public void clickOnButtonSignIn(String elementName) {
         clickOnElement(signIn, elementName);
     }
 
-
+    @Step //хочемо бачити в репорті
     public void checkIsLabelFileVisible(String elementName) {
         checkElementDisplayed(labelFile, elementName);
     }
 
-
+    @Step //хочемо бачити в репорті
     public void checkIsСheckBoxRobVisible() {
         checkElementDisplayed(checkBoxRob, "checkBoxRob");
     }
 
+    @Step //хочемо бачити в репорті
     public void checkIsCheckBoxRobNotVisible() {
         checkElementNotDisplayed(checkBoxRob, "checkBoxRob");// валідний логін
     }
-
+    @Step //хочемо бачити в репорті
     public void checkIsInputPasswordVisible(String elementName) {
         checkElementDisplayed(inputPassword, elementName);
     }
@@ -73,7 +77,7 @@ public class LoginPage extends ParentPage {
     public void checkIsInputPasswordNotVisible(String elementName) {
         checkElementNotDisplayed(inputPassword, elementName);
     }
-
+    @Step //хочемо бачити в репорті
     public void checkIsButtonSignInVisible() {
         checkElementDisplayed(signIn, "SignIn");
     }
