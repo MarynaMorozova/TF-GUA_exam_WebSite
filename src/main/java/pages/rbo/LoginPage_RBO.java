@@ -24,39 +24,35 @@ public class LoginPage_RBO extends ParentPageRBO {
     @FindBy(xpath = "//*[contains (text(),'Невірний ключ або пароль')]")
     private WebElement isInvalidPasswordRBO;
 
-//    public void openLoginPage(String url) {
-//        openPage(url);
-//    }
 
     public LoginPage_RBO(WebDriver webDriver) throws FileNotFoundException {
         super(webDriver);
     }
-    public void checkIsInputPasswordRBOVisible(String elementName) {
-        checkElementDisplayed(isPasswordRBO, elementName);
+
+    public LoginPage_RBO checkIsInputPasswordRBOVisible() {
+        checkElementDisplayed(isPasswordRBO, "Password");
+        return this;
     }
 
     public LoginPage_RBO loadKepRBO() {
         checkIsLabelFileRBOVisible("LabelFile");
 
-        // Знайти label за вказаним XPath
-        WebElement label = webDriver.findElement(By.xpath(".//label [@class='fileField formControl']"));
-
-// Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
-        WebElement parentElement = label.findElement(By.xpath("./.."));
-        WebElement fileInput = parentElement.findElement(By.tagName("input"));
+        WebElement fileInput = webDriver.findElement(By.xpath(".//input [@class='fileField formControl fileField-hidden']"));
 
         logger.info("Send file");
         // Відправити шлях до файлу в інпут
-        fileInput.sendKeys(new File(KepRbo.toString()).getAbsolutePath());
+        fileInput.sendKeys(new File(KepRbo).getAbsolutePath());
         return this;
     }
 
-    public void checkIsFileLoadRBOVisible() {
+    public LoginPage_RBO checkIsFileLoadRBOVisible() {
         checkElementDisplayed(isLabelFileLogin, "LabelFileLogin");
+        return this;
     }
 
-    public void checkIsLabelFileRBOVisible(String elementName) {
+    public LoginPage_RBO checkIsLabelFileRBOVisible(String elementName) {
         checkElementDisplayed(LabelFileLogin, elementName);
+        return this;
     }
 
     public LoginPage_RBO enterTextIntoInputPasswordRBO(String passwordRbo) {
@@ -64,15 +60,22 @@ public class LoginPage_RBO extends ParentPageRBO {
         return this;
     }
 
-    public void checkSignInVisibleRBO(String elementName) {
-        checkElementDisplayed(signInRbo, elementName);
+    public LoginPage_RBO checkSignInVisibleRBO() {
+        checkElementDisplayed(signInRbo, "SignIn");
+        return this;
     }
 
-    public void clickOnButtonSignInRBO(String elementName) {
-        clickOnElement(signInRbo, elementName);
+    public LoginPage_RBO clickOnButtonSignInRBO() {
+        clickOnElement(signInRbo, "SignIn");
+        return this;
     }
 
-    public void checkIsInvalidPassRBOVisible(String elementName) {
-        checkElementDisplayed(isInvalidPasswordRBO, elementName);
+    public LoginPage_RBO checkIsInvalidPassRBOVisible() {
+        checkElementDisplayed(isInvalidPasswordRBO, "IsInvalidPassword");
+        return this;
+    }
+    public LoginPage_RBO checkSignInNotVisibleRBO() {
+        checkElementNotDisplayed(signInRbo, "SignIn");
+        return this;
     }
 }
