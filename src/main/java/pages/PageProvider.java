@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import pages.rbo.LoginPage_RBO;
+import pages.tf_gua.LoginPageTF;
 
 import java.io.FileNotFoundException;
 
@@ -12,20 +13,20 @@ public class PageProvider {
         this.webDriver = webDriver;
     }
 
-    public LoginPage getLoginPage() {
-        return new LoginPage(webDriver);
+    public LoginPageTF getLoginPageTF() throws FileNotFoundException {
+        return new LoginPageTF(webDriver);
     }
 
 
-    public Step1Page getStep1PagePage() {
+    public Step1Page getStep1PagePage() throws FileNotFoundException {
         return new Step1Page(webDriver);
     }
 
-    public Step2Page getStep2PagePage() {
+    public Step2Page getStep2PagePage() throws FileNotFoundException {
         return new Step2Page(webDriver);
     }
 
-    public Step3Page getStep3PagePage() {
+    public Step3Page getStep3PagePage() throws FileNotFoundException {
         return new Step3Page(webDriver);
     }
 
@@ -37,9 +38,9 @@ public class PageProvider {
         return new LoginPage_RBO(webDriver);
     }
 
-    public HomePage getHomePage() {
-        return new HomePage(webDriver);
-    }
+//    public HomePage getHomePage() {
+//        return new HomePage(webDriver);
+//    }
 
 }
 

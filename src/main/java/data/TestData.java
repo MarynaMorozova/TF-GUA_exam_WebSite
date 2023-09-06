@@ -1,6 +1,4 @@
 package data;
-//import libs.ConfigProperties;
-//import libs.ConfigProvider;
 
 public class TestData {
 

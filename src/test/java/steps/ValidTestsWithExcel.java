@@ -2,8 +2,8 @@ package steps;
 
 import baseTest.BaseTest;
 import categories.SmokeTestFilter;
-import libs.ConfigProvider;
 import libs.SpreadsheetData;
+import libs.Util;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.time.Duration;
@@ -54,49 +55,36 @@ public class ValidTestsWithExcel extends BaseTest {
     }
 
     @Before
-    public void validLogin() throws SQLException, ClassNotFoundException {
-        String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
-        String filePath = "C://workSpaсe//key-6.pfx"; // Шлях до вашого файлу
-        pageProvider.getLoginPage().openLoginPage(url);
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд
+    public void validLogin() throws SQLException, ClassNotFoundException, FileNotFoundException {
+        pageProvider.getLoginPageTF().openPageTF();
+        Util.waitABit(10);
+        pageProvider.getLoginPageTF().loadKepTF()
+                .checkIsFileLoadVisible();
+//        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
+//        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        pageProvider.getLoginPageTF().checkIsInputPasswordVisible()
+                .enterTextIntoInputPassword(PASSWORD_DEFAULT)
+                .checkSignInVisible();
 
-        pageProvider.getLoginPage().checkIsLabelFileVisible("LoginFile");
-
-        // Знайти label за вказаним XPath
-        WebElement label = webDriver.findElement(By.xpath(".//label [@for='upload']"));
-
-        // Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
-        WebElement parentElement = label.findElement(By.xpath("./.."));
-        WebElement fileInput = parentElement.findElement(By.tagName("input"));
-
-        logger.info("Send file");
-        // Відправити шлях до файлу в інпут
-        fileInput.sendKeys(new File(filePath).getAbsolutePath());
-        //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsFileLoadVisible("LoginNameFile");
-
-        webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPage().checkIsInputPasswordVisible("Password");
-        pageProvider.getLoginPage().enterTextIntoInputPassword(PASSWORD_DEFAULT);
-        pageProvider.getLoginPage().checkSignInVisible("SignIn");
-
-        pageProvider.getLoginPage().clickOnButtonSignIn("SignIn");
-        pageProvider.getLoginPage().checkIsCheckBoxRobNotVisible();
+        //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        pageProvider.getLoginPageTF().clickOnButtonSignIn()
+                .checkIsCheckBoxRobNotVisible();
     }
 
     @Test
-    public void step1() {
+    public void step1() throws FileNotFoundException {
         logger.info("--step1--");
-        pageProvider.getStep1PagePage().checkIsStep1Visible("Step1");//певірка чи ми на Step1
+        pageProvider.getStep1PagePage().checkIsStep1Visible();//певірка чи ми на Step1
 
         pageProvider.getStep1PagePage().selectTextInDropDownPH(purchaseCN, "DropDownPurh");
-        pageProvider.getStep1PagePage().checkIsInputHrefVisible("InputHref");
+        pageProvider.getStep1PagePage().checkIsInputHrefVisible();
 
         pageProvider.getStep1PagePage().enterTextIntoInputIdProzorro(idProzorro);
-        pageProvider.getStep1PagePage().checkIsInputHrefVisible("IsVisibleHref");
-        pageProvider.getStep1PagePage().clickOnradioButtonEasy("RadioButtonEasy");
+        pageProvider.getStep1PagePage().checkIsInputHrefVisible();
+        pageProvider.getStep1PagePage().clickOnradioButtonEasy();
 
-        pageProvider.getStep1PagePage().clickOnButtonNext("ButtonNext");
+        pageProvider.getStep1PagePage().clickOnButtonNext();
         //перевірка, що немає сайн
     }
 }

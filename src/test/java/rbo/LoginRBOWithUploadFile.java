@@ -3,7 +3,7 @@ package rbo;
 import baseTest.BaseTest;
 import categories.SmokeTestFilter;
 import io.qameta.allure.*;
-import libs.ConfigProvider;
+
 import libs.Util;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -18,12 +18,10 @@ import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_RBO;
 import static data.TestData.PASSWORD_RBO_invalid;
+
 @Epic("Allure examples")
 @Feature("Junit 4 support")
 
-
-//@RunWith(JUnitParamsRunner.class) //позволяет использовать параметризацию
-//@Category(SmokeTestFilter.class)
 public class LoginRBOWithUploadFile extends BaseTest {
     @Description("Some detailed test description")
     @Link("https://example.org")
@@ -37,70 +35,38 @@ public class LoginRBOWithUploadFile extends BaseTest {
     //@Ignore
     @Category(SmokeTestFilter.class)
     public void validLogin() throws FileNotFoundException {
-//        String url = "https://rbo-dev.avrb.com.ua/ibank/home?0"; // Замініть на URL свого веб-сайту
-//        String filePath = "C://workSpaсe//КОФІТОН_37120506_директор.dat"; // Шлях до вашого файлу
         pageProvider.getLoginPageRBO().openPageRBO();
         Util.waitABit(10);
-        pageProvider.getLoginPageRBO().loadKepRBO();
-//        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд
-//
-//
-//        //    webDriver.manage().timeouts().implicitlyWait(Duration,TimeUnit.SECONDS);//замість 30 секунд
-//        pageProvider.getLoginPageRBO().checkIsLabelFileRBOVisible("LabelFile");
-//
-//        // Знайти label за вказаним XPath
-//        WebElement label = webDriver.findElement(By.xpath(".//label [@class='fileField formControl']"));
-//
-//// Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
-//        WebElement parentElement = label.findElement(By.xpath("./.."));
-//        WebElement fileInput = parentElement.findElement(By.tagName("input"));
-//
-//        logger.info("Send file");
-//        // Відправити шлях до файлу в інпут
-//        fileInput.sendKeys(new File(filePath).getAbsolutePath());
-//        //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPageRBO().checkIsFileLoadRBOVisible();
+        pageProvider.getLoginPageRBO().loadKepRBO()
+                .checkIsFileLoadRBOVisible()
 
-  //      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        pageProvider.getLoginPageRBO().checkIsInputPasswordRBOVisible("Password");
-        pageProvider.getLoginPageRBO().enterTextIntoInputPasswordRBO(PASSWORD_RBO);
-        pageProvider.getLoginPageRBO().checkSignInVisibleRBO("SignIn");
+                //      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                .checkIsInputPasswordRBOVisible()
+                .enterTextIntoInputPasswordRBO(PASSWORD_RBO)
+                .checkSignInVisibleRBO();
 
-  //    webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO("SignIn");
-        //додати перевірка що немає сайнина
+        //    webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO();
+        Util.waitABit(10);
+        pageProvider.getLoginPageRBO().checkSignInNotVisibleRBO(); // перевірка що немає сайнина
     }
 
-  @Test//проверка входа с не валидными данными
-  //@Ignore
+    @Test//проверка входа с не валидными данными
+    //@Ignore
     public void inValidLoginPassword() throws FileNotFoundException {
-//      String url = "https://rbo-dev.avrb.com.ua/ibank/home?0"; // Замініть на URL свого веб-сайту
-//      String filePath = "C://workSpaсe//КОФІТОН_37120506_директор.dat"; // Шлях до вашого файлу
-      pageProvider.getLoginPageRBO().openPageRBO();
-//      webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));//замість 5 секунд
-      pageProvider.getLoginPage_RBO().loadKepRBO();
-//      pageProvider.getLoginPageRBO().checkIsLabelFileRBOVisible("LabelFile");
-//
-//      // Знайти label за вказаним XPath
-//      WebElement label = webDriver.findElement(By.xpath(".//label [@class='fileField formControl']"));
-//
-//// Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
-//      WebElement parentElement = label.findElement(By.xpath("./.."));
-//      WebElement fileInput = parentElement.findElement(By.tagName("input"));
-//
-//      logger.info("Send file");
-//      // Відправити шлях до файлу в інпут
-//      fileInput.sendKeys(new File(filePath).getAbsolutePath());
-      //  webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-      pageProvider.getLoginPageRBO().checkIsFileLoadRBOVisible();
+        pageProvider.getLoginPageRBO().openPageRBO();
+        Util.waitABit(10);
+        pageProvider.getLoginPageRBO().loadKepRBO()
 
-     // webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-      pageProvider.getLoginPageRBO().checkIsInputPasswordRBOVisible("Password");
-      pageProvider.getLoginPageRBO().enterTextIntoInputPasswordRBO(PASSWORD_RBO_invalid)
-              .checkSignInVisibleRBO("SignIn");
+                .checkIsFileLoadRBOVisible()
+                //      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+                .checkIsInputPasswordRBOVisible()
+                .enterTextIntoInputPasswordRBO(PASSWORD_RBO_invalid)
+                .checkSignInVisibleRBO();
 
-      //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-      pageProvider.getLoginPageRBO().clickOnButtonSignInRBO("SignIn");
-      pageProvider.getLoginPageRBO().checkIsInvalidPassRBOVisible("IsInvalidPassword");
-  }
+        //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO();
+        Util.waitABit(10);
+        pageProvider.getLoginPageRBO().checkIsInvalidPassRBOVisible();// перевірка, що ввели не валідний пароль
+    }
 }

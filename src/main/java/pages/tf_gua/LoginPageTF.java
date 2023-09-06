@@ -1,10 +1,16 @@
 package pages.tf_gua;
 
 import io.qameta.allure.Step;
+import libs.ConfigProvider;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.ParentPage;
+import pages.rbo.LoginPage_RBO;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.time.Duration;
 
 
 public class LoginPageTF extends ParentPageTF {
@@ -32,70 +38,96 @@ public class LoginPageTF extends ParentPageTF {
     @FindBy(xpath = ".//label [@class='fileField formControl']")
     private WebElement LabelFileLogin;
 
-    //це як варіант webDriver.findElement(By.xpath("//div[@class='alert alert-danger small liveValidateMessage liveValidateMessage--visible']"));
-//    @FindBy(xpath = "@FindBy(xpath = \"//div[@class='alert alert-danger text-center' and text() = 'Invalid username / pasword']\")\n" +
-//            "    private WebElement messageInvalidUsernameAndPassword;")
-//    private List<WebElement> alertDanger;
 
-    public LoginPageTF(WebDriver webDriver) {
+    public LoginPageTF(WebDriver webDriver) throws FileNotFoundException {
         super(webDriver);
     }
-    @Step //хочемо бачити в репорті
-    public void openLoginPage(String url) {
-        openPage(url);
+//    @Step //хочемо бачити в репорті
+//    public void openLoginPage(String url) {
+//        openPage(url);
+//    }
+
+    public LoginPageTF loadKepTF() {
+        checkIsLabelFileVisible("LoginFile");
+        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigProvider.configProperties.TIME_FOR_DEFAULT_WAIT()));
+// Знайти label за вказаним XPath
+        WebElement label = webDriver.findElement(By.xpath(".//label [@for='upload']"));
+
+// Знайти батьківський елемент label і знайти в ньому інпут для завантаження файлу
+        WebElement parentElement = label.findElement(By.xpath("./.."));
+        WebElement fileInput = parentElement.findElement(By.tagName("input"));
+        logger.info("Send file");
+        // Відправити шлях до файлу в інпут
+        fileInput.sendKeys(new File(filePath).getAbsolutePath());
+        return this;
     }
 
     @Step //хочемо бачити в репорті
-
-    public void enterTextIntoInputPassword(String Password) {
+    public LoginPageTF enterTextIntoInputPassword(String Password) {
         enterTextIntoInput(inputPassword, Password);
+        return this;
     }
 
     @Step //хочемо бачити в репорті
-    public void clickOnButtonSignIn(String elementName) {
-        clickOnElement(signIn, elementName);
+    public LoginPageTF clickOnButtonSignIn() {
+        clickOnElement(signIn, "SignIn");
+        return this;
     }
 
     @Step //хочемо бачити в репорті
-    public void checkIsLabelFileVisible(String elementName) {
+    public LoginPageTF checkIsLabelFileVisible(String elementName) {
         checkElementDisplayed(labelFile, elementName);
+        return this;
     }
 
     @Step //хочемо бачити в репорті
-    public void checkIsСheckBoxRobVisible() {
+    public LoginPageTF checkIsСheckBoxRobVisible() {
         checkElementDisplayed(checkBoxRob, "checkBoxRob");
+        return this;
     }
 
     @Step //хочемо бачити в репорті
-    public void checkIsCheckBoxRobNotVisible() {
+    public LoginPageTF checkIsCheckBoxRobNotVisible() {
         checkElementNotDisplayed(checkBoxRob, "checkBoxRob");// валідний логін
-    }
-    @Step //хочемо бачити в репорті
-    public void checkIsInputPasswordVisible(String elementName) {
-        checkElementDisplayed(inputPassword, elementName);
+        return this;
     }
 
-    public void checkIsInputPasswordNotVisible(String elementName) {
+    @Step //хочемо бачити в репорті
+    public LoginPageTF checkIsInputPasswordVisible() {
+        checkElementDisplayed(inputPassword, "Password");
+        return this;
+    }
+
+    public LoginPageTF checkIsInputPasswordNotVisible(String elementName) {
         checkElementNotDisplayed(inputPassword, elementName);
+        return this;
     }
+
     @Step //хочемо бачити в репорті
-    public void checkIsButtonSignInVisible() {
+    public LoginPageTF checkIsButtonSignInVisible() {
         checkElementDisplayed(signIn, "SignIn");
+        return this;
     }
 
-    public void checkIsButtonSignInNotVisible(String elementName) {
+    public LoginPageTF checkIsButtonSignInNotVisible(String elementName) {
         checkElementNotDisplayed(signIn, elementName);
+        return this;
     }
 
-    public void checkIsFileLoadVisible(String elementName) {
-        checkElementDisplayed(isFileLoad, elementName);
+    public LoginPageTF checkIsFileLoadVisible() {
+        checkElementDisplayed(isFileLoad, "LoginNameFile");
         logger.info("checkIsFileLoadVisible");
+        return this;
     }
 
-    public void checkSignInVisible(String elementName) {
-        checkElementDisplayed(signIn, elementName);
+    public LoginPageTF checkSignInVisible() {
+        checkElementDisplayed(signIn, "SignIn");
+        return this;
     }
-    @Step //хочемо бачити в репорті
-    public void checkIsInvalidPasswordVisible(String elementName) {checkElementDisplayed(isInvalidPassword, elementName);}// iнвалідний логін
 
+  //  @Step //хочемо бачити в репорті
+    public LoginPageTF checkIsInvalidPasswordVisible() {// iнвалідний логін
+        checkElementDisplayed(isInvalidPassword, "Ключ пошкоджено або невірний пароль.");
+        return this;
+    }
 }
