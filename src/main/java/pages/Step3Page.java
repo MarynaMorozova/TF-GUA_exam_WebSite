@@ -58,7 +58,7 @@ public class Step3Page extends ParentPageTF {
     }
 
     public Step3Page selectTextInDropDownSelectAccount(String elementAccount) { // метод для вибору значення з дропдауну по id
-       // String elementAccount="UA613808050000000026005728147";// тестові дані передавати стрінгой
+       // String elementAccount="UA613808050000000026005728147";// тестові дані передавати стрінгой в тесті
         selectTextInDropDownByUI(dropDownSelectAccount, elementAccount, "ElementAccount");
         return this;
     }
@@ -77,6 +77,11 @@ public class Step3Page extends ParentPageTF {
     }
     public Step3Page checkIsStep3Visible() {
         checkElementDisplayed(step3, "Step3");
+        return this;
+    }
+
+    public Step3Page checkIsStep3NotVisible() {
+        checkElementNotDisplayed(step3, "Step3");//перевірка, що ми вийшли з Step3
         return this;
     }
 }

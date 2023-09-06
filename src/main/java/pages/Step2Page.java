@@ -1,5 +1,6 @@
 package pages;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,22 +46,26 @@ public class Step2Page extends ParentPageTF {
         return this;
     }
 
-    public Step2Page enterTextIntoInputEdrpou() {
-        enterTextIntoInput(edrpou, "43646107");
+    public Step2Page enterTextIntoInputEdrpou(String textInputEdrpou) {
+        enterTextIntoInput(edrpou, textInputEdrpou);
         return this;
     }
 
-    public Step2Page enterTextIntoInputAdresaPurch() {
-        enterTextIntoInput(adresaPurch, "Фастов");
+    public Step2Page enterTextIntoInputAdresaPurch(String inputAdresaPurch) {
+        enterTextIntoInput(adresaPurch, inputAdresaPurch);
         return this;
     }
-    public Step2Page selectTextInDropDownCategoryPrurch() { // метод для вибору значення з дропдауну по id
-        String elementCategoryPurch ="Органи соціального страхування";
-        selectTextInDropDownByUI(categoryPurch, elementCategoryPurch, "ElementCategoryPurch");
+    public Step2Page selectTextInDropDownCategoryPrurch(String textInDropDownCategoryPrurch) { // метод для вибору значення з дропдауну по id
+        selectTextInDropDownByUI(categoryPurch, textInDropDownCategoryPrurch, "ElementCategoryPurch");
         return this;
     }
-    public void clickOnButtonNext3() throws FileNotFoundException {
+    public Step3Page clickOnButtonNext3() throws FileNotFoundException {
         clickOnElement(buttonNext3,"ButtonNextOnStep3");
+        return new Step3Page(webDriver);
     }
 
+    public Step2Page checkIsStep2NotVisible() {
+        checkElementNotDisplayed(step2, "Step2");//перевірка, що ми вийшли з Step2
+        return this;
+    }
 }

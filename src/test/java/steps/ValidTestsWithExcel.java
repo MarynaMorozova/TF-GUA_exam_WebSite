@@ -77,14 +77,12 @@ public class ValidTestsWithExcel extends BaseTest {
         logger.info("--step1--");
         pageProvider.getStep1PagePage().checkIsStep1Visible();//певірка чи ми на Step1
 
-        pageProvider.getStep1PagePage().selectTextInDropDownPH(purchaseCN, "DropDownPurh");
-        pageProvider.getStep1PagePage().checkIsInputHrefVisible();
-
-        pageProvider.getStep1PagePage().enterTextIntoInputIdProzorro(idProzorro);
-        pageProvider.getStep1PagePage().checkIsInputHrefVisible();
-        pageProvider.getStep1PagePage().clickOnradioButtonEasy();
-
-        pageProvider.getStep1PagePage().clickOnButtonNext();
-        //перевірка, що немає сайн
+        pageProvider.getStep1PagePage().selectTextInDropDownPH(purchaseCN, "DropDownPurh")
+                .checkIsInputHrefVisible()
+                .enterTextIntoInputIdProzorro(idProzorro)
+                .checkIsInputHrefVisible()
+                .clickOnradioButtonEasy()
+                .clickOnButtonNext();
+        pageProvider.getStep1PagePage().checkIsStep1NotVisible();//певірка, що чи ми вже не на Step1
     }
 }

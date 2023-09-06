@@ -5,7 +5,6 @@ import io.qameta.allure.Allure;
 import libs.ConfigProvider;
 import libs.ScreenShot;
 import org.apache.log4j.Logger;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
@@ -18,19 +17,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.safari.SafariDriver;
+
 import pages.PageProvider;
 
 import java.io.ByteArrayInputStream;
 import java.time.Duration;
 import java.util.ArrayList;
-import libs.ScreenShot;
-
-
-
 
 public class BaseTest {
-    public final static String SHORT_USER_NAME = "tr";
     protected WebDriver webDriver;
     protected PageProvider pageProvider;
     protected Logger logger = Logger.getLogger(getClass());
@@ -47,7 +41,7 @@ public class BaseTest {
         pageProvider = new PageProvider(webDriver);
     }
 
-    @Rule()//order = Integer.MIN_VALUE)
+    @Rule()
     public final TestWatcher watchman = new TestWatcher() {
         @Override
         protected void failed(Throwable e, Description description) {
@@ -59,7 +53,7 @@ public class BaseTest {
                     new ByteArrayInputStream(screenShot.getScreenShotImg())));
         }
 
-        public void screenshot() {//
+        public void screenshot() {
             if (webDriver == null) {
                 logger.info("Driver for screenshot not found");
                 return;
@@ -80,7 +74,6 @@ public class BaseTest {
                 logger.error(e);
             }
         }
-
     };
 
     protected void takeScreenshot() {
@@ -89,8 +82,6 @@ public class BaseTest {
         listOfScreenShots.add(new ScreenShot(testName.getMethodName() + "_after", screen));
     }
     //------------------------
-
-
     @Rule
     public TestName testName = new TestName();
 

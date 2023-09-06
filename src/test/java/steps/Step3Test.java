@@ -21,6 +21,14 @@ import static data.TestData.PASSWORD_INVALID;
 
 @Category(SmokeTestFilter.class)
 public class Step3Test extends BaseTest {
+    String textInDropDownPH = "03111000-2";
+    String inputIdProzorro = "UA-2023-06-28-009743-a";
+
+    //Ввод тествових даних для Кроку 2
+    String textInputEdrpou = "43646107";
+    String inputAdresaPurch = "Фастов";
+    String textInDropDownCategoryPrurch = "Органи соціального страхування";
+
     //Ввод тествових даних для Кроку 3
 
     String inputDateTerminDii = "25.03.2024";
@@ -37,8 +45,8 @@ public class Step3Test extends BaseTest {
         pageProvider.getLoginPageTF().loadKepTF()
                 .checkIsFileLoadVisible();
 //        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
-//        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
-    //    webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+       //webDriverWait10.until(ExpectedConditions.elementToBeClickable(inputPassword));
+        //    webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pageProvider.getLoginPageTF().checkIsInputPasswordVisible()
                 .enterTextIntoInputPassword(PASSWORD_DEFAULT)
                 .checkSignInVisible();
@@ -47,24 +55,20 @@ public class Step3Test extends BaseTest {
         pageProvider.getLoginPageTF().clickOnButtonSignIn()
                 .checkIsCheckBoxRobNotVisible();
         logger.info("--step1--");
-        pageProvider.getStep1PagePage().checkIsStep1Visible();//певірка чи ми на Step1
-
-        pageProvider.getStep1PagePage().selectTextInDropDownPH("03111000-2", "DropDownPurh");
-        pageProvider.getStep1PagePage().checkIsInputHrefVisible();
-
-        pageProvider.getStep1PagePage().enterTextIntoInputIdProzorro("UA-2023-06-28-009743-a");
-        pageProvider.getStep1PagePage().checkIsInputHrefVisible();
-        pageProvider.getStep1PagePage().clickOnradioButtonEasy();
-
-        pageProvider.getStep1PagePage().clickOnButtonNext();
+        pageProvider.getStep1PagePage().checkIsStep1Visible()//певірка чи ми на Step1
+                .selectTextInDropDownPH("03111000-2", "DropDownPurh")
+                .checkIsInputHrefVisible()
+                .enterTextIntoInputIdProzorro("UA-2023-06-28-009743-a")
+                .checkIsInputHrefVisible()
+                .clickOnradioButtonEasy()
+                .clickOnButtonNext();
         logger.info("--step2--");
-
         pageProvider.getStep2PagePage().enterTextIntoInputPurchName()
-                .enterTextIntoInputEdrpou()
-                .enterTextIntoInputAdresaPurch()
-                .selectTextInDropDownCategoryPrurch();
-        pageProvider.getStep2PagePage().clickOnButtonNext3();
-        //         .checkIsStep3Visible("Step3");//певірка чи ми на Step3 - gthtytcn
+                .enterTextIntoInputEdrpou("43646107")
+                .enterTextIntoInputAdresaPurch("Фастов")
+                .selectTextInDropDownCategoryPrurch("Органи соціального страхування")
+                .clickOnButtonNext3()
+                .checkIsStep3Visible();//певірка чи ми на Step3
     }
 
     @Description("Step3")
@@ -88,8 +92,9 @@ public class Step3Test extends BaseTest {
                 .selectTextInDropDownSelectAccount(inDropDownSelectAccount)// звідси переносити номер рахунку
                 .enterTextIntoInputTextarea5(inputTextarea5)
                 .enterTextIntoInputTextarea6(inputTextarea6)
-
                 .clickOnButtonNext4();
+        Util.waitABit(10);
+        pageProvider.getStep3PagePage().checkIsStep3NotVisible();
     }
 }
 

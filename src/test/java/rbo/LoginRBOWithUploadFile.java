@@ -48,7 +48,7 @@ public class LoginRBOWithUploadFile extends BaseTest {
         //    webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         pageProvider.getLoginPageRBO().clickOnButtonSignInRBO();
         Util.waitABit(10);
-        pageProvider.getLoginPageRBO().checkSignInNotVisibleRBO(); // перевірка що немає сайнина
+        pageProvider.getLoginPageRBO().checkSignInNotVisibleRBO(); // перевірка що немає SignIn
     }
 
     @Test//проверка входа с не валидными данными

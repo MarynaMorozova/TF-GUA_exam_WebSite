@@ -14,7 +14,6 @@ public class ParentPageTF extends ActionsWithElements {
 
     String urlTF = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender"; // Замініть на URL свого веб-сайту
     protected String filePath = configProperties.DATA_FILE_PATH() + "tf/" + "key-6.pfx";
-  //  String filePathAsString = filePath.toString();
   //  String KepTF = "C://workSpaсe//key-6.pfx";
     public ParentPageTF(WebDriver webDriver) throws FileNotFoundException {
         super(webDriver);

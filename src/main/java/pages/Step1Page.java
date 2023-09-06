@@ -69,4 +69,8 @@ public class Step1Page extends ParentPageTF {
 
     public void clickOnButtonNext() {clickOnElement(buttonNext, "ButtonNext");
     }
+
+    public void checkIsStep1NotVisible() {
+        checkElementNotDisplayed(step1, "Step1");
+    }
 }
