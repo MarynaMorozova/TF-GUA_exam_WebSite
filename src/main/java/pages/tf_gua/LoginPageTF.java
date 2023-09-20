@@ -6,12 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.rbo.LoginPage_RBO;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.time.Duration;
-
 
 public class LoginPageTF extends ParentPageTF {
 
@@ -42,10 +40,6 @@ public class LoginPageTF extends ParentPageTF {
     public LoginPageTF(WebDriver webDriver) throws FileNotFoundException {
         super(webDriver);
     }
-//    @Step //хочемо бачити в репорті
-//    public void openLoginPage(String url) {
-//        openPage(url);
-//    }
 
     public LoginPageTF loadKepTF() {
         checkIsLabelFileVisible("LoginFile");
@@ -125,7 +119,7 @@ public class LoginPageTF extends ParentPageTF {
         return this;
     }
 
-  //  @Step //хочемо бачити в репорті
+    //  @Step //хочемо бачити в репорті
     public LoginPageTF checkIsInvalidPasswordVisible() {// iнвалідний логін
         checkElementDisplayed(isInvalidPassword, "Ключ пошкоджено або невірний пароль.");
         return this;

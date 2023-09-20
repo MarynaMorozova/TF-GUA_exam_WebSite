@@ -7,9 +7,14 @@ import libs.Util;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
+import java.time.Duration;
 
 import static data.TestData.PASSWORD_DEFAULT;
 
@@ -35,14 +40,16 @@ public class Step2Test extends BaseTest {
         pageProvider.getLoginPageTF().checkIsInputPasswordVisible()
                 .enterTextIntoInputPassword(PASSWORD_DEFAULT)
                 .checkSignInVisible();
+        Util.waitABit(30);
         //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         pageProvider.getLoginPageTF().clickOnButtonSignIn()
                 .checkIsCheckBoxRobNotVisible();
         logger.info("--step1--");
+        Util.waitABit(30);
         pageProvider.getStep1PagePage().checkIsStep1Visible()//певірка чи ми на Step1
 
-        .selectTextInDropDownPH(textInDropDownPH, "DropDownPurh")
-       .checkIsInputHrefVisible()
+                .selectTextInDropDownPH(textInDropDownPH, "DropDownPurh")
+                .checkIsInputHrefVisible()
                 .enterTextIntoInputIdProzorro(inputIdProzorro)
                 .checkIsInputHrefVisible()
                 .clickOnradioButtonEasy()
@@ -54,13 +61,15 @@ public class Step2Test extends BaseTest {
     public void Step2() throws FileNotFoundException {
         pageProvider.getStep2PagePage().checkIsStep2Visible();//перевірка чи ми на Step2
         logger.info("--step2--");
-
+        Util.waitABit(30);
         pageProvider.getStep2PagePage().enterTextIntoInputPurchName()
                 .enterTextIntoInputEdrpou(textInputEdrpou)
                 .enterTextIntoInputAdresaPurch(inputAdresaPurch)
                 .selectTextInDropDownCategoryPrurch(textInDropDownCategoryPrurch)
                 .clickOnButtonNext3();
-        Util.waitABit(10);
+//        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(30));
+//        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div [text()= 'Крок 2 з 5']")));
+        Util.waitABit(30);
         pageProvider.getStep2PagePage().checkIsStep2NotVisible();
     }
 }

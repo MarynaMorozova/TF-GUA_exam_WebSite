@@ -7,17 +7,11 @@ import libs.Util;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_DEFAULT;
-import static data.TestData.PASSWORD_INVALID;
 
 @Category(SmokeTestFilter.class)
 public class Step3Test extends BaseTest {
@@ -45,7 +39,7 @@ public class Step3Test extends BaseTest {
         pageProvider.getLoginPageTF().loadKepTF()
                 .checkIsFileLoadVisible();
 //        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
-       //webDriverWait10.until(ExpectedConditions.elementToBeClickable(inputPassword));
+        //webDriverWait10.until(ExpectedConditions.elementToBeClickable(inputPassword));
         //    webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pageProvider.getLoginPageTF().checkIsInputPasswordVisible()
                 .enterTextIntoInputPassword(PASSWORD_DEFAULT)
@@ -55,6 +49,7 @@ public class Step3Test extends BaseTest {
         pageProvider.getLoginPageTF().clickOnButtonSignIn()
                 .checkIsCheckBoxRobNotVisible();
         logger.info("--step1--");
+        Util.waitABit(30);
         pageProvider.getStep1PagePage().checkIsStep1Visible()//певірка чи ми на Step1
                 .selectTextInDropDownPH("03111000-2", "DropDownPurh")
                 .checkIsInputHrefVisible()
@@ -67,8 +62,9 @@ public class Step3Test extends BaseTest {
                 .enterTextIntoInputEdrpou("43646107")
                 .enterTextIntoInputAdresaPurch("Фастов")
                 .selectTextInDropDownCategoryPrurch("Органи соціального страхування")
-                .clickOnButtonNext3()
-                .checkIsStep3Visible();//певірка чи ми на Step3
+                .clickOnButtonNext3();
+        Util.waitABit(30);
+        pageProvider.getStep3PagePage().checkIsStep3Visible();//певірка чи ми на Step3
     }
 
     @Description("Step3")
@@ -93,7 +89,7 @@ public class Step3Test extends BaseTest {
                 .enterTextIntoInputTextarea5(inputTextarea5)
                 .enterTextIntoInputTextarea6(inputTextarea6)
                 .clickOnButtonNext4();
-        Util.waitABit(10);
+        Util.waitABit(60);
         pageProvider.getStep3PagePage().checkIsStep3NotVisible();
     }
 }

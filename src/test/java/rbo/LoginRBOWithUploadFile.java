@@ -8,13 +8,8 @@ import libs.Util;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 import static data.TestData.PASSWORD_RBO;
 import static data.TestData.PASSWORD_RBO_invalid;
@@ -39,34 +34,29 @@ public class LoginRBOWithUploadFile extends BaseTest {
         Util.waitABit(10);
         pageProvider.getLoginPageRBO().loadKepRBO()
                 .checkIsFileLoadRBOVisible()
-
-                //      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                 .checkIsInputPasswordRBOVisible()
                 .enterTextIntoInputPasswordRBO(PASSWORD_RBO)
                 .checkSignInVisibleRBO();
-
-        //    webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO();
         Util.waitABit(10);
+        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO();
+        Util.waitABit(30);
         pageProvider.getLoginPageRBO().checkSignInNotVisibleRBO(); // перевірка що немає SignIn
     }
 
     @Test//проверка входа с не валидными данными
-    //@Ignore
+    @Ignore
     public void inValidLoginPassword() throws FileNotFoundException {
         pageProvider.getLoginPageRBO().openPageRBO();
         Util.waitABit(10);
         pageProvider.getLoginPageRBO().loadKepRBO()
 
                 .checkIsFileLoadRBOVisible()
-                //      webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
                 .checkIsInputPasswordRBOVisible()
                 .enterTextIntoInputPasswordRBO(PASSWORD_RBO_invalid)
                 .checkSignInVisibleRBO();
-
-        //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO();
         Util.waitABit(10);
+        pageProvider.getLoginPageRBO().clickOnButtonSignInRBO();
+        Util.waitABit(20);
         pageProvider.getLoginPageRBO().checkIsInvalidPassRBOVisible();// перевірка, що ввели не валідний пароль
     }
 }

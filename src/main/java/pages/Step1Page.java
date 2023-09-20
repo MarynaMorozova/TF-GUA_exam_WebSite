@@ -33,9 +33,8 @@ public class Step1Page extends ParentPageTF {
         super(webDriver);
     }
 
-
     public Step1Page openStep1Page() {
-      //  String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";
+        //  String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";
         openPageTF();
         return this;
     }
@@ -57,7 +56,8 @@ public class Step1Page extends ParentPageTF {
     }
 
 
-    public Step1Page selectTextInDropDownPH(String purchaseCN, String elementName) { // метод для вибору значення з дропдауну по id
+    public Step1Page selectTextInDropDownPH(String purchaseCN, String elementName) {
+        // метод для вибору значення з дропдауну по id
         selectTextInDropDownByUI(dropDownPur, purchaseCN, elementName);
         return this;
     }
@@ -67,7 +67,8 @@ public class Step1Page extends ParentPageTF {
         return this;
     }
 
-    public void clickOnButtonNext() {clickOnElement(buttonNext, "ButtonNext");
+    public void clickOnButtonNext() {
+        clickOnElement(buttonNext, "ButtonNext");
     }
 
     public void checkIsStep1NotVisible() {

@@ -1,5 +1,2 @@
 package categories;
-
-public class SmokeTestFilter {
-
-}
+public class SmokeTestFilter {}

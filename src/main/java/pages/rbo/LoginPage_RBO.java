@@ -28,10 +28,12 @@ public class LoginPage_RBO extends ParentPageRBO {
     public LoginPage_RBO(WebDriver webDriver) throws FileNotFoundException {
         super(webDriver);
     }
+
     public LoginPage_RBO checkIsInputPasswordRBOVisible() {
         checkElementDisplayed(isPasswordRBO, "Password");
         return this;
     }
+
     public LoginPage_RBO loadKepRBO() {
         checkIsLabelFileRBOVisible("LabelFile");
 
@@ -72,6 +74,7 @@ public class LoginPage_RBO extends ParentPageRBO {
         checkElementDisplayed(isInvalidPasswordRBO, "IsInvalidPassword");
         return this;
     }
+
     public LoginPage_RBO checkSignInNotVisibleRBO() {
         checkElementNotDisplayed(signInRbo, "SignIn");
         return this;

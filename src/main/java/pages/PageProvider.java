@@ -37,10 +37,5 @@ public class PageProvider {
     public LoginPage_RBO getLoginPage_RBO() throws FileNotFoundException {
         return new LoginPage_RBO(webDriver);
     }
-
-//    public HomePage getHomePage() {
-//        return new HomePage(webDriver);
-//    }
-
 }
 

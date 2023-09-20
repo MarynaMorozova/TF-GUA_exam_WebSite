@@ -9,15 +9,11 @@ import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.time.Duration;
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
@@ -60,13 +56,14 @@ public class ValidTestsWithExcel extends BaseTest {
         Util.waitABit(10);
         pageProvider.getLoginPageTF().loadKepTF()
                 .checkIsFileLoadVisible();
+        Util.waitABit(30);
 //        WebDriverWait webDriverWait10 = new WebDriverWait(webDriver, 15);
 //        webDriverWait10.until(ExpectedConditions.elementToBeClickable(webElement));
-        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         pageProvider.getLoginPageTF().checkIsInputPasswordVisible()
                 .enterTextIntoInputPassword(PASSWORD_DEFAULT)
                 .checkSignInVisible();
-
+        Util.waitABit(30);
         //webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         pageProvider.getLoginPageTF().clickOnButtonSignIn()
                 .checkIsCheckBoxRobNotVisible();

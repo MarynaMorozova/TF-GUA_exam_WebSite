@@ -25,7 +25,7 @@ public class Step3Page extends ParentPageTF {
     @FindBy(xpath = "//span [text()='Оберіть доступний рахунок']") // закритий дропдаун
     private WebElement dropDownSelectAccount;
 
-        @FindBy(xpath = ".//textarea[@tabindex=5]")
+    @FindBy(xpath = ".//textarea[@tabindex=5]")
     private WebElement textarea5;
 
     @FindBy(xpath = ".//textarea[@tabindex=6]")
@@ -52,13 +52,14 @@ public class Step3Page extends ParentPageTF {
         enterTextIntoInput(datePrPropoz, element);
         return this;
     }
+
     public Step3Page enterTextIntoInputSumGarant(String element) {
         enterTextIntoInput(sumGarant, element);
         return this;
     }
 
     public Step3Page selectTextInDropDownSelectAccount(String elementAccount) { // метод для вибору значення з дропдауну по id
-       // String elementAccount="UA613808050000000026005728147";// тестові дані передавати стрінгой в тесті
+        // String elementAccount="UA613808050000000026005728147";// тестові дані передавати стрінгой в тесті
         selectTextInDropDownByUI(dropDownSelectAccount, elementAccount, "ElementAccount");
         return this;
     }
@@ -67,6 +68,7 @@ public class Step3Page extends ParentPageTF {
         enterTextIntoInput(textarea5, inputTextarea5);// тестові дані передавати стрінгой
         return this;
     }
+
     public Step3Page enterTextIntoInputTextarea6(String inputTextarea6) {
         enterTextIntoInput(textarea6, inputTextarea6);// тестові дані передавати стрінгой
         return this;
@@ -75,6 +77,7 @@ public class Step3Page extends ParentPageTF {
     public void clickOnButtonNext4() {
         clickOnElement(buttonNextTo4, "ButtonNextOnStep4");
     }
+
     public Step3Page checkIsStep3Visible() {
         checkElementDisplayed(step3, "Step3");
         return this;

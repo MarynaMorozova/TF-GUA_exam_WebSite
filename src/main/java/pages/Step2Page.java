@@ -1,11 +1,9 @@
 package pages;
 
-import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.tf_gua.ParentPageTF;
-
 import java.io.FileNotFoundException;
 
 public class Step2Page extends ParentPageTF {
