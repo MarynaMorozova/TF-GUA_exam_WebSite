@@ -3,8 +3,11 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pages.tf_gua.ParentPageTF;
 
-public class Step3Page extends ParentPage {
+import java.io.FileNotFoundException;
+
+public class Step3Page extends ParentPageTF {
 
 
     @FindBy(xpath = "//div [text()= 'Крок 3 з 5']")
@@ -22,7 +25,7 @@ public class Step3Page extends ParentPage {
     @FindBy(xpath = "//span [text()='Оберіть доступний рахунок']") // закритий дропдаун
     private WebElement dropDownSelectAccount;
 
-        @FindBy(xpath = ".//textarea[@tabindex=5]")
+    @FindBy(xpath = ".//textarea[@tabindex=5]")
     private WebElement textarea5;
 
     @FindBy(xpath = ".//textarea[@tabindex=6]")
@@ -31,49 +34,57 @@ public class Step3Page extends ParentPage {
     @FindBy(xpath = ".//button[@tabindex=7]")
     private WebElement buttonNextTo4;
 
-    public Step3Page(WebDriver webDriver) {
+    public Step3Page(WebDriver webDriver) throws FileNotFoundException {
         super(webDriver);
     } //конструктор
 
     public void openStep3Page() {
         String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";
-        openPage(url);
+        openPageTF();
     }
 
-    public Step3Page enterTextIntoInputDateTerminDii() {
-        enterTextIntoInput(dateTerminDii, "25.03.2024");
+    public Step3Page enterTextIntoInputDateTerminDii(String element) {
+        enterTextIntoInput(dateTerminDii, element);
         return this;
     }
 
-    public Step3Page enterTextIntoInputDatePrPropoz() {
-        enterTextIntoInput(datePrPropoz, "26.09.2023");
-        return this;
-    }
-    public Step3Page enterTextIntoInputSumGarant() {
-        enterTextIntoInput(sumGarant, "20000");
+    public Step3Page enterTextIntoInputDatePrPropoz(String element) {
+        enterTextIntoInput(datePrPropoz, element);
         return this;
     }
 
-    public Step3Page selectTextInDropDownSelectAccount() { // метод для вибору значення з дропдауну по id
-        String elementAccount="UA613808050000000026005728147";// тестові дані передавати стрінгой
+    public Step3Page enterTextIntoInputSumGarant(String element) {
+        enterTextIntoInput(sumGarant, element);
+        return this;
+    }
+
+    public Step3Page selectTextInDropDownSelectAccount(String elementAccount) { // метод для вибору значення з дропдауну по id
+        // String elementAccount="UA613808050000000026005728147";// тестові дані передавати стрінгой в тесті
         selectTextInDropDownByUI(dropDownSelectAccount, elementAccount, "ElementAccount");
         return this;
     }
 
-    public Step3Page enterTextIntoInputTextarea5() {
-        enterTextIntoInput(textarea5, "11");// тестові дані передавати стрінгой
-        return this;
-    }
-    public Step3Page enterTextIntoInputTextarea6() {
-        enterTextIntoInput(textarea6, "22");// тестові дані передавати стрінгой
+    public Step3Page enterTextIntoInputTextarea5(String inputTextarea5) {
+        enterTextIntoInput(textarea5, inputTextarea5);// тестові дані передавати стрінгой
         return this;
     }
 
-    public void clickOnButtonNext4(String elementName) {
-        clickOnElement(buttonNextTo4, elementName);
+    public Step3Page enterTextIntoInputTextarea6(String inputTextarea6) {
+        enterTextIntoInput(textarea6, inputTextarea6);// тестові дані передавати стрінгой
+        return this;
     }
-    public Step3Page checkIsStep3Visible(String elementName) {
-        checkElementDisplayed(step3, elementName);
+
+    public void clickOnButtonNext4() {
+        clickOnElement(buttonNextTo4, "ButtonNextOnStep4");
+    }
+
+    public Step3Page checkIsStep3Visible() {
+        checkElementDisplayed(step3, "Step3");
+        return this;
+    }
+
+    public Step3Page checkIsStep3NotVisible() {
+        checkElementNotDisplayed(step3, "Step3");//перевірка, що ми вийшли з Step3
         return this;
     }
 }

@@ -3,8 +3,13 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import pages.tf_gua.ParentPageTF;
 
-public class Step1Page extends ParentPage {
+import java.io.FileNotFoundException;
+
+public class Step1Page extends ParentPageTF {
+    @FindBy(xpath = "//*[@id='gear']")
+    private WebElement spinWaite;
 
     @FindBy(xpath = "//div [text()= 'Крок 1 з 5']")
     private WebElement step1;
@@ -24,40 +29,49 @@ public class Step1Page extends ParentPage {
     @FindBy(xpath = "//button [@CLASS='mat-focus-indicator next-button mat-button mat-button-base']")
     private WebElement buttonNext;
 
-    public Step1Page(WebDriver webDriver) {
+    public Step1Page(WebDriver webDriver) throws FileNotFoundException {
         super(webDriver);
     }
 
-
-    public void openStep1Page() {
-        String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";
-        openPage(url);
+    public Step1Page openStep1Page() {
+        //  String url = "https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender";
+        openPageTF();
+        return this;
     }
 
-    public void checkIsStep1Visible(String elementName) {
-        checkElementDisplayed(step1, elementName);
+    public Step1Page checkIsStep1Visible() {
+        checkElementDisplayed(step1, "Step1");
+        return this;
     }
 
-    public void checkIsInputHrefVisible(String elementName) {
-        checkElementDisplayed(inputHref, elementName);
+    public Step1Page checkIsInputHrefVisible() {
+        checkElementDisplayed(inputHref, "InputHref");
+        return this;
     }
 
-    public void enterTextIntoInputIdProzorro(String idProzorro) {
+    public Step1Page enterTextIntoInputIdProzorro(String idProzorro) {
         enterTextIntoInput(inputHref, idProzorro);
         logger.info("inputHref");
+        return this;
     }
 
 
-    public Step1Page selectTextInDropDownPH(String purchaseCN, String elementName) { // метод для вибору значення з дропдауну по id
+    public Step1Page selectTextInDropDownPH(String purchaseCN, String elementName) {
+        // метод для вибору значення з дропдауну по id
         selectTextInDropDownByUI(dropDownPur, purchaseCN, elementName);
         return this;
     }
 
-    public void clickOnradioButtonEasy(String elementName) {
-        clickOnElement(radioButtonEasy, elementName);
+    public Step1Page clickOnradioButtonEasy() {
+        clickOnElement(radioButtonEasy, "RadioButtonEasy");
+        return this;
     }
 
-    public void clickOnButtonNext(String elementName) {
-        clickOnElement(buttonNext, elementName);
+    public void clickOnButtonNext() {
+        clickOnElement(buttonNext, "ButtonNext");
+    }
+
+    public void checkIsStep1NotVisible() {
+        checkElementNotDisplayed(step1, "Step1");
     }
 }

@@ -2490,3 +2490,41 @@ Session ID: 0d4d06518855f7f5e23afad428cea4b5
 2023-01-09 19:16:52   INFO [rbo.LoginRBOWithUploadFile] : Send file
 2023-01-09 19:16:52   INFO [pages.LoginPageRBO] : LabelFileLogin element is displayed
 2023-01-09 19:16:52   INFO [pages.LoginPageRBO] : Password element is displayed
+2023-01-09 20:57:03   INFO [rbo.LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-01-09 20:57:08   INFO [rbo.LoginRBOWithUploadFile] : Browser was opened
+2023-01-09 20:57:10   INFO [pages.rbo.LoginPage_RBO] : Page was opened https://rbo-dev.avrb.com.ua/ibank/home?0
+2023-01-09 20:57:10   INFO [pages.rbo.LoginPage_RBO] : LabelFile element is not displayed
+2023-01-09 20:57:10   INFO [rbo.LoginRBOWithUploadFile] : Finished test: rbo.LoginRBOWithUploadFile::validLogin
+2023-01-09 20:57:11   INFO [rbo.LoginRBOWithUploadFile] : Browser was closed
+2023-01-09 20:59:30   INFO [rbo.LoginRBOWithUploadFile] : -----validLogin was started ----
+2023-01-09 20:59:35   INFO [rbo.LoginRBOWithUploadFile] : Browser was opened
+2023-01-09 20:59:37   INFO [pages.rbo.LoginPage_RBO] : Page was opened https://rbo-dev.avrb.com.ua/ibank/home?0
+2023-01-09 20:59:47   INFO [pages.rbo.LoginPage_RBO] : LabelFile element is displayed
+2023-01-09 20:59:47   INFO [pages.rbo.LoginPage_RBO] : Send file
+2023-01-09 20:59:47   INFO [rbo.LoginRBOWithUploadFile] : Finished test: rbo.LoginRBOWithUploadFile::validLogin
+2023-01-09 20:59:48   INFO [rbo.LoginRBOWithUploadFile] : Browser was closed
+2023-01-09 21:00:36  ERROR [pages.LoginPageRBO] : Can not work with elementorg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=116.0.1938.62)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [c9fea582ad83ca5bef9206591a676369, findElement {using=xpath, value=//input [@id = "pwd_id"]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.62, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:62151}, msedge: {msedgedriverVersion: 116.0.1938.62 (493f2197e519..., userDataDir: C:\Users\iuad1b2k\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62151/devtoo..., se:cdpVersion: 116.0.1938.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9fea582ad83ca5bef9206591a676369
+2023-01-09 21:00:36   INFO [rbo.LoginRBOWithUploadFile] : Finished test: rbo.LoginRBOWithUploadFile::validLogin
+2023-01-09 21:00:36   INFO [rbo.LoginRBOWithUploadFile] : Browser was closed
+2023-01-09 21:01:34   INFO [loginTFGUA.LoginWithUploadFile] : -----validLogin was started ----
+2023-01-09 21:01:38   INFO [loginTFGUA.LoginWithUploadFile] : Browser was opened
+2023-01-09 21:01:44   INFO [pages.LoginPage] : Page was opened https://loans-dmz.dev.apps.testdmz-avalaunch.aval/gua-tender
+2023-01-09 21:01:44   INFO [pages.LoginPage] : LoginFile element is displayed
+2023-01-09 21:01:44   INFO [loginTFGUA.LoginWithUploadFile] : Send file
+2023-01-09 21:01:44   INFO [pages.LoginPage] : LoginNameFile element is displayed
+2023-01-09 21:01:44   INFO [pages.LoginPage] : checkIsFileLoadVisible
+2023-01-09 21:01:44   INFO [pages.LoginPage] : Password element is displayed
+2023-01-09 21:01:44   INFO [pages.LoginPage] : 12345678 was inputted 
+2023-01-09 21:01:44   INFO [pages.LoginPage] : SignIn element is displayed
+2023-01-09 21:01:44   INFO [pages.LoginPage] : SignIn element was clicked
+2023-01-09 21:01:54   INFO [pages.LoginPage] : checkBoxRob element is not displayed
+2023-01-09 21:01:54   INFO [loginTFGUA.LoginWithUploadFile] : Finished test: loginTFGUA.LoginWithUploadFile::validLogin
+2023-01-09 21:01:55   INFO [loginTFGUA.LoginWithUploadFile] : Browser was closed
